@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "deploy": "gh-pages -d wonderfl.net"
+  },
+  "devDependencies": {
+    "gh-pages": "^0.12.0"
+  }
+}
