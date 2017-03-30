@@ -1,0 +1,2610 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:mixi="http://mixi-platform.com/ns#" xmlns:og="http://ogp.me/ns#">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="chrome=1" http-equiv="X-UA-Compatible"/>
+  <title>
+   Starling Boids - wonderfl build flash online
+  </title>
+  <meta content="Starling Boids | wonderfl build flash online" name="title"/>
+  <meta content="Starling Boids StarlingでGPU使ってBoids描画。  数量とかもろもろ設定はconfigボタンを押すとウィンドウが開きます。showのチェックを入れると視界範囲やベクトルも表示されます。大量に出す場合は画面広くしたほうが見やすいです。  boidsの基本3ルール（cohere/align/separate）以外に、異なる色同士は反発するルールを付加しています。（なので、単色にすればスタンダードなboids）  あと画面端はループするか反射か選べます。 @ wonderfl build flash online. wonderflは、サイト上でFlash（swf）をつくることのできるサービス。Actionscript3のコードを書くと、自動でコンパイルし、作成されたFlashを見ることができます。" name="description"/>
+  <meta content="Flash,Actionscript3,Flex,as3,wonderful" http-equiv="Keywords"/>
+  <meta content="text/css" http-equiv="content-style-type"/>
+  <meta content="text/javascript" http-equiv="content-script-type"/>
+  <meta content="KAYAC Inc." name="author"/>
+  <meta content="Copyright © 2008-2010 Wonderfl All right reserved. KAYAC Inc." name="copyright"/>
+  <meta content="wonderfl build flash online" property="og:site_name"/>
+  <meta content="100748186650646" property="fb:page_id"/>
+  <!--[if IE]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+  <link href="../../css/common.css" media="screen,print" rel="stylesheet" type="text/css"/>
+  <link href="../../css/reserved.css" media="screen,print" rel="stylesheet" type="text/css"/>
+  <link href="../../css/SyntaxHighlighter.css" media="screen,print" rel="stylesheet" type="text/css"/>
+  <link href="../../css/code.css" media="screen,print" rel="stylesheet" type="text/css"/>
+  <link href="../../css/lightbox.css" media="screen,print" rel="stylesheet" type="text/css"/>
+  <link href="../../img/favicon.png" rel="shortcut icon" type="image/png"/>
+  <link href="../../images/capture/5/56/56b8/56b84d1f500546b8903fd2ac24ff1579ce256372_100.jpg?t=1362497407" rel="image_src"/>
+  <link href="../../images/capture/5/56/56b8/56b84d1f500546b8903fd2ac24ff1579ce256372_100.jpg?t=1362497407" rel="mixi-check-image"/>
+  <meta content="http://wonderfl.net/images/capture/5/56/56b8/56b84d1f500546b8903fd2ac24ff1579ce256372_100.jpg?t=1362497407" property="og:image"/>
+  <meta content="Starling Boids" property="og:title"/>
+  <meta content="video" name="medium"/>
+  <meta content="../../swf/usercode/5/56/56b8/56b84d1f500546b8903fd2ac24ff1579ce256372.swf" property="og:video"/>
+  <meta content="Starling Boids" property="og:audio:title"/>
+  <meta content="465" property="og:video:height"/>
+  <meta content="465" property="og:video:width"/>
+  <meta content="application/x-shockwave-flash" property="og:video:type"/>
+  <script src="../../js/header.js" type="text/javascript">
+  </script>
+  <script src="http://partner.googleadservices.com/gampad/google_service.js" type="text/javascript">
+  </script>
+ </head>
+ <body>
+  <div class="codepage contents" id="container">
+   <!--[[[ HEADER-AREA ]]]-->
+   <header class="group" id="headerGlobal">
+    <p id="siteName">
+     <a href="../../" title="wonderfl - build flash online">
+      <img alt="wonderfl - build flash online" height="24" src="../../img/common/logo.png" width="234"/>
+     </a>
+    </p>
+    <nav id="navGlobal">
+     <ul>
+      <li class="column">
+       <span class="header_menu_column">
+        <a href="../../login" onclick="this.href='/login?redirect=' + encodeURIComponent(location.pathname);">
+         signin
+        </a>
+       </span>
+      </li>
+      <li class="column">
+       <span class="header_menu_column" id="header_menu_column_2" onmouseout="Wonderfl.Header.mouseout(this);" onmouseover="Wonderfl.Header.mouseover(this);">
+        <a href="../../codes" title="flash,actionscript3 code ranking">
+         codes
+        </a>
+       </span>
+       <ul class="navGlobalSub" id="header_submenu_2" onmouseout="Wonderfl.Header.mouseout(this);" onmouseover="Wonderfl.Header.mouseover(this);" style="display:none;">
+        <li>
+         <a href="../../codes" title="page view ranking">
+          page view ranking
+         </a>
+        </li>
+        <li>
+         <a href="../../codes?order=favorite" title="favorites count ranking">
+          favorite ranking
+         </a>
+        </li>
+        <li>
+         <a href="../../codes?order=forked" title="forked count ranking">
+          forked count ranking
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li class="column">
+       <span class="header_menu_column" id="header_menu_column_3" onmouseout="Wonderfl.Header.mouseout(this);" onmouseover="Wonderfl.Header.mouseover(this);">
+        <a href="../../users" title="wonderfl users">
+         users
+        </a>
+       </span>
+       <ul class="navGlobalSub" id="header_submenu_3" onmouseout="Wonderfl.Header.mouseout(this);" onmouseover="Wonderfl.Header.mouseover(this);" style="display:none;">
+        <li>
+         <a href="../../users" title="page view ranking">
+          page view ranking
+         </a>
+        </li>
+        <li>
+         <a href="../../users?order=favorite" title="favorites count ranking">
+          favorite ranking
+         </a>
+        </li>
+        <li>
+         <a href="../../users?order=forked" title="forked count ranking">
+          forked count ranking
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li class="column">
+       <span class="header_menu_column" id="header_menu_column_8" onmouseout="Wonderfl.Header.mouseout(this);" onmouseover="Wonderfl.Header.mouseover(this);">
+        <a href="http://flash-games.wonderfl.net/" title="game wonderfl">
+         games
+        </a>
+       </span>
+       <ul class="navGlobalSub" id="header_submenu_8" onmouseout="Wonderfl.Header.mouseout(this);" onmouseover="Wonderfl.Header.mouseover(this);" style="display:none;">
+        <li>
+         <a href="http://flash-games.wonderfl.net/about" title="フラッシュゲームをつくる">
+          make games
+         </a>
+        </li>
+        <li>
+         <a href="http://flash-games.wonderfl.net/" title="フラッシュゲームで遊ぶ">
+          play games
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li class="column">
+       <span class="header_menu_column" id="header_menu_column_10" onmouseout="Wonderfl.Header.mouseout(this);" onmouseover="Wonderfl.Header.mouseover(this);">
+        <a href="../../events" title="events">
+         events
+        </a>
+       </span>
+       <ul class="navGlobalSub" id="header_submenu_10" onmouseout="Wonderfl.Header.mouseout(this);" onmouseover="Wonderfl.Header.mouseover(this);" style="display:none;">
+        <li>
+         <a class="external" href="http://jsdo.it/event/jam/" title="HTML5&amp;Flash">
+          JAM -HTML5&amp;Flash-
+         </a>
+        </li>
+        <li>
+         <a class="external" href="http://checkmate.wonderfl.net/" title="CHECKMATE">
+          CHECKMATE
+         </a>
+        </li>
+        <li>
+         <a class="external" href="http://nengafl.wonderfl.net/" title="nengafl">
+          nengafl
+         </a>
+        </li>
+        <li>
+         <a href="../../code/adce526f063149d781c2752e7472b08ad7279595" title="FeliCa Flash Contest">
+          FeliCa Flash Contest
+         </a>
+        </li>
+       </ul>
+      </li>
+      <!-- li class="column">
+<span class="header_menu_column" id="header_menu_column_9" onmouseover="Wonderfl.Header.mouseover(this);" onmouseout="Wonderfl.Header.mouseout(this);"><a href="http://flash-jobs.wonderfl.net/" title="flash-jobs" target="_blank" >jobs</a></span>
+<ul class="navGlobalSub" id="header_submenu_9" style="display:none;" onmouseover="Wonderfl.Header.mouseover(this);" onmouseout="Wonderfl.Header.mouseout(this);">
+<li><a href="http://flash-jobs.wonderfl.net/" title="want a job?" target="_blank" >want a job?</a></li>
+<li><a href="http://flash-jobs.wonderfl.net/plan" title="post a job" target="_blank" >post a job</a></li>
+</ul>
+</li -->
+      <li class="column">
+       <span class="header_menu_column" id="header_menu_column_4" onmouseout="Wonderfl.Header.mouseout(this);" onmouseover="Wonderfl.Header.mouseover(this);">
+        <a href="../../tags" title="tags">
+         tags
+        </a>
+       </span>
+       <ul class="navGlobalSub" id="header_submenu_4" onmouseout="Wonderfl.Header.mouseout(this);" onmouseover="Wonderfl.Header.mouseover(this);" style="display:none;">
+        <li>
+         <a href="../../search" title="Flash/Actionscript keywords">
+          Flash/Actionscript keywords
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li class="column">
+       <span class="header_menu_column" id="header_menu_column_5" onmouseout="Wonderfl.Header.mouseout(this);" onmouseover="Wonderfl.Header.mouseover(this);">
+        <a href="../../qa" title="Flash Q&amp;A">
+         Q&amp;A
+        </a>
+       </span>
+       <ul class="navGlobalSub" id="header_submenu_5" onmouseout="Wonderfl.Header.mouseout(this);" onmouseover="Wonderfl.Header.mouseover(this);" style="display:none;">
+        <li>
+         <a href="../../qa#questions" title="Flash Q&amp;A">
+          new questions
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li class="column header_menu header_last">
+       <span class="header_menu_column" id="header_menu_column_7" onmouseout="Wonderfl.Header.mouseout(this);" onmouseover="Wonderfl.Header.mouseover(this);">
+        <a href="../../about/" title="about">
+         wonderfl?
+        </a>
+       </span>
+       <ul class="navGlobalSub" id="header_submenu_7" onmouseout="Wonderfl.Header.mouseout(this);" onmouseover="Wonderfl.Header.mouseover(this);" style="display:none;">
+        <li>
+         <a href="../../about/" title="about">
+          what is wonderfl?
+         </a>
+        </li>
+        <li>
+         <a href="../../help" title="help, FAQ">
+          help!
+         </a>
+        </li>
+        <li>
+         <a href="../../libraries" title="libraries">
+          libraries
+         </a>
+        </li>
+        <li>
+         <a href="../../wiki" title="wiki">
+          wiki
+         </a>
+        </li>
+        <li>
+         <a href="../../apis" title="APIs">
+          APIs
+         </a>
+        </li>
+        <li>
+         <a href="../../media" title="Media">
+          Media Information
+         </a>
+        </li>
+        <li>
+         <a href="../../blog" title="developer's blog">
+          developer's blog
+         </a>
+        </li>
+        <li>
+         <a href="../../help#help_contact" title="contact">
+          contact
+         </a>
+        </li>
+       </ul>
+      </li>
+     </ul>
+    </nav>
+    <div id="navUtility">
+     <div id="btnHeaderCodeNew">
+      <form action="/code/new" method="get">
+       <fieldset>
+        <p>
+         <input alt="コードを書きはじめる" class="btnT" src="../../img/common/btn_write_code.png" type="image"/>
+        </p>
+       </fieldset>
+       <input name="token" type="hidden" value="469068c657b626c562998063b6cb8347ba13ac403b0060678051ad287ffe5265"/>
+      </form>
+      <!-- / #btnHeaderCodeNew -->
+     </div>
+     <div id="navGlobalSearch">
+      <form action="/search" class="search" method="get">
+       <span>
+        <a href="../../search" title="flash,actionscript3 code search">
+         code search
+        </a>
+       </span>
+       <input class="query" name="q" type="text"/>
+       <input class="search_btn btnT" src="../../img/common/btn/btn_go.png" type="image" value=""/>
+      </form>
+      <!--/#navGlobalSearch-->
+     </div>
+     <!-- /#navUtility -->
+    </div>
+    <!--/#header-->
+   </header>
+   <!--/[[[ HEADER-AREA ]]]-->
+   <!--[[[ CONTENT-AREA ]]]-->
+   <div class="group" id="content">
+    <!--Banner-->
+    <div class="ad_super_bnr bnrAd btnT">
+     <!-- wonderfl_codepage_fullbnr1 -->
+    </div>
+    <!--Banner-->
+    <article class="code">
+     <header>
+      <div class="headerInfo group">
+       <h1>
+        Starling Boids
+       </h1>
+       <p class="description">
+        StarlingでGPU使ってBoids描画。
+        <br/>
+        <br/>
+        数量とかもろもろ設定はconfigボタンを押すとウィンドウが開きます。showのチェックを入れると視界範囲やベクトルも表示されます。大量に出す場合は画面広くしたほうが見やすいです。
+        <br/>
+        <br/>
+        boidsの基本3ルール（cohere/align/separate）以外に、異なる色同士は反発するルールを付加しています。（なので、単色にすればスタンダードなboids）
+        <br/>
+        <br/>
+        あと画面端はループするか反射か選べます。
+       </p>
+       <p class="user">
+        <span class="thumb">
+         <a href="../../user/miyaoka" title="miyaoka">
+          <img alt="miyaoka" height="30" src="../../images/icon/c/c4/c475/c475c2100684a371e18b18afc96d9f6455df8db4m" title="miyaoka" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/miyaoka" title="miyaoka">
+         miyaoka
+        </a>
+       </p>
+       <ul class="data">
+        <ul class="data">
+         <li class="forked">
+          forked:0
+         </li>
+         <li class="fav">
+          <a href="#code_favorites" title="Starling Boids favorites">
+           favorite:18
+          </a>
+         </li>
+         <li class="lines">
+          lines:1088
+         </li>
+         <li class="license">
+          license :
+          <a href="../../help#help_license">
+           MIT License
+          </a>
+         </li>
+         <li class="modified">
+          modified : 2013-03-06 00:28:34
+         </li>
+        </ul>
+       </ul>
+       <p class="btnAddFav btnAddFavDes">
+        <a href="../../login?redirect=http%3A%2F%2Fwonderfl.net%2Fc%2Fcn9V">
+         <img alt="add to favorites" class="btnT" height="50" src="../../img/common/btn/btn_code_add_fav.png?t=1" width="140"/>
+        </a>
+       </p>
+       <!-- /.headerInfo -->
+      </div>
+     </header>
+     <div class="mode_view" id="parentsCode">
+      <div class="boxCodeInner">
+       <div class="code mode_view">
+        <div id="as3_container">
+         <div id="externalFlashViewer">
+         </div>
+         <textarea id="raw_as3" style="display:none;">package 
+{
+    import com.bit101.components.CheckBox;
+    import com.bit101.components.HUISlider;
+    import com.bit101.components.Label;
+    import com.bit101.components.NumericStepper;
+    import com.bit101.components.PushButton;
+    import com.bit101.components.RadioButton;
+    import com.bit101.components.Window;
+    
+    import flash.display.Sprite;
+    import flash.display.StageAlign;
+    import flash.display.StageQuality;
+    import flash.display.StageScaleMode;
+    import flash.events.Event;
+    import flash.geom.Rectangle;
+    
+    import starling.core.Starling;
+    import starling.events.Event;
+    
+    [SWF(frameRate="60", backgroundColor="#111111")]
+    public class StarlingBoids extends flash.display.Sprite
+    {
+        private var _bm:BoidsModel;
+        private var _starling:Starling;
+        
+        private var _confWindow:Window;
+        private var _boidsCountNS:NumericStepper;
+        private var _boidsTypeNS:NumericStepper;
+        
+        private var _cohRangeSlider:HUISlider;
+        private var _sepRangeSlider:HUISlider;
+        private var _maxSpeedSlider:HUISlider;
+        private var _maxForceSlider:HUISlider;
+        private var _cohSlider:HUISlider;
+        private var _aliSlider:HUISlider;
+        private var _sepSlider:HUISlider;
+        private var _frameRateSlider:HUISlider;
+        
+        private var _showCohRangeChk:CheckBox;
+        private var _showSepRangeChk:CheckBox;
+        private var _showCohForceChk:CheckBox;
+        private var _showAliForceChk:CheckBox;
+        private var _showSepForceChk:CheckBox;
+        
+        private static const LABEL_BOUND_LOOP:String = "loop";
+        private static const LABEL_BOUND_HARD:String = "bound";//"hard bound";
+        private static const LABEL_BOUND_SOFT:String = "soft bound";
+        
+        private var gridUnitSize:uint = 50;
+        
+        public function StarlingBoids()
+        {
+            stage.scaleMode = StageScaleMode.NO_SCALE;
+            stage.align = StageAlign.TOP_LEFT;
+            stage.quality = StageQuality.LOW;
+            
+            initUI();
+            initModel();
+            initStarling();
+        }
+        private function initUI():void
+        {
+            //呼び出しボタン
+            var confBtn:PushButton = new PushButton(this, 50, 4, "config", showConfig);
+            addChild(confBtn);
+            
+            //設定ウィンドウ
+            _confWindow = new Window(null, 50, 4, "config");
+            
+            var ux:Number;
+            var uy:Number;
+            var uBaseY:Number = 24;
+            
+            //各種UI
+            var countLabel:Label = new Label(_confWindow, ux=4, uy=uBaseY, "boids");
+            var typeLabel:Label = new Label(_confWindow, ux, uy+=20, "colors");
+            
+            _boidsCountNS = new NumericStepper(_confWindow, ux+=32, uy=uBaseY+2, onChangeBoidsCount);
+            _boidsTypeNS = new NumericStepper(_confWindow, ux, uy+=20, onChangeBoidsCount);
+            
+            var edgeLabel:Label = new Label(_confWindow, ux=8, uy+=28, "[when out of stage]");
+            new RadioButton(_confWindow, ux+=4, uy+=20, LABEL_BOUND_LOOP, true, onSelectBounding);
+            new RadioButton(_confWindow, ux, uy+=16, LABEL_BOUND_HARD, false, onSelectBounding);
+            //            new RadioButton(_confWindow, ux, uy+=16, LABEL_BOUND_SOFT, false, onSelectBounding);
+            
+            var frameRateLabel:Label = new Label(_confWindow, ux=128, uy=uBaseY, "frameRate");
+            var cohRangeLabel:Label = new Label(_confWindow, ux, uy+=24, "cohRange");
+            var sepRangeLabel:Label = new Label(_confWindow, ux, uy+=16, "sepRange");
+            var maxSpeed:Label = new Label(_confWindow, ux, uy+=16, "maxSpeed");
+            var maxForce:Label = new Label(_confWindow, ux, uy+=16, "maxForce");
+            
+            var forces:Label = new Label(_confWindow, ux, uy+=24, "[forces]");
+            var cohLabel:Label = new Label(_confWindow, ux, uy+=16, "Cohision");
+            var aliLabel:Label = new Label(_confWindow, ux, uy+=16, "Alignment");
+            var sepLabel:Label = new Label(_confWindow, ux, uy+=16, "Separation");
+            
+            _frameRateSlider = new HUISlider(_confWindow, ux+=40, uy=uBaseY, "", onChangeFR);
+            
+            _cohRangeSlider = new HUISlider(_confWindow, ux, uy+=24, "", onChangeCohRange);
+            _sepRangeSlider = new HUISlider(_confWindow, ux, uy+=16, "", onChangeSepRange);
+            _maxSpeedSlider = new HUISlider(_confWindow, ux, uy+=16, "", onChangeMaxSpeed);
+            _maxForceSlider = new HUISlider(_confWindow, ux, uy+=16, "", onChangeMaxForce);
+            
+            _cohSlider = new HUISlider(_confWindow, ux, uy+=24+16, "", onChangeAmps);
+            _aliSlider = new HUISlider(_confWindow, ux, uy+=16, "", onChangeAmps);
+            _sepSlider = new HUISlider(_confWindow, ux, uy+=16, "", onChangeAmps);
+            
+            var show:Label = new Label(_confWindow, ux+=172, uy=uBaseY+12, "[show]");
+            _showCohRangeChk = new CheckBox(_confWindow, ux+=10, uy=_cohRangeSlider.y+4, "", onChangeShowCohRange);
+            _showSepRangeChk = new CheckBox(_confWindow, ux, uy+=16, "", onChangeShowSepRange);
+            _showCohForceChk = new CheckBox(_confWindow, ux, uy=_cohSlider.y+4, "", onChangeShowCohForce);
+            _showAliForceChk = new CheckBox(_confWindow, ux, uy+=16, "", onChangeShowAliForce);
+            _showSepForceChk = new CheckBox(_confWindow, ux, uy+=16, "", onChangeShowSepForce);
+            
+            _confWindow.setSize(376,194);
+            
+            var closeBtn:PushButton = new PushButton(_confWindow, _confWindow.width - 18, 2, "x", hideConfig);
+            closeBtn.setSize(16,16);
+            
+            
+            //初期値
+            _boidsCountNS.value = 200;
+            _boidsCountNS.step = 50;
+            _boidsCountNS.minimum = 0;
+            
+            _boidsTypeNS.value = 3;
+            _boidsTypeNS.step = 1;
+            _boidsTypeNS.minimum = 1;
+            _boidsTypeNS.maximum = 8;
+            
+            _cohRangeSlider.maximum = 200;
+            _sepRangeSlider.maximum = 1.0;
+            _maxSpeedSlider.maximum = 30;
+            _maxForceSlider.maximum = 1.0;
+            
+            _cohRangeSlider.value = 45;
+            _sepRangeSlider.value = 0.3;
+            _maxSpeedSlider.value = 2;
+            _maxForceSlider.value = 0.5;
+            _cohSlider.value = 30;
+            _aliSlider.value = 30;
+            _sepSlider.value = 50;
+            
+            _showCohRangeChk.selected = false;
+            _showSepRangeChk.selected = false;
+            
+            _frameRateSlider.maximum = 60;
+            _frameRateSlider.minimum = 0;
+            _frameRateSlider.value = stage.frameRate;
+            
+        }
+        private function showConfig(e:flash.events.Event):void
+        {
+            addChild(_confWindow)
+        }
+        private function hideConfig(e:flash.events.Event):void
+        {
+            removeChild(_confWindow)
+        }
+        private function initModel():void
+        {
+            _bm = new BoidsModel(new Rectangle(0, 0, stage.stageWidth, stage.stageHeight), gridUnitSize);
+            onChangeCohRange(null);
+            onChangeSepRange(null);
+            onChangeMaxSpeed(null);
+            onChangeMaxForce(null);
+            onChangeBoidsCount(null);
+            onChangeAmps(null);
+            _bm.bounding = BoidsModel.BOUND_LOOP;
+        }
+        private function initStarling():void
+        {
+            _starling = new Starling(StarlingBoidsView, stage);
+            _starling.showStats = true;
+            _starling.enableErrorChecking = false;
+            _starling.addEventListener(starling.events.Event.ROOT_CREATED, onRootCreated);
+            _starling.start();
+        }
+        private function onRootCreated(e:starling.events.Event):void
+        {
+            StarlingBoidsView.instance.init(_bm);
+            onChangeShowCohRange(null);
+            onChangeShowSepRange(null);
+        }
+        private function onSelectBounding(e:flash.events.Event):void
+        {
+            switch(e.target.label)
+            {
+                case LABEL_BOUND_LOOP:
+                    _bm.bounding = BoidsModel.BOUND_LOOP;
+                    break;
+                case LABEL_BOUND_HARD:
+                    _bm.bounding = BoidsModel.BOUND_HARD;
+                    break;
+                case LABEL_BOUND_SOFT:
+                    _bm.bounding = BoidsModel.BOUND_SOFT;
+                    break;
+            }
+        }
+        private function onChangeShowCohRange(e:flash.events.Event):void
+        {
+            StarlingBoidsView.instance.showCohRange = _showCohRangeChk.selected;
+        }
+        private function onChangeShowSepRange(e:flash.events.Event):void
+        {
+            StarlingBoidsView.instance.showSepRange = _showSepRangeChk.selected;
+        }
+        private function onChangeShowCohForce(e:flash.events.Event):void
+        {
+            StarlingBoidsView.instance.showCohForce = _showCohForceChk.selected;
+        }
+        private function onChangeShowAliForce(e:flash.events.Event):void
+        {
+            StarlingBoidsView.instance.showAliForce = _showAliForceChk.selected;
+        }
+        private function onChangeShowSepForce(e:flash.events.Event):void
+        {
+            StarlingBoidsView.instance.showSepForce = _showSepForceChk.selected;
+        }
+        private function onChangeBoidsCount(e:flash.events.Event):void
+        {
+            _bm.reset(_boidsCountNS.value, _boidsTypeNS.value);
+        }
+        private function onChangeAmps(e:flash.events.Event):void
+        {
+            _bm.changeAmps(_cohSlider.value, _aliSlider.value, _sepSlider.value);
+        }
+        private function onChangeFR(e:flash.events.Event):void
+        {
+            stage.frameRate = _frameRateSlider.value;
+        }
+        private function onChangeCohRange(e:flash.events.Event):void
+        {
+            _bm.baseCohRange = _cohRangeSlider.value;
+        }
+        private function onChangeSepRange(e:flash.events.Event):void
+        {
+            _bm.baseSepRange = _sepRangeSlider.value;
+        }
+        private function onChangeMaxSpeed(e:flash.events.Event):void
+        {
+            _bm.baseSpeed = _maxSpeedSlider.value;
+        }
+        private function onChangeMaxForce(e:flash.events.Event):void
+        {
+            _bm.baseForce = _maxForceSlider.value;
+        }
+    }
+}
+import flash.display.BitmapData;
+import flash.display.Graphics;
+import flash.display.Shape;
+import flash.geom.Matrix;
+import flash.geom.Point;
+import flash.geom.Rectangle;
+
+import starling.core.Starling;
+import starling.display.BlendMode;
+import starling.display.DisplayObjectContainer;
+import starling.display.Image;
+import starling.display.QuadBatch;
+import starling.display.Sprite;
+import starling.events.Event;
+import starling.events.ResizeEvent;
+import starling.textures.Texture;
+
+
+
+internal class StarlingBoidsView extends Sprite
+{
+    private static var _instance:StarlingBoidsView;        
+    private var _boidImage:Image;
+    private var _circleImage:Image;
+    private var _forceImage:Image;
+    
+    private var _boidQBL:QBList;
+    private var _circleQBL:QBList;
+    private var _forceQBL:QBList;
+    
+    private var _bm:BoidsModel;
+    
+    public var showCohRange:Boolean;
+    public var showSepRange:Boolean;
+    public var showCohForce:Boolean;
+    public var showAliForce:Boolean;
+    public var showSepForce:Boolean;
+    
+    
+    private static var colorList:Vector.&lt;uint&gt; = new &lt;uint&gt;[
+        0xeeeeee,
+        0xff3333,
+        0x3333ff,
+        0x33ff33,
+        0xffff33,
+        0xff33ff,
+        0x33ffff,
+        0xff9911,
+        0x1199ff,
+        0x111111,
+        0x000000
+    ];
+    
+    public function StarlingBoidsView()
+    {
+        _instance = this;
+        addEventListener(Event.ADDED_TO_STAGE, onAddedToStage);
+    }
+    public static function get instance():StarlingBoidsView
+    {
+        return _instance;
+    }
+    public function init(bm:BoidsModel):void
+    {
+        _bm = bm;
+        addEventListener(Event.ENTER_FRAME, onEnterFrame);
+    }
+    private function onAddedToStage(event:Event):void
+    {
+        touchable = false;
+        
+        createImages();
+        _boidQBL = new QBList(this);
+        _circleQBL = new QBList(this);
+        _forceQBL = new QBList(this);
+        
+        stage.addEventListener(ResizeEvent.RESIZE, onResize);
+    }
+    private function createImages():void
+    {
+        var shape:Shape;
+        var bmd:BitmapData;
+        
+        //boid
+        shape = new Shape();
+        var g:Graphics = shape.graphics;
+        g.beginFill(0x999999, 0.8);
+        g.lineStyle(1, 0xffffff, 1);
+        g.lineTo(1, 1);
+        g.lineTo(13, 5);
+        g.lineTo(1, 9);
+        g.lineTo(1, 1);
+        
+        bmd = new BitmapData(14, 10, true, 0x00000000);
+        bmd.draw(shape);
+        
+        _boidImage = new Image(Texture.fromBitmapData(bmd, false));
+        _boidImage.pivotX = _boidImage.width &gt;&gt; 1;
+        _boidImage.pivotY = _boidImage.height &gt;&gt; 1;
+        _boidImage.alpha = 0.8;
+        _boidImage.scaleX = _boidImage.scaleY = .7;
+        _boidImage.blendMode = BlendMode.ADD;
+        
+        //circle
+        g.clear();
+        g.lineStyle(4, 0xffffff, 1);
+        g.beginFill(0xffffff, 0.2);
+        g.drawCircle(200,200,198);
+        bmd = new BitmapData(400, 400, true, 0x00000000);
+        bmd.draw(shape);
+        
+        _circleImage = new Image(Texture.fromBitmapData(bmd, false));
+        _circleImage.pivotX = _circleImage.width &gt;&gt; 1;
+        _circleImage.pivotY = _circleImage.height &gt;&gt; 1;        
+        _circleImage.scaleX = _circleImage.scaleY = 1;
+        _circleImage.blendMode = BlendMode.ADD;
+        
+        //force arrow
+        g.clear();
+        g.lineStyle(2, 0xffffff, 1);
+        g.moveTo(20,5);
+        g.lineTo(10, 0);
+        g.moveTo(20,5);
+        g.lineTo(10,10);
+        g.moveTo(20,5);
+        g.lineTo(0, 5);
+        bmd = new BitmapData(20, 10, true, 0x00000000);
+        bmd.draw(shape);
+        
+        _forceImage = new Image(Texture.fromBitmapData(bmd, false));
+        _forceImage.pivotX = _forceImage.width &gt;&gt; 1;
+        _forceImage.pivotY = _forceImage.height &gt;&gt; 1;        
+        _forceImage.scaleX = _forceImage.scaleY = .75;
+        _forceImage.blendMode = BlendMode.ADD;
+        _forceImage.alpha = 0.125;
+    }
+    private function onResize(e:ResizeEvent):void
+    {
+        var viewPortRectangle:Rectangle = new Rectangle();
+        viewPortRectangle.width = e.width; viewPortRectangle.height = e.height
+        
+        Starling.current.viewPort = viewPortRectangle;
+        
+        stage.stageWidth = e.width;
+        stage.stageHeight = e.height;
+        
+        _bm.stageRect = Starling.current.viewPort;
+    }
+    private function onEnterFrame(event:Event):void
+    {
+        _bm.update();
+        drawImages();
+    }
+    private function drawImages():void
+    {
+        var b:BoidVO;
+        var i:int;
+        var len:uint;
+        var color:uint;
+        var boidList:Vector.&lt;BoidVO&gt; = _bm.boidList;
+        len = boidList.length;
+        _boidQBL.reset();
+        _circleQBL.reset();
+        _forceQBL.reset();
+        var showAmp:Number = 30;
+        
+        for (i = 0; i &lt; len; i++)
+        {
+            b = boidList[i];
+            color = colorList[b.type];
+            
+            _boidImage.x = b.x;
+            _boidImage.y = b.y;
+            _boidImage.color = color;
+            _boidImage.rotation = b.rot;
+            
+            _boidQBL.addImage(_boidImage);
+            
+            if(showCohRange)
+            {
+                _circleImage.x = b.x; 
+                _circleImage.y = b.y;
+                _circleImage.alpha = 0.2;
+                _circleImage.color = color;
+                _circleImage.scaleX = _circleImage.scaleY = b.cohesionDist / 200;
+                _circleQBL.addImage(_circleImage);
+                
+            }
+            if(showSepRange)
+            {
+                _circleImage.x = b.x; 
+                _circleImage.y = b.y;
+                _circleImage.alpha = 0.5;
+                _circleImage.color = color;
+                _circleImage.scaleX = _circleImage.scaleY = b.separationDist / 200;
+                _circleQBL.addImage(_circleImage);
+            }
+            
+            if(showSepForce &amp;&amp; (b.sepX != 0 || b.sepY != 0))
+            {
+                _forceImage.x = b.x + b.sepX * showAmp;
+                _forceImage.y = b.y + b.sepY * showAmp;
+                _forceImage.color = color;
+                _forceImage.rotation = Math.atan2(b.sepY, b.sepX);
+                _forceQBL.addImage(_forceImage);
+            }
+            if(showCohForce &amp;&amp; (b.cohX != 0 || b.cohY != 0))
+            {
+                _forceImage.x = b.x + b.cohX * showAmp;
+                _forceImage.y = b.y + b.cohY * showAmp;
+                _forceImage.color = color;
+                _forceImage.rotation = Math.atan2(b.cohY, b.cohX);
+                _forceQBL.addImage(_forceImage);
+            }
+            
+            if(showAliForce &amp;&amp; (b.aliX != 0 || b.aliY != 0))
+            {
+                _forceImage.x = b.x + b.aliX * showAmp; 
+                _forceImage.y = b.y + b.aliY * showAmp;
+                _forceImage.color = color;
+                _forceImage.rotation = Math.atan2(b.aliY, b.aliX);
+                _forceQBL.addImage(_forceImage);
+            }
+        }
+    }
+}
+
+
+internal class BoidsModel
+{
+    private var _boidList:Vector.&lt;BoidVO&gt;;
+    
+    private var _bm:BoidModel;
+    private var _stageRect:Rectangle;
+    private var _grid:GridModel;
+    private var _cohAmp:Number = 1;
+    private var _aliAmp:Number = 1;
+    private var _sepAmp:Number = 1;
+    
+    public var avoidOtherTypes:Boolean;
+    public var bounding:String;
+    public static const BOUND_LOOP:String = "boundLoop";
+    public static const BOUND_HARD:String = "boundHard";
+    public static const BOUND_SOFT:String = "boundSoft";
+    
+    private var _baseCohRange:Number;
+    private var _baseSepRange:Number;
+    private var _baseSpeed:Number;
+    private var _baseForce:Number;
+    private var _force:Point = new Point();
+    
+    public function BoidsModel(stageRect:Rectangle, gridUnitSize:Number = 15)
+    {
+        _stageRect = stageRect;
+        _boidList = new Vector.&lt;BoidVO&gt;();
+        _grid = new GridModel(stageRect, gridUnitSize);
+        _bm = new BoidModel();
+    }
+    
+    public function get baseForce():Number
+    {
+        return _baseForce;
+    }
+    
+    public function set baseForce(value:Number):void
+    {
+        _baseForce = value;
+        var i:uint;
+        var len:uint = boidList.length;
+        var b:BoidVO;
+        var f:Number = _baseSpeed * value;
+        for(i = 0; i &lt; len; i++)
+        {
+            b = boidList[i];
+            b.maxForce = f * rand();
+        }
+    }
+    
+    public function get baseSpeed():Number
+    {
+        return _baseSpeed;
+    }
+    
+    public function set baseSpeed(value:Number):void
+    {
+        _baseSpeed = value;
+        var i:uint;
+        var len:uint = boidList.length;
+        var b:BoidVO;
+        var f:Number = _baseForce * value;
+        for(i = 0; i &lt; len; i++)
+        {
+            b = boidList[i];
+            b.maxSpeed = value * rand();
+            b.maxForce = f;
+        }
+    }
+    
+    public function get baseSepRange():Number
+    {
+        return _baseSepRange;
+    }
+    
+    public function set baseSepRange(value:Number):void
+    {
+        _baseSepRange = value;
+        var i:uint;
+        var len:uint = boidList.length;
+        var b:BoidVO;
+        var sep:Number = _baseCohRange * value;
+        for(i = 0; i &lt; len; i++)
+        {
+            b = boidList[i];
+            b.separationDist = sep * rand();
+        }            
+    }
+    
+    public function get baseCohRange():Number
+    {
+        return _baseCohRange;
+    }
+    
+    public function set baseCohRange(value:Number):void
+    {
+        _baseCohRange = value;
+        var i:uint;
+        var len:uint = boidList.length;
+        var b:BoidVO;
+        var sep:Number = _baseSepRange * value;
+        for(i = 0; i &lt; len; i++)
+        {
+            b = boidList[i];
+            b.cohesionDist = value * rand();
+            b.separationDist = sep;
+        }
+    }
+    
+    public function changeAmps(coh:Number, ali:Number, sep:Number):void
+    {
+        _cohAmp = 
+            _bm.cohAmp = coh;
+        _aliAmp = 
+            _bm.aliAmp = ali;
+        _sepAmp = 
+            _bm.sepAmp = sep;
+    }        
+    public function get boidList():Vector.&lt;BoidVO&gt;
+    {
+        return _boidList;
+    }
+    
+    public function set boidList(value:Vector.&lt;BoidVO&gt;):void
+    {
+        _boidList = value;
+    }
+    
+    public function get stageRect():Rectangle
+    {
+        return _stageRect;
+    }
+    public function set stageRect(value:Rectangle):void
+    {
+        _stageRect = _grid.stageRect = value;
+    }
+    private function rand(min:Number = 0.5, max:Number = 1.5):Number
+    {
+        return Math.random() * (max - min) + min;
+    }
+    public function reset(num:uint = 0, typeSize:uint = 1):void 
+    {
+        _boidList.length = 0;
+        if(1 &gt; num) return;
+        
+        var vo:BoidVO;
+        var i:int;
+        var type:uint;
+        var pi2:Number = Math.PI * 2;
+        var range:Number = pi2 / typeSize;
+        var spornAngle:Number;
+        var stageR:Number = Math.sqrt(_stageRect.width * _stageRect.width + _stageRect.height * _stageRect.height) / 2;
+        var stageCenterH:Number = _stageRect.width/2 + _stageRect.left;
+        var stageCenterV:Number = _stageRect.height/2 + _stageRect.top;
+        
+        var spornR:Number;
+        for(i = 0; i&lt; num; i++)
+        {
+            type = Math.floor(Math.random() * typeSize);
+            //               spornAngle = (Math.random() * 0.75 + type) * range;
+            spornAngle = Math.random() * pi2;
+            spornR = stageR * (0.1 + Math.random() * 0.7);
+            vo = new BoidVO(
+                Math.cos(spornAngle) * spornR + stageCenterH, 
+                Math.sin(spornAngle) * spornR + stageCenterV,
+                type);
+            
+            vo.maxSpeed = _baseSpeed * rand();
+            vo.maxForce = _baseForce * rand() * _baseSpeed;
+            vo.cohesionDist = _baseCohRange* rand();
+            vo.separationDist = _baseSepRange * rand() * _baseCohRange;
+            vo.vx = _baseSpeed * (Math.random() - 0.5)
+            vo.vy = _baseSpeed * (Math.random() - 0.5)
+            _boidList.push(vo);
+        }
+    }
+    public function update():void 
+    {
+        updateGrid();
+        calcBoidRules();
+    }
+    
+    private function updateGrid():void
+    {
+        //Grid内容を初期化
+        _grid.reset();
+        
+        //Boidを該当グリッドにセットする
+        var i:uint;
+        var len:uint = boidList.length;
+        for (i = 0; i &lt; len; i++)
+        {
+            _grid.addValue(boidList[i]);
+        }
+    }
+    private function calcBoidRules():void
+    {
+        var i:uint;
+        var len:uint = boidList.length;
+        var gridUnitSize:Number = _grid.gridUnitSize;
+        var b:BoidVO;
+        var distSq:Number;
+        var dist:Number;
+        for(i = 0; i &lt; len; i++)
+        {
+            b = boidList[i];
+            _bm.boid = b;
+            _bm.update(_grid, _stageRect, gridUnitSize);
+            
+            switch(bounding)
+            {
+                case BOUND_LOOP:
+                    _bm.looping(_stageRect);
+                    break;
+                case BOUND_HARD:
+                    _bm.bounding(_stageRect);
+                    break;
+            }
+            
+            _force.x = b.vx + b.ax * b.maxForce;
+            _force.y = b.vy + b.ay * b.maxForce;
+            Util.limitNorm(_force, b.maxSpeed);
+            b.vx = _force.x * b.maxSpeed;
+            b.vy = _force.y * b.maxSpeed;
+            
+            b.x += b.vx;
+            b.y += b.vy;
+            b.rot = Math.atan2(b.vy, b.vx);
+        }
+    }    
+}
+
+
+
+internal class BoidModel
+{
+    public var boid:BoidVO;
+    private var _force:Point = new Point;
+    
+    private var _cohFXmean:Number;
+    private var _cohFYmean:Number;
+    private var _cohEXmean:Number;
+    private var _cohEYmean:Number;
+    private var _aliXmean:Number;
+    private var _aliYmean:Number;
+    private var _sepXmean:Number;
+    private var _sepYmean:Number;
+    private var _sepDistSq:Number;
+    private var _cohDistSq:Number;
+    
+    private var _cohFCount:uint;
+    private var _cohECount:uint;
+    private var _aliCount:uint;
+    private var _sepCount:uint;
+    
+    
+    private var _cohAmp:Number = 1;
+    private var _aliAmp:Number = 1;
+    private var _sepAmp:Number = 1;        
+    private var _ampSum:Number = _cohAmp + _aliAmp + _sepAmp;
+    
+    public function get sepAmp():Number
+    {
+        return _sepAmp;
+    }
+    
+    public function set sepAmp(value:Number):void
+    {
+        _sepAmp = value;
+        updateAmpSum();
+    }
+    
+    public function get aliAmp():Number
+    {
+        return _aliAmp;
+    }
+    
+    public function set aliAmp(value:Number):void
+    {
+        _aliAmp = value;
+        updateAmpSum();
+    }
+    
+    public function get cohAmp():Number
+    {
+        return _cohAmp;
+    }
+    
+    public function set cohAmp(value:Number):void
+    {
+        _cohAmp = value;
+        updateAmpSum();
+    }
+    private function updateAmpSum():void
+    {
+        _ampSum = _cohAmp + _aliAmp + _sepAmp;
+    }
+    /**
+     * boidsルールを計算する
+     */
+    public function update(grid:GridModel, stageRect:Rectangle, gridUnitSize:uint):void
+    {
+        seek(grid);
+        
+        var ax:Number = 0;
+        var ay:Number = 0;
+        _force.x = _force.y = 0;
+        
+        var cohCount:uint = _cohFCount + _cohECount;
+        //[cohere]
+        if(1 &lt; _cohFCount) 
+        {
+            //自身以外にある場合
+            _cohFXmean = _cohFXmean / _cohFCount - boid.x;
+            _cohFYmean = _cohFYmean / _cohFCount - boid.y;
+        }
+        else
+        {
+            _cohFXmean = _cohFYmean = 0;
+        }
+        if(0 &lt; _cohECount)
+        {
+            _cohEXmean = _cohEXmean / _cohECount - boid.x;
+            _cohEYmean = _cohEYmean / _cohECount - boid.y;
+        }
+        //足して範囲で正規化してアンプを掛ける
+        if(0 &lt; cohCount)
+        {
+            _force.x = _cohFXmean * _cohFCount / cohCount - _cohEXmean * _cohECount / cohCount;
+            _force.y = _cohFYmean * _cohFCount / cohCount - _cohEYmean * _cohECount / cohCount;
+            
+        }
+        Util.limitNorm(_force, boid.cohesionDist);
+        boid.cohX = _force.x;
+        boid.cohY = _force.y;
+        ax += _force.x * _cohAmp;
+        ay += _force.y * _cohAmp;
+        
+        //[align]
+        if(1 &lt; _aliCount) 
+        {
+            //自身以外にある場合
+            _aliXmean = _aliXmean / _aliCount;
+            _aliYmean = _aliYmean / _aliCount;
+        }
+        else
+        {
+            _aliXmean = _aliYmean = 0;
+        }
+        _force.x = _aliXmean;
+        _force.y = _aliYmean;
+        Util.limitNorm(_force, boid.maxSpeed);
+        boid.aliX = _force.x;
+        boid.aliY = _force.y;
+        
+        ax += _force.x * _aliAmp;
+        ay += _force.y * _aliAmp;
+        
+        //[separate]
+        if(0 &lt; _sepCount)
+        {
+            _sepXmean = _sepXmean / _sepCount - boid.x;
+            _sepYmean = _sepYmean / _sepCount - boid.y;
+            
+            _force.x = _sepXmean;
+            _force.y = _sepYmean;
+            sepNorm(_force, boid.separationDist);
+        }
+        boid.sepX = -_force.x;
+        boid.sepY = -_force.y;
+        ax -= _force.x * _sepAmp;
+        ay -= _force.y * _sepAmp;
+        
+        //トータル
+        _force.x = ax;
+        _force.y = ay;
+        if(0 &lt; _ampSum) Util.limitNorm(_force, _ampSum);
+        
+        boid.ax = _force.x;
+        boid.ay = _force.y;
+    }
+    private function seek(grid:GridModel):void
+    {
+        _cohFXmean = _cohFYmean = 
+            _cohEXmean = _cohEYmean = 
+            _aliXmean = _aliYmean = 
+            _sepXmean = _sepYmean = 
+            _cohFCount = _cohECount = _aliCount = _sepCount = 0;
+        
+        _sepDistSq = boid.separationDist * boid.separationDist * 2;
+        _cohDistSq = boid.cohesionDist * boid.cohesionDist * 2;
+        grid.map(seekCallback, boid.x, boid.y, boid.cohesionDist);
+    }
+    private function seekCallback(gridValue:Vector.&lt;BoidVO&gt;):void
+    {
+        var len:uint = gridValue.length;
+        if(0 == len) return;
+        
+        var i:uint;
+        var t:BoidVO;
+        var distSq:Number;
+        for(i = 0; i &lt; len; i++)
+        {
+            t = gridValue[i];
+            distSq = Util.getDistSquare(t.x - boid.x, t.y - boid.y);
+            if(distSq &gt; _cohDistSq) continue;
+            
+            //coh
+            if(t.type == boid.type)
+            {
+                //同タイプを集計
+                _cohFXmean += t.x;
+                _cohFYmean += t.y;
+                _cohFCount++;
+                //alignは同タイプのみ
+                _aliXmean += t.vx;
+                _aliYmean += t.vy;
+                _aliCount++;
+            }
+            else
+            {
+                //異タイプを集計
+                _cohEXmean += t.x;
+                _cohEYmean += t.y;
+                _cohECount++;
+            }
+            
+            if(distSq &gt; _sepDistSq) continue;
+            if(t == boid) continue;
+            _sepXmean += t.x;
+            _sepYmean += t.y;
+            _sepCount++;
+        }
+    }
+    
+    
+    /**
+     * [optionルール]
+     * ステージ境界を超えたら逆向きに押し戻す力を加える
+     */
+    public function bounding(stageRect:Rectangle):void
+    {
+        if(boid.x &gt; stageRect.right)
+        {
+            boid.x = stageRect.right;
+            boid.vx *= -1;
+        }
+        else if(boid.x &lt; stageRect.left)
+        {
+            boid.x = stageRect.left;
+            boid.vx *= -1;
+        }
+        if(boid.y &gt; stageRect.bottom)
+        {
+            boid.y = stageRect.bottom;
+            boid.vy *= -1;
+        }
+        else if(boid.y &lt; stageRect.top)
+        {
+            boid.y = stageRect.top;
+            boid.vy *= -1;
+        }
+    }
+    public function looping(stageRect:Rectangle):void
+    {
+        if(boid.x &gt; stageRect.right)
+        {
+            boid.x = stageRect.left;
+        }
+        else if(boid.x &lt; stageRect.left)
+        {
+            boid.x = stageRect.right;
+        }
+        if(boid.y &gt; stageRect.bottom)
+        {
+            boid.y = stageRect.top;
+        }
+        else if(boid.y &lt; stageRect.top)
+        {
+            boid.y = stageRect.bottom;
+        }
+    }        
+    
+    
+    private function sepNorm(pt:Point, limit:Number):void
+    {
+        var x:Number = pt.x / limit;
+        var y:Number = pt.y / limit;
+        var distSq:Number = Util.getDistSquare(x, y);
+        
+        if(distSq &gt; 1) 
+        {
+            //範囲外ならsepを加えない
+            x = 0;
+            y = 0;
+        }
+        else
+        {
+            //距離が近いほど大きくする
+            var dist:Number = Math.sqrt(distSq);
+            x = x / dist * (1-dist);
+            y = y / dist * (1-dist);
+        }
+        pt.x = x;
+        pt.y = y;
+    }        
+}
+
+
+
+internal class GridModel
+{
+    private var _stageRect:Rectangle;
+    private var _gridUnitSize:Number;
+    
+    private var _gridList:Vector.&lt;Vector.&lt;Vector.&lt;BoidVO&gt;&gt;&gt;;
+    private var _gridCountX:uint;
+    private var _gridCountY:uint;
+    private var _gridLeft:Number;
+    private var _gridTop:Number;
+    private var _gridRight:Number;
+    private var _gridBottom:Number;
+    
+    public function get gridUnitSize():Number
+    {
+        return _gridUnitSize;
+    }
+    public function set gridUnitSize(value:Number):void
+    {
+        _gridUnitSize = value;
+        init();
+    }
+    public function get stageRect():Rectangle
+    {
+        return _stageRect;
+    }
+    public function set stageRect(value:Rectangle):void
+    {
+        _stageRect = value;
+        init();
+    }
+    public function GridModel(stageRect:Rectangle, gridUnitSize:Number)
+    {
+        _gridUnitSize = gridUnitSize;
+        _stageRect = stageRect;
+        init();
+    }
+    /**
+     * グリッド配列を決定し、全グリッド内に初期オブジェクトを配置
+     */
+    public function init():void
+    {
+        //stageRectから縦横グリッド数を算出
+        _gridCountX = (_stageRect.width / _gridUnitSize &gt;&gt; 0) + 1;
+        _gridCountY = (_stageRect.height / _gridUnitSize &gt;&gt; 0) + 1;
+        
+        //グリッドのrectを設定
+        _gridLeft = _stageRect.left;
+        _gridTop = _stageRect.top;
+        _gridRight = _gridUnitSize * _gridCountX + _gridLeft;
+        _gridBottom = _gridUnitSize * _gridCountY + _gridTop;
+        
+        //グリッド内容を初期化
+        _gridList = new Vector.&lt;Vector.&lt;Vector.&lt;BoidVO&gt;&gt;&gt;(_gridCountX, true);
+        var i:uint;
+        var j:uint;
+        for (i = 0; i &lt; _gridCountX; i++)
+        {
+            _gridList[i] = new Vector.&lt;Vector.&lt;BoidVO&gt;&gt;(_gridCountY, true);
+            for(j = 0; j &lt; _gridCountY; j++)
+            {
+                _gridList[i][j] = new Vector.&lt;BoidVO&gt;;
+            }
+        }
+    }
+    /**
+     * 全グリッドの内容物の値をリセット
+     */
+    public function reset():void
+    {
+        var i:uint;
+        var j:uint;
+        for (i = 0; i &lt; _gridCountX; i++)
+        {
+            for (j = 0; j &lt; _gridCountY; j++)
+            {
+                _gridList[i][j].length = 0;
+            }
+        }
+    }
+    /**
+     * boidの座標から該当するグリッドに追加
+     */
+    public function addValue(boid:BoidVO):void
+    {
+        var gridValue:Vector.&lt;BoidVO&gt; = getGridValue(boid.x, boid.y);
+        if(gridValue) gridValue.push(boid);
+    }
+    /**
+     * 座標からグリッドの値を取得
+     * インデックス範囲外ならnullを返す
+     */
+    public function getGridValue(x:Number, y:Number):Vector.&lt;BoidVO&gt;
+    {
+        return (_gridLeft &gt; x) ? null :  
+            (_gridTop &gt; y) ? null : 
+            (x &gt;= _gridRight) ? null :
+            (y &gt;= _gridBottom) ? null :
+            _gridList[(x - _gridLeft) / _gridUnitSize &gt;&gt; 0][(y - _gridTop) / _gridUnitSize &gt;&gt; 0];
+    }
+    public function map(callback:Function, x:Number, y:Number, dist:Number):void
+    {
+        var rx:int;
+        var ry:int;
+        
+        var gridRange:uint = (dist / gridUnitSize &gt;&gt; 0) + 1;
+        var distSq:Number = dist * dist / (gridUnitSize * gridUnitSize);
+        var offsetDistSq:Number;
+        
+        var isHit:Boolean;
+        for(rx = gridRange; rx &gt; 0; rx--)
+        {
+            for(ry = rx; ry &gt; 0; ry--)
+            {
+                offsetDistSq = Util.getDistSquare(rx-1, ry-1);
+                if(offsetDistSq &gt; distSq) continue;
+                
+                if(!isHit)
+                {
+                    isHit = true;
+                    callbackCenterGrid(x, y, rx, callback);
+                }
+                callbackSymGrid(x, y, rx, ry, callback);
+                for(ry = ry - 1; ry &gt; 0; ry--)
+                {
+                    callbackSymGrid(x, y, rx, ry, callback);
+                }
+            }
+        }        
+    }
+    private function callbackSymGrid(x:Number, y:Number, rx:int, ry:int, callback:Function):void
+    {
+        callbackQuadGrid(x,y,rx,ry, callback);
+        if(rx == ry) return;
+        callbackQuadGrid(x,y,ry,rx, callback);
+    }
+    private function callbackQuadGrid(x:Number, y:Number, offsetGx:Number, offsetGy:Number, callback:Function):void
+    {
+        var offsetX:Number;
+        var offsetY:Number;
+        offsetX = offsetGx * gridUnitSize;
+        offsetY = offsetGy * gridUnitSize;
+        callbackGrid(x + offsetX, y + offsetY, callback);
+        callbackGrid(x - offsetX, y + offsetY, callback);
+        callbackGrid(x + offsetX, y - offsetY, callback);
+        callbackGrid(x - offsetX, y - offsetY, callback);
+        
+    }        
+    private function callbackCenterGrid(x:Number, y:Number, rx:int, callback:Function):void
+    {
+        var offset:Number;
+        var offsetSq:Number;
+        var i:uint;
+        for(i = rx; i &gt; 0; i--)
+        {
+            offset = i * gridUnitSize;
+            callbackGrid(x + offset, y, callback);
+            callbackGrid(x - offset, y, callback);
+            callbackGrid(x, y + offset, callback);
+            callbackGrid(x, y - offset, callback);
+        }
+        callbackGrid(x, y, callback);
+    }        
+    private function callbackGrid(x:Number, y:Number, callback:Function):void
+    {
+        var gridValue:Vector.&lt;BoidVO&gt; = getGridValue(x, y);
+        if(!gridValue) return;
+        callback(gridValue)
+    }
+}
+
+
+internal class BoidVO
+{
+    //Position
+    public var x:Number;
+    public var y:Number;
+    public var rot:Number;
+    
+    //Velocity
+    public var vx:Number = 0;
+    public var vy:Number = 0;
+    public var maxSpeed:Number = 2.5;
+    
+    //Acceleration
+    public var ax:Number = 0;
+    public var ay:Number = 0;
+    public var maxForce:Number = 0.5;
+    
+    //range (radius)
+    public var cohesionDist:Number;
+    public var separationDist:Number;
+    
+    
+    public var type:uint = 0;
+    
+    //option
+    public var cohX:Number;
+    public var cohY:Number;
+    public var aliX:Number;
+    public var aliY:Number;
+    public var sepX:Number;
+    public var sepY:Number;
+    
+    public function BoidVO(x:Number, y:Number, type:uint)
+    {
+        this.x = x;
+        this.y = y;
+        this.type = type;
+    }
+}
+
+
+
+
+internal class QBList
+{
+    private static const MAX_QUAD_BATCH_COUNT:int = 8192;
+    private var _imgIndex:int;
+    private var _qbList:Vector.&lt;QuadBatch&gt;;
+    private var _currentQB:QuadBatch;
+    private var _display:DisplayObjectContainer;
+    private var _qbListIndex:int;
+    private var _qbListLen:uint;
+    
+    public function QBList(display:DisplayObjectContainer)
+    {
+        _display = display;
+        _qbList = new Vector.&lt;QuadBatch&gt;();
+        _qbListLen = 0;
+        _imgIndex = -1;
+    }
+    /**
+     * バッチ内容追加
+     * バッチ内容数が最大(8192)を超えたら新しいバッチを生成してバッチリストに追加
+     */
+    public function addImage(image:Image, parentAlpha:Number=1.0, modelViewMatrix:Matrix=null, blendMode:String=null):void
+    {
+        //バッチ内容数がフローしたら
+        if(_qbListIndex != ++_imgIndex / MAX_QUAD_BATCH_COUNT &gt;&gt; 0)
+        {
+            _qbListIndex++;
+            //そのインデックスのバッチが存在しなければ生成
+            if(_qbListLen == _qbListIndex)
+            {
+                _qbList[_qbListIndex] = new QuadBatch();
+                _qbListLen++;
+                _display.addChild(_qbList[_qbListIndex]);            
+            }
+            //インデックスに応じたバッチをセット
+            _currentQB = _qbList[_qbListIndex]
+        }
+        _currentQB.addImage(image, parentAlpha, modelViewMatrix, blendMode);
+    }
+    /**
+     * 全てのバッチリストからバッチ内容を消去
+     * （確保したバッチ自体は残る）
+     */
+    public function reset():void
+    {
+        var i:int;
+        for (i = 0; i &lt; _qbList.length; i++)
+        {
+            _qbList[i].reset();
+        }
+        _imgIndex = -1;
+        _qbListIndex = -1;
+    }
+    /**
+     * バッチリストをGC
+     */
+    public function dispose():void
+    {
+        var i:int;
+        for (i = 0; i &lt; _qbList.length; i++)
+        {
+            _qbList[i].dispose();
+            _display.removeChild(_qbList[i]);
+        }        
+        _qbList = new Vector.&lt;QuadBatch&gt;();
+        _imgIndex = -1;
+        _qbListIndex = -1;
+        _qbListLen = 0;
+        _currentQB = null;
+    }
+}
+
+internal class Util
+{
+    /**
+     * ベクトルを0-1の範囲に正規化
+     * 制限範囲以上なら1にノーマライズする
+     */
+    public static function limitNorm(pt:Point, limit:Number):void
+    {
+        var x:Number = pt.x / limit;
+        var y:Number = pt.y / limit;
+        var distSq:Number = getDistSquare(x, y);
+        if(distSq &gt; 1) 
+        {
+            var dist:Number = Math.sqrt(distSq);
+            x /= dist;
+            y /= dist;
+        }
+        pt.x = x;
+        pt.y = y;
+    }
+    /**
+     * 距離の平方を返す
+     * （距離の大小の比較用。sqrt演算を省いて処理高速化）
+     */
+    public static function getDistSquare(x:Number, y:Number):Number
+    {
+        return x * x + y * y;
+    }        
+}</textarea>
+         <p class="btnFullScreen">
+          <a href="../../c/cn9V/read">
+           Code Fullscreen
+          </a>
+         </p>
+        </div>
+       </div>
+      </div>
+      <div class="codeswf boxCodeInner ">
+       <p class="btnFullScreen">
+        <a href="../../c/cn9V/fullscreen">
+         Preview Fullscreen
+        </a>
+       </p>
+       <div id="swf_container">
+        <div id="swf">
+         <img alt="flash swf thumbnail" height="465" src="../../images/capture/5/56/56b8/56b84d1f500546b8903fd2ac24ff1579ce256372.jpg" title="Starling Boids" width="465"/>
+         <a href="javascript:void(0);" id="play_button" onclick="Wonderfl.Codepage.play(); return false;">
+          <img alt="play" class="iepngfix btn" src="../../img/common/play_button.png"/>
+         </a>
+        </div>
+       </div>
+      </div>
+     </div>
+     <ul class="listBtns" id="listPlayer">
+      <li>
+       <a href="javascript:void(0);">
+        <img class="btnT" height="10" id="btnPlay" src="../../img/code/btn_code_play.png" width="30"/>
+       </a>
+      </li>
+      <li>
+       <a href="javascript:void(0);">
+        <img class="btnT" height="10" id="btnStop" src="../../img/code/btn_code_stop.png" style="display: none;" width="34"/>
+       </a>
+      </li>
+      <li>
+       <a href="javascript:void(0);">
+        <img class="btnT" height="10" id="btnReload" src="../../img/code/btn_code_reload.png" style="display: none;" width="44"/>
+       </a>
+      </li>
+     </ul>
+     <ul class="listBtns" id="listActions">
+      <li class="btnEdit btnT">
+       <a href="../../c/cn9V/fork">
+        <img class="btnT" height="46" src="../../img/code/btn_code_fork.png" width="221"/>
+       </a>
+      </li>
+      <li class="btnDl btnT">
+       <a href="../../c/cn9V/cn9V.zip">
+        <img class="btnT" height="14" src="../../img/common/btn/btn_code_dl.png" width="102"/>
+       </a>
+      </li>
+     </ul>
+     <!--Banner-->
+     <div class="ad_super_bnr bnrAd btnT">
+      <p>
+       <!-- wonderfl_codepage_fullbnr2 -->
+      </p>
+     </div>
+     <!--Banner-->
+     <section class="group" id="sectFavBy">
+      <h1 id="code_favorites">
+       <img alt="Favorite by" height="19" src="../../img/code/ttl_code_fav_by.png" width="111"/>
+      </h1>
+      <div class="unitGroup group">
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/savage69kr" title="savage69kr">
+          <img alt="savage69kr" height="30" src="../../images/icon/d/d7/d73b/d73bf79691be0965f049e02abe3708f355952409m" title="savage69kr" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/savage69kr" title="savage69kr">
+         savage69kr
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/greentec" title="greentec">
+          <img alt="greentec" height="30" src="../../images/icon/6/63/63cd/63cd617ea862e88efe2932dcae82ffb2ddd7abfbm" title="greentec" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/greentec" title="greentec">
+         greentec
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/MKEason" title="MKEason">
+          <img alt="MKEason" height="30" src="../../img/common/img_user_anonymous.gif" title="MKEason" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/MKEason" title="MKEason">
+         MKEason
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/cg2" title="cg2">
+          <img alt="cg2" height="30" src="../../img/common/img_user_anonymous.gif" title="cg2" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/cg2" title="cg2">
+         cg2
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/merrycat" title="merrycat">
+          <img alt="merrycat" height="30" src="../../img/common/img_user_anonymous.gif" title="merrycat" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/merrycat" title="merrycat">
+         merrycat
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/cid" title="cid">
+          <img alt="cid" height="30" src="../../img/common/img_user_anonymous.gif" title="cid" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/cid" title="cid">
+         cid
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/caiofranchi" title="caiofranchi">
+          <img alt="caiofranchi" height="30" src="../../img/common/img_user_anonymous.gif" title="caiofranchi" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/caiofranchi" title="caiofranchi">
+         caiofranchi
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/CZQ" title="CZQ">
+          <img alt="CZQ" height="30" src="../../images/icon/8/8a/8a11/8a11ca4158fbc84e3e28b3f6cd6957b262e19d42m" title="CZQ" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/CZQ" title="CZQ">
+         CZQ
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/siouxcitizen" title="siouxcitizen">
+          <img alt="siouxcitizen" height="30" src="../../img/common/img_user_anonymous.gif" title="siouxcitizen" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/siouxcitizen" title="siouxcitizen">
+         siouxcitizen..
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/0xABCDEF" title="0xABCDEF">
+          <img alt="0xABCDEF" height="30" src="../../images/icon/0/0c/0cac/0cacaabe03463d97513d64e9e4d64f8aa450255fm" title="0xABCDEF" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/0xABCDEF" title="0xABCDEF">
+         0xABCDEF
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/hacker_4z534tw0" title="hacker_4z534tw0">
+          <img alt="hacker_4z534tw0" height="30" src="../../images/icon/4/49/491d/491d91a4724e475a6adc21d245b63483911bbe2em" title="hacker_4z534tw0" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/hacker_4z534tw0" title="hacker_4z534tw0">
+         hacker_4z534..
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/ProjectNya" title="ProjectNya">
+          <img alt="ProjectNya" height="30" src="../../images/icon/0/03/03d2/03d22765ccd9749e08db586a701bffdbd554415bm" title="ProjectNya" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/ProjectNya" title="ProjectNya">
+         ProjectNya
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <!-- /.unitGroup -->
+      </div>
+      <div class="unitFavUserL group">
+       <p class="user">
+        <span class="thumb">
+         <a href="../../user/Sungmin.Jin" title="Sungmin.Jin">
+          <img alt="Sungmin.Jin" height="30" src="../../img/common/img_user_anonymous.gif" title="Sungmin.Jin" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/Sungmin.Jin" title="Sungmin.Jin">
+         Sungmin.Jin
+        </a>
+        :
+       </p>
+       <p class="comment">
+        <a class="tag" href="../../tag/boid" title="boid">
+         boid
+        </a>
+        boid
+       </p>
+       <!-- /#unitFavUserL -->
+      </div>
+      <div class="unitFavUserL group">
+       <p class="user">
+        <span class="thumb">
+         <a href="../../user/tananuka13" title="tananuka13">
+          <img alt="tananuka13" height="30" src="../../images/icon/5/5b/5b8d/5b8dc5ade1d2fe275679be36dd31f793b669e4c3m" title="tananuka13" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/tananuka13" title="tananuka13">
+         tananuka13
+        </a>
+        :
+       </p>
+       <p class="comment">
+        <a class="tag" href="../../tag/boids" title="boids">
+         boids
+        </a>
+        boids
+       </p>
+       <!-- /#unitFavUserL -->
+      </div>
+      <div class="unitFavUserL group">
+       <p class="user">
+        <span class="thumb">
+         <a href="../../user/ukasz" title="ukasz">
+          <img alt="ukasz" height="30" src="../../img/common/img_user_anonymous.gif" title="ukasz" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/ukasz" title="ukasz">
+         ukasz
+        </a>
+        :
+       </p>
+       <p class="comment">
+        <a class="tag" href="../../tag/animation" title="animation">
+         animation
+        </a>
+        <a class="tag" href="../../tag/game" title="game">
+         game
+        </a>
+       </p>
+       <!-- /#unitFavUserL -->
+      </div>
+      <div class="unitFavUserL group">
+       <p class="user">
+        <span class="thumb">
+         <a href="../../user/christ" title="christ">
+          <img alt="christ" height="30" src="../../img/common/img_user_anonymous.gif" title="christ" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/christ" title="christ">
+         christ
+        </a>
+        :
+       </p>
+       <p class="comment">
+        <a class="tag" href="../../tag/" title="">
+        </a>
+        <a class="tag" href="../../tag/patical" title="patical">
+         patical
+        </a>
+        <a class="tag" href="../../tag/Starling" title="Starling">
+         Starling
+        </a>
+        Starling Boids
+       </p>
+       <!-- /#unitFavUserL -->
+      </div>
+      <div class="unitFavUserL group">
+       <p class="user">
+        <span class="thumb">
+         <a href="../../user/korooooon" title="korooooon">
+          <img alt="korooooon" height="30" src="../../img/common/img_user_anonymous.gif" title="korooooon" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/korooooon" title="korooooon">
+         korooooon
+        </a>
+        :
+       </p>
+       <p class="comment">
+        <a class="tag" href="../../tag/アルゴリズム" title="アルゴリズム">
+         アルゴリズム
+        </a>
+       </p>
+       <!-- /#unitFavUserL -->
+      </div>
+      <div class="unitFavUserL group">
+       <p class="user">
+        <span class="thumb">
+         <a href="../../user/Hasufel" title="Hasufel">
+          <img alt="Hasufel" height="30" src="../../images/icon/a/a7/a73e/a73efcbab4b1496217af8eed7bfb5daa7b47f63am" title="Hasufel" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/Hasufel" title="Hasufel">
+         Hasufel
+        </a>
+        :
+       </p>
+       <p class="comment">
+        <a class="tag" href="../../tag/behavior" title="behavior">
+         behavior
+        </a>
+        <a class="tag" href="../../tag/boids" title="boids">
+         boids
+        </a>
+        <a class="tag" href="../../tag/crowd" title="crowd">
+         crowd
+        </a>
+       </p>
+       <!-- /#unitFavUserL -->
+      </div>
+      <!-- /#sectFavBy -->
+     </section>
+     <section class="group" id="sectTags">
+      <h1>
+       <img alt="Tags" height="18" src="../../img/code/ttl_code_tags.png" width="47"/>
+      </h1>
+      <ul class="listTag group">
+       <li>
+        <a class="tag " href="../../tag/" title="">
+        </a>
+       </li>
+       <li>
+        <a class="tag " href="../../tag/Starling" title="Starling">
+         Starling
+        </a>
+       </li>
+       <li>
+        <a class="tag " href="../../tag/animation" title="animation">
+         animation
+        </a>
+       </li>
+       <li>
+        <a class="tag " href="../../tag/behavior" title="behavior">
+         behavior
+        </a>
+       </li>
+       <li>
+        <a class="tag " href="../../tag/boid" title="boid">
+         boid
+        </a>
+       </li>
+       <li>
+        <a class="tag tag1" href="../../tag/boids" title="boids">
+         boids
+        </a>
+       </li>
+       <li>
+        <a class="tag " href="../../tag/crowd" title="crowd">
+         crowd
+        </a>
+       </li>
+       <li>
+        <a class="tag " href="../../tag/game" title="game">
+         game
+        </a>
+       </li>
+       <li>
+        <a class="tag " href="../../tag/patical" title="patical">
+         patical
+        </a>
+       </li>
+       <li>
+        <a class="tag " href="../../tag/アルゴリズム" title="アルゴリズム">
+         アルゴリズム
+        </a>
+       </li>
+      </ul>
+      <!-- / #sectTags .group -->
+     </section>
+     <section class="group" id="sectKeywords">
+      <h1>
+       <img alt="sectKeywords" height="19" src="../../img/code/ttl_code_keywords.png" width="98"/>
+      </h1>
+      <ul class="listKeywords group">
+       <li>
+        <a class="keyword keyword2" href="../../search?q=offset" title="offset | JavaScript,HTML5,CSS search">
+         offset
+        </a>
+       </li>
+       <li>
+        <a class="keyword keyword2" href="../../search?q=Rectangle" title="Rectangle | JavaScript,HTML5,CSS search">
+         Rectangle
+        </a>
+       </li>
+       <li>
+        <a class="keyword keyword2" href="../../search?q=top" title="top | JavaScript,HTML5,CSS search">
+         top
+        </a>
+       </li>
+       <li>
+        <a class="keyword keyword2" href="../../search?q=bottom" title="bottom | JavaScript,HTML5,CSS search">
+         bottom
+        </a>
+       </li>
+       <li>
+        <a class="keyword keyword2" href="../../search?q=right" title="right | JavaScript,HTML5,CSS search">
+         right
+        </a>
+       </li>
+       <li>
+        <a class="keyword keyword2" href="../../search?q=left" title="left | JavaScript,HTML5,CSS search">
+         left
+        </a>
+       </li>
+       <li>
+        <a class="keyword keyword2" href="../../search?q=Math.atan2" title="Math.atan2 | JavaScript,HTML5,CSS search">
+         Math.atan2
+        </a>
+       </li>
+       <li>
+        <a class="keyword keyword1" href="../../search?q=addEventListener" title="addEventListener | JavaScript,HTML5,CSS search">
+         addEventListener
+        </a>
+       </li>
+       <li>
+        <a class="keyword keyword1" href="../../search?q=Math.sqrt" title="Math.sqrt | JavaScript,HTML5,CSS search">
+         Math.sqrt
+        </a>
+       </li>
+       <li>
+        <a class="keyword keyword1" href="../../search?q=blendMode" title="blendMode | JavaScript,HTML5,CSS search">
+         blendMode
+        </a>
+       </li>
+       <li>
+        <a class="keyword keyword1" href="../../search?q=rotation" title="rotation | JavaScript,HTML5,CSS search">
+         rotation
+        </a>
+       </li>
+       <li>
+        <a class="keyword keyword1" href="../../search?q=stage" title="stage | JavaScript,HTML5,CSS search">
+         stage
+        </a>
+       </li>
+       <li>
+        <a class="keyword keyword1" href="../../search?q=scaleY" title="scaleY | JavaScript,HTML5,CSS search">
+         scaleY
+        </a>
+       </li>
+       <li>
+        <a class="keyword keyword1" href="../../search?q=scaleX" title="scaleX | JavaScript,HTML5,CSS search">
+         scaleX
+        </a>
+       </li>
+       <li>
+        <a class="keyword keyword1" href="../../search?q=Vector" title="Vector | JavaScript,HTML5,CSS search">
+         Vector
+        </a>
+       </li>
+       <li>
+        <a class="keyword keyword1" href="../../search?q=graphics" title="graphics | JavaScript,HTML5,CSS search">
+         graphics
+        </a>
+       </li>
+       <li>
+        <a class="keyword" href="../../search?q=Event.RESIZE" title="Event.RESIZE | JavaScript,HTML5,CSS search">
+         Event.RESIZE
+        </a>
+       </li>
+       <li>
+        <a class="keyword" href="../../search?q=alpha" title="alpha | JavaScript,HTML5,CSS search">
+         alpha
+        </a>
+       </li>
+       <li>
+        <a class="keyword" href="../../search?q=type" title="type | JavaScript,HTML5,CSS search">
+         type
+        </a>
+       </li>
+       <li>
+        <a class="keyword" href="../../search?q=Math.min" title="Math.min | JavaScript,HTML5,CSS search">
+         Math.min
+        </a>
+       </li>
+      </ul>
+      <!-- / #sectKeywords .group -->
+     </section>
+     <div class="ad_super_bnr bnrAd btnT">
+      <div class="ad_super_bnr bnrAd btnT">
+       <!-- wonderfl_codepage_longbnr -->
+      </div>
+     </div>
+     <script src="../../js/lib/prototype-1.7.2.js" type="text/javascript">
+     </script>
+     <script src="../../js/lib/builder.js" type="text/javascript">
+     </script>
+     <script src="../../js/lib/effects.js" type="text/javascript">
+     </script>
+     <script src="../../js/lib/lightbox.js" type="text/javascript">
+     </script>
+     <script src="../../js/lib/swfobject.js" type="text/javascript">
+     </script>
+     <script src="../../js/lib/swfformfix2.js" type="text/javascript">
+     </script>
+     <script src="../../js/form_manager.js" type="text/javascript">
+     </script>
+     <script src="../../js/rpc_wrapper.js" type="text/javascript">
+     </script>
+     <script src="../../js/wonderfl.js" type="text/javascript">
+     </script>
+     <script type="text/javascript">
+      var viewer_swf      = "../../swf/WonderflViewer.swf";
+var open_api_key    = "a76b80051993a7c6322bf8b4bbc457b44c3d4f5c";
+var google_maps_key = "ABQIAAAAXpWFDG8Wm9YzscY4IEB27xSO5wqdqdHVqPB8sVJhBj86bhrVXRSBgqnsO9rxcctD5ppITaLzKCDqHA";
+var compiler_server = "";
+var compiler_port   = "";
+var code_uid        = "cn9V";
+var swf_uri         = "../../swf/usercode/5/56/56b8/56b84d1f500546b8903fd2ac24ff1579ce256372.swf";
+var wmode           = "direct";
+var ticket          = "";
+var is_login        = "0";
+var viewer          = {
+  displayName : "anonymous",
+  iconURL     : "http://wonderfl.net/img/common/img_user_anonymous.gif"
+};
+     </script>
+    </article>
+    <div id="diff_container">
+    </div>
+    <div id="diff_controller">
+     <a href="#" id="diff_close_button">
+      <img class="btn" src="../../img/code/close.gif"/>
+     </a>
+    </div>
+    <div id="popup" style="display:none">
+     <p class="btnClose">
+      <a href="javascript:void(0);" onclick="popup.hide();">
+       <img alt="close" height="23" src="../../img/nengafl2011/btn_close.png" width="23"/>
+      </a>
+     </p>
+     <form action="/api/code/flash2android/sendmail" id="sendmail" method="post" style="display:none">
+      <p class="ttlPopup">
+       <img alt="AndroidアプリのDownload URLを携帯へ送る" src="../../img/nengafl2011/ttl_download.png"/>
+      </p>
+      <p>
+       <input id="email" name="email" placeholder="メールアドレスを入力してください" type="input" value=""/>
+      </p>
+      <p class="btnSubmit">
+       <input alt="携帯に送る" src="../../img/nengafl2011/btn_send.png" type="image"/>
+      </p>
+      <input name="token" type="hidden" value="469068c657b626c562998063b6cb8347ba13ac403b0060678051ad287ffe5265"/>
+      <input name="code_uid" type="hidden" value="cn9V"/>
+     </form>
+     <p id="converting" style="display:block">
+      Converting...
+     </p>
+     <!-- /#popup -->
+    </div>
+    <!--/#content-->
+   </div>
+   <!--/[[[ CONTENT-AREA ]]]-->
+   <!--[[[ FOOTER-AREA ]]]-->
+   <div id="footerGlobal">
+    <p class="goPageTop">
+     <a href="#container">
+      <img alt="ページの先頭へ戻る" class="btn" height="32" src="../../img/common/btn/btn_backtotop.png" width="36"/>
+     </a>
+    </p>
+    <div id="navFooter">
+     <p class="navFooterTop">
+      <a href="../../" title="wonderfl TOP">
+       wonderfl TOP
+      </a>
+     </p>
+     <ul class="listNavFooter group">
+      <li>
+       <dl>
+        <dt>
+         <a href="../../codes" title="Codes">
+          Codes
+         </a>
+        </dt>
+        <dd>
+         <a href="../../codes" title="page view ranking">
+          page view ranking
+         </a>
+        </dd>
+        <dd>
+         <a href="../../codes?order=favorite" title="favorite ranking">
+          favorite ranking
+         </a>
+        </dd>
+        <dd>
+         <a href="../../codes?order=forked" title="forked count ranking">
+          forked count ranking
+         </a>
+        </dd>
+       </dl>
+      </li>
+      <li>
+       <dl>
+        <dt>
+         <a href="../../users" title="Users">
+          Users
+         </a>
+        </dt>
+        <dd>
+         <a href="../../users" title="page view ranking">
+          page view ranking
+         </a>
+        </dd>
+        <dd>
+         <a href="../../users?order=favorite" title="favorite ranking">
+          favorite ranking
+         </a>
+        </dd>
+        <dd>
+         <a href="../../users?order=forked" title="forked count ranking">
+          forked count ranking
+         </a>
+        </dd>
+       </dl>
+      </li>
+      <li>
+       <dl>
+        <dt>
+         <a href="http://flash-games.wonderfl.net/" title="Game">
+          Game
+         </a>
+        </dt>
+        <dd>
+         <a href="http://flash-games.wonderfl.net/about" title="フラッシュゲームをつくる">
+          make games
+         </a>
+        </dd>
+        <dd>
+         <a href="http://flash-games.wonderfl.net/" title="フラッシュゲームで遊ぶ">
+          play games
+         </a>
+        </dd>
+       </dl>
+      </li>
+      <li>
+       <dl>
+        <dt>
+         <a href="../../events" title="Game">
+          Events
+         </a>
+        </dt>
+        <dd>
+         <a href="http://jsdo.it/event/jam/" title="HTML5&amp;Flash">
+          JAM -HTML5&amp;Flash-
+         </a>
+        </dd>
+        <dd>
+         <a href="http://checkmate.wonderfl.net/" title="CHECKMATE">
+          CHECKMATE
+         </a>
+        </dd>
+        <dd>
+         <a href="http://nengafl.wonderfl.net/" title="nengafl">
+          nengafl
+         </a>
+        </dd>
+        <dd>
+         <a href="../../code/adce526f063149d781c2752e7472b08ad7279595" title="FeliCa Flash Contest">
+          FeliCa Flash Contest
+         </a>
+        </dd>
+       </dl>
+      </li>
+      <li>
+       <dl>
+        <dt>
+         <a href="http://flash-jobs.wonderfl.net/" title="flash-jobs">
+          Jobs
+         </a>
+        </dt>
+        <dd>
+         <a href="http://flash-jobs.wonderfl.net/" target="_blank" title="want a job?">
+          want a job?
+         </a>
+        </dd>
+        <dd>
+         <a href="http://flash-jobs.wonderfl.net/plan" target="_blank" title="post a job">
+          post a job
+         </a>
+        </dd>
+       </dl>
+      </li>
+      <li>
+       <dl>
+        <dt>
+         <a href="../../tags" title="Tags">
+          Tags
+         </a>
+        </dt>
+        <dd>
+         <a href="../../search">
+          Flash /
+          <br/>
+          Actionscript3.0
+          <br/>
+          keywords
+         </a>
+        </dd>
+       </dl>
+      </li>
+      <li>
+       <dl>
+        <dt>
+         <a href="../../qa" title="Q&amp;A">
+          Q&amp;A
+         </a>
+        </dt>
+        <dd>
+         <a href="../../qa#questions">
+          Questions
+          <br/>
+          about Flash /
+          <br/>
+          Actionscript3.0
+         </a>
+        </dd>
+       </dl>
+      </li>
+     </ul>
+     <ul class="listNavFooter group">
+      <li>
+       <dl>
+        <dt>
+         <a href="../../about/" title="about">
+          What is wonderfl
+         </a>
+        </dt>
+        <dd>
+         <a href="../../help" title="ヘルプ">
+          help
+         </a>
+        </dd>
+        <dd>
+         <a href="../../qa" title="Q&amp;A">
+          Q&amp;A
+         </a>
+        </dd>
+        <dd>
+         <a href="../../libraries" title="ライブラリ">
+          libraries
+         </a>
+        </dd>
+        <dd>
+         <a href="../../wiki" title="wiki">
+          wiki
+         </a>
+        </dd>
+        <dd>
+         <a href="../../apis" title="APIs">
+          APIs
+         </a>
+        </dd>
+        <dd>
+         <a href="../../media" title="Media">
+          Media Information
+         </a>
+        </dd>
+        <dd>
+         <a href="../../blog" title="developer's blog">
+          developer's blog
+         </a>
+        </dd>
+        <dd>
+         <a href="../../help#help_contact" title="contact">
+          contact
+         </a>
+        </dd>
+       </dl>
+      </li>
+      <li>
+       <dl>
+        <dt>
+         <a href="../../terms" title="利用規約">
+          Terms of Use
+         </a>
+        </dt>
+        <dd>
+         <a href="../../terms#terms_pp" title="プライバシーポリシー">
+          Privacy Policy
+         </a>
+        </dd>
+       </dl>
+      </li>
+     </ul>
+     <!--/#navFooter-->
+    </div>
+    <dl id="kayacFooter">
+     <dt class="ttlKayacService">
+      <a href="http://www.kayac.com" title="株式会社KAYAC（カヤック）古都鎌倉から新しい価値感のサービスを次々にリリースする面白法人">
+       <img alt="KAYAC Project" height="14" src="../../img/common/kayacproject.png" width="56"/>
+      </a>
+     </dt>
+     <dd class="listKayacService">
+      <div id="boxKayacLink">
+       <div class="unitKayacLink" id="kayacProject">
+        <dl>
+         <dt>
+          <a class="external" href="http://www.kayac.com/" rel="external" title="面白法人カヤック">
+           カヤックプロジェクト
+          </a>
+         </dt>
+         <dd>
+          <ul class="group">
+           <li>
+            <a class="external" href="https://web.lobi.co/" rel="external" title="Lobi">
+             Lobi
+            </a>
+           </li>
+           <li>
+            <a class="external" href="https://lobi.co/recsdk" rel="external" title="Lobi REC SDK">
+             Lobi REC SDK
+            </a>
+           </li>
+           <li>
+            <a class="external" href="https://rankers.co/" rel="external" title="RANKERS">
+             RANKERS
+            </a>
+           </li>
+           <li>
+            <a class="external" href="https://koshien-pocket.kayac.com/" rel="external" title="ぼくらの甲子園！ポケット">
+             ぼくらの甲子園！ポケット
+            </a>
+           </li>
+           <li>
+            <a class="external" href="https://games.kayac.com/pf/" rel="external" title="ポケットフットボーラーPLUS">
+             ポケットフットボーラーPLUS
+            </a>
+           </li>
+           <li>
+            <a class="external" href="http://quikin.kayac.com/" rel="external" title="冒険クイズキングダム">
+             冒険クイズキングダム
+            </a>
+           </li>
+           <li>
+            <a class="external" href="http://jagmo.jp/" rel="external" title="JAGMO">
+             JAGMO
+            </a>
+           </li>
+           <li>
+            <a class="external" href="https://pla-cole.wedding/" rel="external" title="プラコレ">
+             プラコレ
+            </a>
+           </li>
+           <li>
+            <a class="external" href="http://iikuni-kamakura.jp/" rel="external" title="iikuni">
+             iikuni
+            </a>
+           </li>
+           <li>
+            <a class="external" href="http://thanks.kayac.com/ja/top" rel="external" title="THANKS">
+             THANKS
+            </a>
+           </li>
+           <li>
+            <a class="external" href="https://sumika.me/" rel="external" title="SuMiKa">
+             SuMiKa
+            </a>
+           </li>
+           <li>
+            <a class="external" href="http://www.kayac.com/service/strongpoint" rel="external" title="キャンペーン">
+             キャンペーン
+            </a>
+           </li>
+           <li>
+            <a class="external" href="http://www.kayac.com/service/strongpoint" rel="external" title="受託">
+             受託
+            </a>
+           </li>
+          </ul>
+         </dd>
+        </dl>
+        <!-- / #kayacProject -->
+       </div>
+       <div class="unitKayacLink" id="kayacMedia">
+        <dl>
+         <dt>
+          KAYAC Media
+         </dt>
+         <dd>
+          <ul class="group">
+           <li>
+            <a class="external" href="http://techblog.kayac.com/" rel="external" title="面白法人プログラマーブログ">
+             面白法人プログラマーブログ
+            </a>
+           </li>
+           <li>
+            <a class="external" href="http://business.nikkeibp.co.jp/article/opinion/20111227/225722/?rt=nocnt" rel="external" title="面白法人社長ブログ">
+             面白法人社長ブログ
+            </a>
+           </li>
+           <li>
+            <a class="external" href="http://www.facebook.com/KayacJapan" rel="external" title="面白法人カヤックの「ここだけの話」">
+             面白法人カヤックの「ここだけの話」
+            </a>
+           </li>
+           <li>
+            <a class="external" href="http://design.kayac.com" rel="external" title="面白法人デザイナーブログ">
+             面白法人デザイナーブログ
+            </a>
+           </li>
+           <li>
+            <a class="external" href="https://twitter.com/yanasawa" rel="external" title="@yanasawa">
+             @yanasawa
+            </a>
+           </li>
+           <li>
+            <a class="external" href="http://create.kayac.com" rel="external" title="つくってみたラボ">
+             つくってみたラボ
+            </a>
+           </li>
+          </ul>
+         </dd>
+        </dl>
+        <!-- / #kayacMedia -->
+       </div>
+       <!-- / #boxKayacLink -->
+      </div>
+     </dd>
+    </dl>
+    <p class="vcard" id="copyright">
+     <small>
+      site design ©
+      <a class="external fn org url" href="http://www.kayac.com/" title="KAYAC Inc.">
+       KAYAC Inc.
+      </a>
+      All Rights Reserved.
+     </small>
+    </p>
+    <!--/#footer-->
+   </div>
+   <!--/[[[ FOOTER-AREA ]]]-->
+   <!--/#container-->
+  </div>
+  <!-- scripts [-->
+  <script src="../../js/lib/sisso.js" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   var swf_server = "http://swf.wonderfl.net";
+var lang = "ja";
+  </script>
+  <!--] scripts-->
+  <!-- Analytics [-->
+  <!--] Analytics-->
+ </body>
+</html>

@@ -1,0 +1,2878 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:mixi="http://mixi-platform.com/ns#" xmlns:og="http://ogp.me/ns#">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="chrome=1" http-equiv="X-UA-Compatible"/>
+  <title>
+   Retro Avatars - wonderfl build flash online
+  </title>
+  <meta content="Retro Avatars | wonderfl build flash online" name="title"/>
+  <meta content="Retro Avatars ======================================= Retro Avatars for Flash ======================================= -Type avatar name to generate image. -press ENTER key to save current image as PNG.  // Retro Avatars // -------------  // By Richard Phipps // (Open source, but a credit if used would be nice!)  http://retroremakes.com/forum/index.php/topic,657.0.html より移植してみました  [Sample] http://www.indiegames.com/blog/2009/06/freeware_app_pick_retro_avatar.html http://www.flickr.com/photos/miyaoka/3592194889/   @ wonderfl build flash online. wonderflは、サイト上でFlash（swf）をつくることのできるサービス。Actionscript3のコードを書くと、自動でコンパイルし、作成されたFlashを見ることができます。" name="description"/>
+  <meta content="Flash,Actionscript3,Flex,as3,wonderful" http-equiv="Keywords"/>
+  <meta content="text/css" http-equiv="content-style-type"/>
+  <meta content="text/javascript" http-equiv="content-script-type"/>
+  <meta content="KAYAC Inc." name="author"/>
+  <meta content="Copyright © 2008-2010 Wonderfl All right reserved. KAYAC Inc." name="copyright"/>
+  <meta content="wonderfl build flash online" property="og:site_name"/>
+  <meta content="100748186650646" property="fb:page_id"/>
+  <!--[if IE]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+  <link href="../../css/common.css" media="screen,print" rel="stylesheet" type="text/css"/>
+  <link href="../../css/reserved.css" media="screen,print" rel="stylesheet" type="text/css"/>
+  <link href="../../css/SyntaxHighlighter.css" media="screen,print" rel="stylesheet" type="text/css"/>
+  <link href="../../css/code.css" media="screen,print" rel="stylesheet" type="text/css"/>
+  <link href="../../css/lightbox.css" media="screen,print" rel="stylesheet" type="text/css"/>
+  <link href="../../img/favicon.png" rel="shortcut icon" type="image/png"/>
+  <link href="../../images/capture/9/99/99db/99db9f4dc72fd4f660750c1d5db06e7af8c4904a_100.jpg" rel="image_src"/>
+  <link href="../../images/capture/9/99/99db/99db9f4dc72fd4f660750c1d5db06e7af8c4904a_100.jpg" rel="mixi-check-image"/>
+  <meta content="http://wonderfl.net/images/capture/9/99/99db/99db9f4dc72fd4f660750c1d5db06e7af8c4904a_100.jpg" property="og:image"/>
+  <meta content="Retro Avatars" property="og:title"/>
+  <meta content="video" name="medium"/>
+  <meta content="../../swf/usercode/9/99/99db/99db9f4dc72fd4f660750c1d5db06e7af8c4904a.swf" property="og:video"/>
+  <meta content="Retro Avatars" property="og:audio:title"/>
+  <meta content="465" property="og:video:height"/>
+  <meta content="465" property="og:video:width"/>
+  <meta content="application/x-shockwave-flash" property="og:video:type"/>
+  <script src="../../js/header.js" type="text/javascript">
+  </script>
+  <script src="http://partner.googleadservices.com/gampad/google_service.js" type="text/javascript">
+  </script>
+ </head>
+ <body>
+  <div class="codepage contents" id="container">
+   <!--[[[ HEADER-AREA ]]]-->
+   <header class="group" id="headerGlobal">
+    <p id="siteName">
+     <a href="../../" title="wonderfl - build flash online">
+      <img alt="wonderfl - build flash online" height="24" src="../../img/common/logo.png" width="234"/>
+     </a>
+    </p>
+    <nav id="navGlobal">
+     <ul>
+      <li class="column">
+       <span class="header_menu_column">
+        <a href="../../login" onclick="this.href='/login?redirect=' + encodeURIComponent(location.pathname);">
+         signin
+        </a>
+       </span>
+      </li>
+      <li class="column">
+       <span class="header_menu_column" id="header_menu_column_2" onmouseout="Wonderfl.Header.mouseout(this);" onmouseover="Wonderfl.Header.mouseover(this);">
+        <a href="../../codes" title="flash,actionscript3 code ranking">
+         codes
+        </a>
+       </span>
+       <ul class="navGlobalSub" id="header_submenu_2" onmouseout="Wonderfl.Header.mouseout(this);" onmouseover="Wonderfl.Header.mouseover(this);" style="display:none;">
+        <li>
+         <a href="../../codes" title="page view ranking">
+          page view ranking
+         </a>
+        </li>
+        <li>
+         <a href="../../codes?order=favorite" title="favorites count ranking">
+          favorite ranking
+         </a>
+        </li>
+        <li>
+         <a href="../../codes?order=forked" title="forked count ranking">
+          forked count ranking
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li class="column">
+       <span class="header_menu_column" id="header_menu_column_3" onmouseout="Wonderfl.Header.mouseout(this);" onmouseover="Wonderfl.Header.mouseover(this);">
+        <a href="../../users" title="wonderfl users">
+         users
+        </a>
+       </span>
+       <ul class="navGlobalSub" id="header_submenu_3" onmouseout="Wonderfl.Header.mouseout(this);" onmouseover="Wonderfl.Header.mouseover(this);" style="display:none;">
+        <li>
+         <a href="../../users" title="page view ranking">
+          page view ranking
+         </a>
+        </li>
+        <li>
+         <a href="../../users?order=favorite" title="favorites count ranking">
+          favorite ranking
+         </a>
+        </li>
+        <li>
+         <a href="../../users?order=forked" title="forked count ranking">
+          forked count ranking
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li class="column">
+       <span class="header_menu_column" id="header_menu_column_8" onmouseout="Wonderfl.Header.mouseout(this);" onmouseover="Wonderfl.Header.mouseover(this);">
+        <a href="http://flash-games.wonderfl.net/" title="game wonderfl">
+         games
+        </a>
+       </span>
+       <ul class="navGlobalSub" id="header_submenu_8" onmouseout="Wonderfl.Header.mouseout(this);" onmouseover="Wonderfl.Header.mouseover(this);" style="display:none;">
+        <li>
+         <a href="http://flash-games.wonderfl.net/about" title="フラッシュゲームをつくる">
+          make games
+         </a>
+        </li>
+        <li>
+         <a href="http://flash-games.wonderfl.net/" title="フラッシュゲームで遊ぶ">
+          play games
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li class="column">
+       <span class="header_menu_column" id="header_menu_column_10" onmouseout="Wonderfl.Header.mouseout(this);" onmouseover="Wonderfl.Header.mouseover(this);">
+        <a href="../../events" title="events">
+         events
+        </a>
+       </span>
+       <ul class="navGlobalSub" id="header_submenu_10" onmouseout="Wonderfl.Header.mouseout(this);" onmouseover="Wonderfl.Header.mouseover(this);" style="display:none;">
+        <li>
+         <a class="external" href="http://jsdo.it/event/jam/" title="HTML5&amp;Flash">
+          JAM -HTML5&amp;Flash-
+         </a>
+        </li>
+        <li>
+         <a class="external" href="http://checkmate.wonderfl.net/" title="CHECKMATE">
+          CHECKMATE
+         </a>
+        </li>
+        <li>
+         <a class="external" href="http://nengafl.wonderfl.net/" title="nengafl">
+          nengafl
+         </a>
+        </li>
+        <li>
+         <a href="../../code/adce526f063149d781c2752e7472b08ad7279595" title="FeliCa Flash Contest">
+          FeliCa Flash Contest
+         </a>
+        </li>
+       </ul>
+      </li>
+      <!-- li class="column">
+<span class="header_menu_column" id="header_menu_column_9" onmouseover="Wonderfl.Header.mouseover(this);" onmouseout="Wonderfl.Header.mouseout(this);"><a href="http://flash-jobs.wonderfl.net/" title="flash-jobs" target="_blank" >jobs</a></span>
+<ul class="navGlobalSub" id="header_submenu_9" style="display:none;" onmouseover="Wonderfl.Header.mouseover(this);" onmouseout="Wonderfl.Header.mouseout(this);">
+<li><a href="http://flash-jobs.wonderfl.net/" title="want a job?" target="_blank" >want a job?</a></li>
+<li><a href="http://flash-jobs.wonderfl.net/plan" title="post a job" target="_blank" >post a job</a></li>
+</ul>
+</li -->
+      <li class="column">
+       <span class="header_menu_column" id="header_menu_column_4" onmouseout="Wonderfl.Header.mouseout(this);" onmouseover="Wonderfl.Header.mouseover(this);">
+        <a href="../../tags" title="tags">
+         tags
+        </a>
+       </span>
+       <ul class="navGlobalSub" id="header_submenu_4" onmouseout="Wonderfl.Header.mouseout(this);" onmouseover="Wonderfl.Header.mouseover(this);" style="display:none;">
+        <li>
+         <a href="../../search" title="Flash/Actionscript keywords">
+          Flash/Actionscript keywords
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li class="column">
+       <span class="header_menu_column" id="header_menu_column_5" onmouseout="Wonderfl.Header.mouseout(this);" onmouseover="Wonderfl.Header.mouseover(this);">
+        <a href="../../qa" title="Flash Q&amp;A">
+         Q&amp;A
+        </a>
+       </span>
+       <ul class="navGlobalSub" id="header_submenu_5" onmouseout="Wonderfl.Header.mouseout(this);" onmouseover="Wonderfl.Header.mouseover(this);" style="display:none;">
+        <li>
+         <a href="../../qa#questions" title="Flash Q&amp;A">
+          new questions
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li class="column header_menu header_last">
+       <span class="header_menu_column" id="header_menu_column_7" onmouseout="Wonderfl.Header.mouseout(this);" onmouseover="Wonderfl.Header.mouseover(this);">
+        <a href="../../about/" title="about">
+         wonderfl?
+        </a>
+       </span>
+       <ul class="navGlobalSub" id="header_submenu_7" onmouseout="Wonderfl.Header.mouseout(this);" onmouseover="Wonderfl.Header.mouseover(this);" style="display:none;">
+        <li>
+         <a href="../../about/" title="about">
+          what is wonderfl?
+         </a>
+        </li>
+        <li>
+         <a href="../../help" title="help, FAQ">
+          help!
+         </a>
+        </li>
+        <li>
+         <a href="../../libraries" title="libraries">
+          libraries
+         </a>
+        </li>
+        <li>
+         <a href="../../wiki" title="wiki">
+          wiki
+         </a>
+        </li>
+        <li>
+         <a href="../../apis" title="APIs">
+          APIs
+         </a>
+        </li>
+        <li>
+         <a href="../../media" title="Media">
+          Media Information
+         </a>
+        </li>
+        <li>
+         <a href="../../blog" title="developer's blog">
+          developer's blog
+         </a>
+        </li>
+        <li>
+         <a href="../../help#help_contact" title="contact">
+          contact
+         </a>
+        </li>
+       </ul>
+      </li>
+     </ul>
+    </nav>
+    <div id="navUtility">
+     <div id="btnHeaderCodeNew">
+      <form action="/code/new" method="get">
+       <fieldset>
+        <p>
+         <input alt="コードを書きはじめる" class="btnT" src="../../img/common/btn_write_code.png" type="image"/>
+        </p>
+       </fieldset>
+       <input name="token" type="hidden" value="38c83c61cedf1826235b0dbb2dffc243d32c199e2c18869a9d94795e2e1f8f7e"/>
+      </form>
+      <!-- / #btnHeaderCodeNew -->
+     </div>
+     <div id="navGlobalSearch">
+      <form action="/search" class="search" method="get">
+       <span>
+        <a href="../../search" title="flash,actionscript3 code search">
+         code search
+        </a>
+       </span>
+       <input class="query" name="q" type="text"/>
+       <input class="search_btn btnT" src="../../img/common/btn/btn_go.png" type="image" value=""/>
+      </form>
+      <!--/#navGlobalSearch-->
+     </div>
+     <!-- /#navUtility -->
+    </div>
+    <!--/#header-->
+   </header>
+   <!--/[[[ HEADER-AREA ]]]-->
+   <!--[[[ CONTENT-AREA ]]]-->
+   <div class="group" id="content">
+    <!--Banner-->
+    <div class="ad_super_bnr bnrAd btnT">
+     <!-- wonderfl_codepage_fullbnr1 -->
+    </div>
+    <!--Banner-->
+    <article class="code">
+     <header>
+      <div class="headerInfo group">
+       <h1>
+        Retro Avatars
+       </h1>
+       <p class="description">
+        =======================================
+        <br/>
+        Retro Avatars for Flash
+        <br/>
+        =======================================
+        <br/>
+        -Type avatar name to generate image.
+        <br/>
+        -press ENTER key to save current image as PNG.
+        <br/>
+        <br/>
+        // Retro Avatars
+        <br/>
+        // -------------
+        <br/>
+        <br/>
+        // By Richard Phipps
+        <br/>
+        // (Open source, but a credit if used would be nice!)
+        <br/>
+        <br/>
+        <a href="http://retroremakes.com/forum/index.php/topic,657.0.html">
+         http://retroremakes.com/forum/index.php/topic,657.0.html
+        </a>
+        <br/>
+        より移植してみました
+        <br/>
+        <br/>
+        [Sample]
+        <br/>
+        <a href="http://www.indiegames.com/blog/2009/06/freeware_app_pick_retro_avatar.html">
+         http://www.indiegames.com/blog/2009/06/freeware_app_pick_retro_avatar.html
+        </a>
+        <br/>
+        <a href="http://www.flickr.com/photos/miyaoka/3592194889/">
+         http://www.flickr.com/photos/miyaoka/3592194889/
+        </a>
+        <br/>
+        <br/>
+       </p>
+       <p class="user">
+        <span class="thumb">
+         <a href="../../user/miyaoka" title="miyaoka">
+          <img alt="miyaoka" height="30" src="../../images/icon/c/c4/c475/c475c2100684a371e18b18afc96d9f6455df8db4m" title="miyaoka" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/miyaoka" title="miyaoka">
+         miyaoka
+        </a>
+       </p>
+       <ul class="data">
+        <ul class="data">
+         <li class="forked">
+          <a href="#code_forked" title="forked from Retro Avatars">
+           forked:4
+          </a>
+         </li>
+         <li class="fav">
+          <a href="#code_favorites" title="Retro Avatars favorites">
+           favorite:70
+          </a>
+         </li>
+         <li class="lines">
+          lines:454
+         </li>
+         <li class="license">
+          license :
+          <a href="../../help#help_license">
+           MIT License
+          </a>
+         </li>
+         <li class="modified">
+          modified : 2009-06-04 20:05:23
+         </li>
+        </ul>
+       </ul>
+       <p class="btnAddFav btnAddFavDes">
+        <a href="../../login?redirect=http%3A%2F%2Fwonderfl.net%2Fc%2FlX5A">
+         <img alt="add to favorites" class="btnT" height="50" src="../../img/common/btn/btn_code_add_fav.png?t=1" width="140"/>
+        </a>
+       </p>
+       <!-- /.headerInfo -->
+      </div>
+     </header>
+     <div class="mode_view" id="parentsCode">
+      <div class="boxCodeInner">
+       <div class="code mode_view">
+        <div id="as3_container">
+         <div id="externalFlashViewer">
+         </div>
+         <textarea id="raw_as3" style="display:none;">/*
+=======================================
+Retro Avatars for Flash
+=======================================
+-Type avatar name to generate image.
+-press ENTER key to save current image as PNG.
+ 
+// Retro Avatars
+// -------------
+ 
+// By Richard Phipps
+// (Open source, but a credit if used would be nice!)
+ 
+http://retroremakes.com/forum/index.php/topic,657.0.html
+より移植してみました
+ 
+[Sample]
+http://www.indiegames.com/blog/2009/06/freeware_app_pick_retro_avatar.html
+http://www.flickr.com/photos/miyaoka/3592194889/
+
+*/
+package 
+{
+	import flash.display.Sprite;
+	import flash.text.TextField;
+	import flash.text.TextFormat;
+	import flash.text.TextFormatAlign;
+	import flash.text.TextFieldType;
+	import flash.text.TextFieldAutoSize;
+	import flash.ui.Keyboard;
+	import flash.events.KeyboardEvent;
+	import flash.display.Bitmap;
+	import flash.display.BitmapData;
+	import flash.utils.ByteArray;
+
+	import com.adobe.images.PNGEncoder;
+	import flash.net.FileReference;
+	import flash.geom.Matrix;
+	
+	import flash.system.Capabilities;
+	import flash.system.IME;
+
+	[SWF(width="465", height="465", backgroundColor= 0x0, frameRate="60")]
+	public class RetroAvatars
+	extends Sprite 
+	{
+		private	var tfd:TextField = new TextField();
+		private var maxNameLength:uint = 9;
+		private var bmd:AvatarBMD = new AvatarBMD(12, 12, false);
+		private var bmd32:BitmapData = new BitmapData(bmd.width, bmd.height, true, 0x0);
+		private var bmp:Bitmap = new Bitmap(bmd32);
+		
+		private static const EYES_COL:int = 0;
+		private static const NOSE_COL:int = 0;
+		private static const MOUSE_COL:int = 0;
+		
+		private var isFirst:Boolean = true;
+
+		public function RetroAvatars():void 
+		{
+			//bg
+			graphics.beginFill(0);
+			graphics.drawRect(0, 0, stage.stageWidth, stage.stageHeight);
+			
+			//ime off
+			if (Capabilities.hasIME)
+			{
+				try
+				{
+					IME.enabled = false;
+				}
+				catch (e:Error) {}
+			}
+			
+			//bmp
+			bmp.scaleX = bmp.scaleY = 24;
+			bmp.x = (stage.stageWidth - bmp.width) / 2;
+			bmp.y = 40;
+			addChild(bmp);			
+			
+			
+			//text
+			var tft:TextFormat = new TextFormat();
+			tft.align = TextFormatAlign.CENTER;
+			tft.bold = true;
+			tft.font = "Verdana";
+			tft.letterSpacing = 5;
+			tft.size = 48;
+			
+			tfd.defaultTextFormat = tft;
+			tfd.autoSize = TextFieldAutoSize.CENTER;
+			
+			tfd.x = 465/2;
+			tfd.y = 380;
+			tfd.text = "ENTER NAME";
+			tfd.textColor = 0xDDDDDD;
+			isFirst = true;
+			addChild(tfd);
+			
+			//event
+			stage.addEventListener(KeyboardEvent.KEY_DOWN, keyDownHandler);
+		}
+		private function keyDownHandler(e:KeyboardEvent):void 
+		{
+			var cc:uint = e.charCode;
+			
+			// lower case keys, so make upper case.
+			if (97 &lt;= cc &amp;&amp; cc &lt;= 122) cc -= 32;
+			
+			if (isFirst) tfd.text = ""; isFirst = false;
+			if (
+				tfd.length &lt; maxNameLength &amp;&amp; 
+				(
+				cc == 32 // Space
+				|| (cc &gt;= 65 &amp;&amp; cc &lt;= 90) //letters
+				|| (cc &gt;= 48 &amp;&amp; cc &lt;= 57) //numbers 
+				)
+			)
+			{
+				tfd.text = tfd.text.concat(String.fromCharCode(cc));
+			}
+			else if ( cc == 8 &amp;&amp; tfd.length &gt; 0) //Backspace
+			{
+				tfd.text = tfd.text.substr(0, tfd.length -1);
+			}
+			else if (cc == 13 &amp;&amp; 0 &lt; tfd.text.length) // ENTER key
+			{
+				//save PNG to local
+				var mtx:Matrix = new Matrix();
+				var sc:Number = 8;
+				mtx.scale(sc, sc);
+				var tempBmd:BitmapData = new BitmapData(bmd32.width * sc, bmd32.height * sc, true,0);
+				tempBmd.draw(bmd32, mtx);
+				var ba:ByteArray = PNGEncoder.encode(tempBmd);
+				var fr:FileReference = new FileReference;
+				fr.save(ba, tfd.text + ".png");
+			}
+			
+			
+			var nameLen:int = tfd.text.length;
+			if (nameLen == 0) 
+			{
+				bmd32.fillRect(bmd32.rect, 0);
+				return;
+			}
+			
+			// ------------
+			// make code from text and set to srand
+			Crand.srand(0);
+			var code:int = 0;
+			for (var g:int = 0; g &lt; 32; g++)
+			{
+				code += tfd.text.charCodeAt(g % nameLen) * Crand.rand() % 1024;
+			}
+			Crand.srand(code); // Seed random generator with code.
+			
+			//make avatar color.  Random (but not too dark) colour.
+			var col:int =
+			Crand.rand() % 192 + 64
+			| Crand.rand() % 192 + 64 &lt;&lt; 8
+			| Crand.rand() % 192 + 64 &lt;&lt; 16;
+			
+			tfd.textColor = col;
+			
+
+			// ------------
+			// build avatar img
+			bmd.build();
+			bmd.removeNoise(0);
+			bmd.mirror();			
+			bmd.enhanceFace();
+			
+			
+			//copy to 32bit bmd and set color
+			bmd32.threshold(bmd, bmd.rect, bmd.rect.topLeft, "&gt;=", 0xff &lt;&lt; 24 | AvatarBMD.SOLID_COL, 0xFF &lt;&lt;24  | col);
+			bmd32.threshold(bmd, bmd.rect, bmd.rect.topLeft, "==", 0xff &lt;&lt; 24 | AvatarBMD.EYES_COL, EYES_COL);
+			bmd32.threshold(bmd, bmd.rect, bmd.rect.topLeft, "==", 0xff &lt;&lt; 24 | AvatarBMD.NOSE_COL, NOSE_COL);
+			bmd32.threshold(bmd, bmd.rect, bmd.rect.topLeft, "==", 0xff &lt;&lt; 24 | AvatarBMD.MOUSE_COL, MOUSE_COL);
+			bmd32.threshold(bmd, bmd.rect, bmd.rect.topLeft, "==", 0xff &lt;&lt; 24 | AvatarBMD.BLANK_COL, 0);
+
+
+		}
+	}	
+}
+import flash.display.BitmapData
+import flash.geom.Matrix;
+import flash.geom.Rectangle;
+class AvatarBMD
+extends BitmapData
+{
+	public static const EYES_COL:int = 1;
+	public static const NOSE_COL:int = 2;
+	public static const MOUSE_COL:int = 3;
+	public static const SOLID_COL:int = 0xFF;
+	public static const BLANK_COL:int = 0x0;
+	public function AvatarBMD(width:int, height:int, transparent:Boolean = true, fillColor:uint = 0xFFFFFFFF):void 
+	{
+		//bmd24
+		super(width, height, false, fillColor);
+	}
+	public function build():void 
+	{
+		var c:int = 158;
+		for (var y:int = 0; y &lt; height; y++)
+		{
+			for (var x:int = 0; x &lt; width; x++)
+			{
+				setPixel(x, y, (Crand.rand() % 356 &gt; c) ? BLANK_COL : SOLID_COL);
+			}
+		}
+	}
+	public function enhanceFace():void 
+	{
+		var eyes:Boolean;
+		var nose:Boolean;
+		var mouth:Boolean;
+		var x:int;
+		var y:int;
+		var hx:int = width / 2 - 1; // Half width of sprite variable.
+
+		// Detect eyes one pixel away from horizontal centre (look from just below the top edge to the middle of the vertical height).
+		for (y = 1; y &lt; height / 2; y++)
+		{
+			if (getPixel(hx - 1, y) == BLANK_COL) // 0 - Empty, Pixel?
+			{
+				floodFill(hx - 1, y, EYES_COL); // Mark area with reserved colour 1 (normal colours are 0 - empty &amp; 255 - solid).
+				if (checkForFilledEdge() == 0) break; // If this eye area doesn't touch the edges of the image, then stop searching.
+				floodFill(hx - 1, y, BLANK_COL); 	// It reaches the edge, so refill as 0 - empty and keep looking.
+			}
+			if (getPixel(hx - 2, y) == BLANK_COL) // Any potential eye areas one pixel further away?
+			{
+				floodFill(hx - 2, y, EYES_COL); 
+				if (checkForFilledEdge() == 0) break;
+				floodFill(hx - 2, y, BLANK_COL); 					
+			}
+		}
+
+
+		// Ok, we didn't find anything!
+		if ( y == height / 2) 
+		{
+			// Try to make eyes from any centre pixels (converting them to one pixel further away. i.e. xx -&gt; x  x
+			for ( y = 1; y &lt; height; y++)
+			{
+				if (getPixel(hx - 1, y) == SOLID_COL &amp;&amp; getPixel(hx, y) == BLANK_COL)
+				{
+					setPixel(hx - 1, y, BLANK_COL);
+					setPixel(hx, y, SOLID_COL);
+					setPixel(hx - 1, y + 1, BLANK_COL); // Make the eye 2 pixels (at least) high.  
+					
+					floodFill(hx - 1, y, EYES_COL); 
+					if (checkForFilledEdge() == 0) break;
+					floodFill(hx - 1, y, BLANK_COL); 					
+				}
+			}
+		}
+		
+		var ny:int = y + 1;
+		if (y &lt; height) eyes = true; // Ok, we did find eyes
+		
+		// Still NO eyes.
+		if (!eyes)
+		{
+			// Ok, create fake eyes!
+			y = 1 + Crand.rand() % (height / 2);
+			
+			setPixel(hx - 1, y, EYES_COL);
+			outlineArea(1); // Outline to protect area.
+			
+			eyes = true;
+			ny = y + 1;
+		}
+		
+		// Remove any joined up eyes (i.e xx instead of x  x)
+		for (y = 1; y &lt; height; y++)
+		{
+			if (getPixel(hx, y) == EYES_COL)
+			{
+				setPixel(hx, y, SOLID_COL);
+				setPixel(hx - 1, y, EYES_COL);
+			}
+			else
+			{
+				if (getPixel(hx - 2, y) == EYES_COL) setPixel(hx, y, SOLID_COL);
+				if (getPixel(hx - 1, y) == EYES_COL) setPixel(hx, y, SOLID_COL);
+			}
+		}
+		mirror(); // Miror all eye work.
+		
+		if (eyes) outlineArea(EYES_COL); // Protect eyes with solid outline.
+		
+		trace(ny);
+
+		
+		// -------
+		// Detect nose
+		for (y = ny; y &lt; height; y++)
+		{
+			if (getPixel(hx, y) == BLANK_COL)
+			{
+				floodFill(hx, y, NOSE_COL); // Fill with area colour 2.
+				if ( checkForFilledEdge() == 0) break;
+				floodFill(hx, y, BLANK_COL);
+			}
+		}
+		if ( y &lt; 10) nose = true;
+		
+		// No nose?
+		if (!nose)
+		{
+			// Ok, we won't find a mouth either, but we need to make a nose/mouth one out of any open sections (regardless of touching the edge)
+			for (y = ny; y &lt; height - 1; y++)
+			{
+				if (getPixel(hx, y) == BLANK_COL)
+				{
+					setPixel(hx, y, NOSE_COL)
+					nose = true;
+					break;
+				}
+			}
+			
+			// Try to find a nose/mouth one pixel away which we can join up. i.e. x  x -&gt; xxxx
+			if (!nose)
+			{
+				for (y = ny; y &lt; height - 1; y++)
+				{
+					if (getPixel(hx - 1, y) == BLANK_COL)
+					{
+						setPixel(hx -1, y, NOSE_COL)
+						setPixel(hx, y, NOSE_COL)
+						nose = true;
+						break;
+					}
+				}
+			
+				// Ok, NOTHING, just create fake mouth/nose!
+				if (!nose)
+				{
+					y = ny + 1 + Crand.rand() % (height / 3);
+					if (y &gt; height - 2) y = height - 2;
+
+					setPixel(hx, y, NOSE_COL)
+					nose = true;
+					ny = y + 1;
+				}
+			}
+		}
+		else
+		{
+			ny = y + 1;
+			
+			// --------
+			// Detect mouth	
+			for (y = ny; y &lt; height; y++)
+			{
+				if (getPixel(hx, y) == BLANK_COL)
+				{
+					floodFill(hx, y, MOUSE_COL);
+					if (checkForFilledEdge() == 0) break;
+					floodFill(hx, y, BLANK_COL);
+				}
+			}
+			if (y &lt; height) mouth = true;
+			
+			if (!mouth) // Still no mouse, so look one pixel further away and then if found, join up.
+			{
+				for (y = ny; y &lt; height - 1; y++)
+				{
+					if (getPixel(hx - 1, y) == BLANK_COL)
+					{
+						setPixel(hx, y, BLANK_COL);
+						floodFill(hx, y, MOUSE_COL);
+						if (checkForFilledEdge() == 0) break;
+						floodFill(hx, y, BLANK_COL);
+					}
+				}
+			}
+			if (y &lt; height) mouth = true;
+		}
+		// Outline mouth / nose to protect and stop surrounding gfx 'bleeding' in.
+		if (mouth) outlineArea(MOUSE_COL);
+		if (nose) outlineArea(NOSE_COL);
+		
+		if (eyes) trimArea(EYES_COL, 3, 3); // Trim eyes to no more than 3 x 3
+		if (nose &amp;&amp; mouth) trimArea(NOSE_COL, 3, 3); // Trim nose to no more than 3 x 3. Mouth can be bigger..;
+		
+		mirror(); // Mirror to fix changes symmetrically.
+		
+		// Now search for any fill in any holes that doesn't leak to the edge of the sprite (passing over eyes, mouth and nose areas).
+		const tmpCol:int = 4;
+		for (y = 1; y &lt; height -1; y++)
+		{
+			for (x = 1; x &lt; hx - 1; x++)
+			{
+				if (getPixel(x, y) == BLANK_COL)
+				{
+					floodFill(x, y, tmpCol)
+					floodFill(x, y, checkForFilledEdge() == 0 ? SOLID_COL : BLANK_COL);
+				}
+			}
+		}
+
+		mirror(); // Mirror finally (neccessary?)
+	}
+	public function mirror():void 
+	{
+		var mtx:Matrix = new Matrix();
+		mtx.scale(-1, 1);
+		mtx.translate(width, 0);
+		draw(this, mtx , null, null, new Rectangle(width/2, 0, width, height));
+	}
+	public function checkForFilledEdge():int
+	{
+		var c:int;
+		for (var y:int = 0; y &lt; height; y++)
+		{
+			c = getPixel(0, y);
+			if (c != BLANK_COL &amp;&amp; c != SOLID_COL) return 1;
+			c = getPixel(width-1, y);
+			if (c != BLANK_COL &amp;&amp; c != SOLID_COL) return 1;
+		}
+		for (var x:int = 0; x &lt; width; x++)
+		{
+			c = getPixel(x, 0);
+			if (c != BLANK_COL &amp;&amp; c != SOLID_COL) return 2;
+			c = getPixel(x, height -1);
+			if (c != BLANK_COL &amp;&amp; c != SOLID_COL) return 2;			
+		}
+		return 0;
+	}
+	public function outlineArea(col:int):void 
+	{
+		for (var y:int = 0; y &lt; height; y++)
+		{
+			for (var x:int = 0; x &lt; width; x++)
+			{
+				var c:int = getPixel(x, y);
+				if (c == col) 
+				{
+				// diagonals are only outlined if blank (and not another reserved area).
+				if (getPixel(x - 1, y - 1) == BLANK_COL) setPixel(x - 1, y - 1, SOLID_COL);
+				if (getPixel(x , y - 1) != col) setPixel(x, y - 1, SOLID_COL);
+				if (getPixel(x + 1, y - 1) == BLANK_COL) setPixel(x +1, y - 1, SOLID_COL);
+				if (getPixel(x - 1, y) != col) setPixel(x - 1, y, SOLID_COL);
+				if (getPixel(x + 1, y) != col) setPixel(x + 1, y, SOLID_COL);
+				if (getPixel(x - 1, y + 1) == BLANK_COL) setPixel(x - 1, y + 1, SOLID_COL);
+				if (getPixel(x, y + 1) != col) setPixel(x, y + 1, SOLID_COL);
+				if (getPixel(x + 1, y + 1) == BLANK_COL) setPixel(x + 1, y + 1, SOLID_COL);
+				}
+			}
+		}
+	}
+	public function trimArea(col:int, x2:int, y2:int ):void 
+	{
+		var rx:int;
+		var nx:int = -1;
+		var ny:int = -1;
+		for (var y:int = 0; y &lt; height; y++)
+		{
+			for (var x:int = 0; x &lt; width / 2; x++)
+			{
+				if (col == 1) rx = x;
+				if (col &gt; 1) rx = ((width / 2) - 1) - x;
+				
+				var c:int = getPixel(rx, y);
+				
+				if (c == col)
+				{
+					if (nx == -1) nx = x;
+					if (ny == -1) ny = y;
+					
+					if (x &gt;= nx + x2) setPixel(rx, y, SOLID_COL);
+					if (y &gt;= ny + y2) setPixel(rx, y, SOLID_COL);
+				}
+			}
+		}
+	}
+	public function removeNoise(type:int):void 
+	{
+		var noise:int = 4;
+		var c:uint;
+		for (var i:int = 0; i &lt; noise; i++)
+		{
+			//Remove isolated pixels
+			for (var y:int = 0; y &lt; height; y++)
+			{
+				for (var x:int = 0; x &lt; width; x++)
+				{
+					c = getPixel(x, y);
+					if (c != BLANK_COL) continue;
+					
+					c = getPixel(x - 1, y - 1)
+					+ getPixel(x, y - 1)
+					+ getPixel(x + 1, y - 1)
+					+ getPixel(x - 1, y)
+					+ getPixel(x + 1, y)
+					+ getPixel(x - 1, y + 1)
+					+ getPixel(x, y + 1)
+					+ getPixel(x + 1, y + 1);
+					
+					if (type == 0 &amp;&amp; c &gt;= 8 * SOLID_COL)
+					{
+						setPixel(x, y, SOLID_COL);
+					}
+					if (type == 1 &amp;&amp; c &gt;= 7 * SOLID_COL)
+					{
+						setPixel(x, y, SOLID_COL);							
+					}
+					
+					// Join up 'one pixel' horizontal and vertical gaps, (adds a little order to the image).
+					if (getPixel(x, y + 1) == SOLID_COL
+					&amp;&amp; getPixel(x, y -1 ) == SOLID_COL
+					&amp;&amp; getPixel(x-1, y ) != SOLID_COL
+					&amp;&amp; getPixel(x + 1, y ) != SOLID_COL
+					&amp;&amp; Crand.rand() % 5 &gt; 2)
+					{
+						setPixel(x, y, SOLID_COL);
+					}
+					if (getPixel(x-1, y ) == SOLID_COL
+					&amp;&amp; getPixel(x + 1, y ) == SOLID_COL
+					&amp;&amp; getPixel(x, y + 1) != SOLID_COL
+					&amp;&amp; getPixel(x, y -1 ) != SOLID_COL
+					&amp;&amp; Crand.rand() % 5 &gt; 2)
+					{
+						setPixel(x, y, SOLID_COL);
+					}
+				}
+			}
+			
+			// Remove isolated pixels
+			for (y = 0; y &lt; height; y++)
+			{
+				for (x = 0; x &lt; width; x++)
+				{
+					c = getPixel(x, y);
+					if (c == 255)
+					{
+						// Add up surrounding pixels.
+						c = getPixel(x, y - 1) 
+						+ getPixel(x - 1, y) 
+						+ getPixel(x - 1, y - 1)
+						+ getPixel(x + 1, y - 1)
+						+ getPixel(x + 1, y)
+						+ getPixel(x, y + 1)
+						+ getPixel(x - 1, y + 1)
+						+ getPixel(x + 1, y + 1);
+						
+						// No lit pixels around this one.
+						if (c &lt;= 0) setPixel(x, y, BLANK_COL);
+					}
+				}
+			}
+		}
+	}
+}
+
+/*
+C rand()
+
+http://www001.upp.so-net.ne.jp/isaku/rand.html
+*/
+
+class Crand
+{
+	//Visual C++ version
+	private static var x:int = 1;
+	public static function rand():int
+	{
+		x = x * 214013 + 2531011;
+		return (x&gt;&gt;16) &amp; 32767;
+	}
+	public static function srand(s:int):void
+	{
+		x = s;
+	}
+}
+</textarea>
+         <p class="btnFullScreen">
+          <a href="../../c/lX5A/read">
+           Code Fullscreen
+          </a>
+         </p>
+        </div>
+       </div>
+      </div>
+      <div class="codeswf boxCodeInner ">
+       <p class="btnFullScreen">
+        <a href="../../c/lX5A/fullscreen">
+         Preview Fullscreen
+        </a>
+       </p>
+       <div id="swf_container">
+        <div id="swf">
+         <img alt="flash swf thumbnail" height="465" src="../../images/capture/9/99/99db/99db9f4dc72fd4f660750c1d5db06e7af8c4904a.jpg" title="Retro Avatars" width="465"/>
+         <a href="javascript:void(0);" id="play_button" onclick="Wonderfl.Codepage.play(); return false;">
+          <img alt="play" class="iepngfix btn" src="../../img/common/play_button.png"/>
+         </a>
+        </div>
+       </div>
+      </div>
+     </div>
+     <ul class="listBtns" id="listPlayer">
+      <li>
+       <a href="javascript:void(0);">
+        <img class="btnT" height="10" id="btnPlay" src="../../img/code/btn_code_play.png" width="30"/>
+       </a>
+      </li>
+      <li>
+       <a href="javascript:void(0);">
+        <img class="btnT" height="10" id="btnStop" src="../../img/code/btn_code_stop.png" style="display: none;" width="34"/>
+       </a>
+      </li>
+      <li>
+       <a href="javascript:void(0);">
+        <img class="btnT" height="10" id="btnReload" src="../../img/code/btn_code_reload.png" style="display: none;" width="44"/>
+       </a>
+      </li>
+     </ul>
+     <ul class="listBtns" id="listActions">
+      <li class="btnEdit btnT">
+       <a href="../../c/lX5A/fork">
+        <img class="btnT" height="46" src="../../img/code/btn_code_fork.png" width="221"/>
+       </a>
+      </li>
+      <li class="btnDl btnT">
+       <a href="../../c/lX5A/lX5A.zip">
+        <img class="btnT" height="14" src="../../img/common/btn/btn_code_dl.png" width="102"/>
+       </a>
+      </li>
+     </ul>
+     <!--Banner-->
+     <div class="ad_super_bnr bnrAd btnT">
+      <p>
+       <!-- wonderfl_codepage_fullbnr2 -->
+      </p>
+     </div>
+     <!--Banner-->
+     <section class="group" id="sectFavBy">
+      <h1 id="code_favorites">
+       <img alt="Favorite by" height="19" src="../../img/code/ttl_code_fav_by.png" width="111"/>
+      </h1>
+      <div class="unitGroup group">
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/pipeline" title="pipeline">
+          <img alt="pipeline" height="30" src="../../images/icon/f/f2/f295/f295825f46d0c2ca63decdfc502d5c81397c19fdm" title="pipeline" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/pipeline" title="pipeline">
+         pipeline
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/kabantus" title="kabantus">
+          <img alt="kabantus" height="30" src="../../img/common/img_user_anonymous.gif" title="kabantus" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/kabantus" title="kabantus">
+         kabantus
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/shaktool" title="shaktool">
+          <img alt="shaktool" height="30" src="../../images/icon/4/44/448d/448da28c6652d6c10220b77fcf861f2d489e4999m" title="shaktool" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/shaktool" title="shaktool">
+         shaktool
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/hacker_7wbe4cck" title="hacker_7wbe4cck">
+          <img alt="hacker_7wbe4cck" height="30" src="../../img/common/img_user_anonymous.gif" title="hacker_7wbe4cck" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/hacker_7wbe4cck" title="hacker_7wbe4cck">
+         hacker_7wbe4..
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/hank5678" title="hank5678">
+          <img alt="hank5678" height="30" src="../../img/common/img_user_anonymous.gif" title="hank5678" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/hank5678" title="hank5678">
+         hank5678
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/tjoen" title="tjoen">
+          <img alt="tjoen" height="30" src="../../images/icon/3/37/37fa/37fa54caddc404722a80c0622e243a50b12aec6dm" title="tjoen" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/tjoen" title="tjoen">
+         tjoen
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/jackfreak" title="jackfreak">
+          <img alt="jackfreak" height="30" src="../../img/common/img_user_anonymous.gif" title="jackfreak" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/jackfreak" title="jackfreak">
+         jackfreak
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/egoalcubo" title="egoalcubo">
+          <img alt="egoalcubo" height="30" src="../../img/common/img_user_anonymous.gif" title="egoalcubo" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/egoalcubo" title="egoalcubo">
+         egoalcubo
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/Indyaner2" title="Indyaner2">
+          <img alt="Indyaner2" height="30" src="../../img/common/img_user_anonymous.gif" title="Indyaner2" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/Indyaner2" title="Indyaner2">
+         Indyaner2
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/Qaziro" title="Qaziro">
+          <img alt="Qaziro" height="30" src="../../img/common/img_user_anonymous.gif" title="Qaziro" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/Qaziro" title="Qaziro">
+         Qaziro
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/jaboooo" title="jaboooo">
+          <img alt="jaboooo" height="30" src="../../images/icon/f/fa/fa1d/fa1d0948b31fca305065f71c7e8e68173882f729m" title="jaboooo" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/jaboooo" title="jaboooo">
+         jaboooo
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/imajuk" title="imajuk">
+          <img alt="imajuk" height="30" src="../../images/icon/2/27/2723/27238318f2b00846008ac98223d3433ba62ae541m" title="imajuk" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/imajuk" title="imajuk">
+         imajuk
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/xor" title="xor">
+          <img alt="xor" height="30" src="../../img/common/img_user_anonymous.gif" title="xor" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/xor" title="xor">
+         xor
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/anvide24" title="anvide24">
+          <img alt="anvide24" height="30" src="../../img/common/img_user_anonymous.gif" title="anvide24" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/anvide24" title="anvide24">
+         anvide24
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/jackoz" title="jackoz">
+          <img alt="jackoz" height="30" src="../../img/common/img_user_anonymous.gif" title="jackoz" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/jackoz" title="jackoz">
+         jackoz
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/matacat" title="matacat">
+          <img alt="matacat" height="30" src="../../images/icon/e/e1/e1f8/e1f8c29d86f38fd5ba12986268f42d5f1c49d8d4m" title="matacat" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/matacat" title="matacat">
+         matacat
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/ongaeshi" title="ongaeshi">
+          <img alt="ongaeshi" height="30" src="../../images/icon/1/1f/1f5e/1f5eb14c86bc3d28da0992170fe7fa93cb8c5718m" title="ongaeshi" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/ongaeshi" title="ongaeshi">
+         ongaeshi
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/hacker_fimwfaob" title="hacker_fimwfaob">
+          <img alt="hacker_fimwfaob" height="30" src="../../img/common/img_user_anonymous.gif" title="hacker_fimwfaob" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/hacker_fimwfaob" title="hacker_fimwfaob">
+         hacker_fimwf..
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/escanar68" title="escanar68">
+          <img alt="escanar68" height="30" src="../../img/common/img_user_anonymous.gif" title="escanar68" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/escanar68" title="escanar68">
+         escanar68
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/bluepix" title="bluepix">
+          <img alt="bluepix" height="30" src="../../img/common/img_user_anonymous.gif" title="bluepix" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/bluepix" title="bluepix">
+         bluepix
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/umihara" title="umihara">
+          <img alt="umihara" height="30" src="../../images/icon/0/00/00e4/00e47a368c96b6a643a3198eaf438139e8c811f0m" title="umihara" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/umihara" title="umihara">
+         umihara
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/knd" title="knd">
+          <img alt="knd" height="30" src="../../images/icon/b/bd/bd5b/bd5bd786db4210311242e39d5899f6be60158b1em" title="knd" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/knd" title="knd">
+         knd
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/alumican_net" title="alumican_net">
+          <img alt="alumican_net" height="30" src="../../images/icon/0/04/04b8/04b80a906b0de6fab253ccaf4efafdf30b213939m" title="alumican_net" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/alumican_net" title="alumican_net">
+         alumican_net..
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/osamX" title="osamX">
+          <img alt="osamX" height="30" src="../../images/icon/7/7b/7b8c/7b8ce27520b46529cf8a6354233b47bc42124368m" title="osamX" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/osamX" title="osamX">
+         osamX
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/web_shiino" title="web_shiino">
+          <img alt="web_shiino" height="30" src="../../img/common/img_user_anonymous.gif" title="web_shiino" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/web_shiino" title="web_shiino">
+         web_shiino
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/timothyd" title="timothyd">
+          <img alt="timothyd" height="30" src="../../img/common/img_user_anonymous.gif" title="timothyd" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/timothyd" title="timothyd">
+         timothyd
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/Laqu" title="Laqu">
+          <img alt="Laqu" height="30" src="../../images/icon/0/03/03ae/03aed65c6cb98f04110a2df0db828c1ea6f11118m" title="Laqu" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/Laqu" title="Laqu">
+         Laqu
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/paq" title="paq">
+          <img alt="paq" height="30" src="../../images/icon/9/9a/9a3d/9a3d6f78091dce4ac57ebf3f8d754e6cdeca9013m" title="paq" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/paq" title="paq">
+         paq
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/hisasann" title="hisasann">
+          <img alt="hisasann" height="30" src="../../img/common/img_user_anonymous.gif" title="hisasann" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/hisasann" title="hisasann">
+         hisasann
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/uly" title="uly">
+          <img alt="uly" height="30" src="../../images/icon/0/0a/0a3c/0a3cb069609bcd05abe166e7ffd3f7c826cda8dem" title="uly" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/uly" title="uly">
+         uly
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/hacker_x5c5shs_" title="hacker_x5c5shs_">
+          <img alt="hacker_x5c5shs_" height="30" src="../../img/common/img_user_anonymous.gif" title="hacker_x5c5shs_" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/hacker_x5c5shs_" title="hacker_x5c5shs_">
+         hacker_x5c5s..
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/matsumos" title="matsumos">
+          <img alt="matsumos" height="30" src="../../images/icon/c/c0/c02d/c02d4cb53075a1a22172360ac7db967e371589c8m" title="matsumos" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/matsumos" title="matsumos">
+         matsumos
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/flabaka" title="flabaka">
+          <img alt="flabaka" height="30" src="../../images/icon/8/8b/8bd7/8bd79da1516dd4e67bbfca76a4cdef35e01e2617m" title="flabaka" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/flabaka" title="flabaka">
+         flabaka
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/everdibe" title="everdibe">
+          <img alt="everdibe" height="30" src="../../img/common/img_user_anonymous.gif" title="everdibe" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/everdibe" title="everdibe">
+         everdibe
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/nutsu" title="nutsu">
+          <img alt="nutsu" height="30" src="../../img/common/img_user_anonymous.gif" title="nutsu" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/nutsu" title="nutsu">
+         nutsu
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/dizgid" title="dizgid">
+          <img alt="dizgid" height="30" src="../../img/common/img_user_anonymous.gif" title="dizgid" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/dizgid" title="dizgid">
+         dizgid
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/mash" title="mash">
+          <img alt="mash" height="30" src="../../images/icon/7/73/73b5/73b56ff18985ef4501c948d2e008594c4ebd2d90m" title="mash" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/mash" title="mash">
+         mash
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/oreore" title="oreore">
+          <img alt="oreore" height="30" src="../../images/icon/e/e4/e48b/e48b986a7b23a21168efd8df8588562381ab6d45m" title="oreore" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/oreore" title="oreore">
+         oreore
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/nki2" title="nki2">
+          <img alt="nki2" height="30" src="../../images/icon/e/e9/e92f/e92f6b73769f9f787d87623f476a0dd86cb610b4m" title="nki2" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/nki2" title="nki2">
+         nki2
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/hacker_773dzwzy" title="hacker_773dzwzy">
+          <img alt="hacker_773dzwzy" height="30" src="../../img/common/img_user_anonymous.gif" title="hacker_773dzwzy" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/hacker_773dzwzy" title="hacker_773dzwzy">
+         hacker_773dz..
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/matsu4512" title="matsu4512">
+          <img alt="matsu4512" height="30" src="../../images/icon/1/1a/1a8f/1a8f320789bc3b9a83fe8af4c2f6e2d5192fe459m" title="matsu4512" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/matsu4512" title="matsu4512">
+         matsu4512
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/bao_bao" title="bao_bao">
+          <img alt="bao_bao" height="30" src="../../images/icon/8/8f/8f5a/8f5a3d22ca5867144db72f632f4dfcd168d03946m" title="bao_bao" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/bao_bao" title="bao_bao">
+         bao_bao
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/ahchang" title="ahchang">
+          <img alt="ahchang" height="30" src="../../images/icon/e/e5/e551/e551d783ee40c76f99eadf24fe30218723f89059m" title="ahchang" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/ahchang" title="ahchang">
+         ahchang
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/hacker_2rl3obdp" title="hacker_2rl3obdp">
+          <img alt="hacker_2rl3obdp" height="30" src="../../img/common/img_user_anonymous.gif" title="hacker_2rl3obdp" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/hacker_2rl3obdp" title="hacker_2rl3obdp">
+         hacker_2rl3o..
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/sw_lucchini" title="sw_lucchini">
+          <img alt="sw_lucchini" height="30" src="../../images/icon/d/d1/d149/d14976d0e9c864c3fd94423617d92e6415859eefm" title="sw_lucchini" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/sw_lucchini" title="sw_lucchini">
+         sw_lucchini
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/miniapp" title="miniapp">
+          <img alt="miniapp" height="30" src="../../images/icon/9/95/95e9/95e99af3f53636cf8e3e67a589545871e073035dm" title="miniapp" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/miniapp" title="miniapp">
+         miniapp
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <!-- /.unitGroup -->
+      </div>
+      <div class="unitFavUserL group">
+       <p class="user">
+        <span class="thumb">
+         <a href="../../user/rememberx" title="rememberx">
+          <img alt="rememberx" height="30" src="../../img/common/img_user_anonymous.gif" title="rememberx" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/rememberx" title="rememberx">
+         rememberx
+        </a>
+        :
+       </p>
+       <p class="comment">
+        Retro Avatars
+       </p>
+       <!-- /#unitFavUserL -->
+      </div>
+      <div class="unitFavUserL group">
+       <p class="user">
+        <span class="thumb">
+         <a href="../../user/heckmeck" title="heckmeck">
+          <img alt="heckmeck" height="30" src="../../img/common/img_user_anonymous.gif" title="heckmeck" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/heckmeck" title="heckmeck">
+         heckmeck
+        </a>
+        :
+       </p>
+       <p class="comment">
+        very cool
+       </p>
+       <!-- /#unitFavUserL -->
+      </div>
+      <div class="unitFavUserL group">
+       <p class="user">
+        <span class="thumb">
+         <a href="../../user/sazaam" title="sazaam">
+          <img alt="sazaam" height="30" src="../../images/icon/a/a1/a1ef/a1ef64baff3474d1640533fd197b3a5c960e8dacm" title="sazaam" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/sazaam" title="sazaam">
+         sazaam
+        </a>
+        :
+       </p>
+       <p class="comment">
+        <a class="tag" href="../../tag/avatars" title="avatars">
+         avatars
+        </a>
+        <a class="tag" href="../../tag/png" title="png">
+         png
+        </a>
+        <a class="tag" href="../../tag/spaceinvaders" title="spaceinvaders">
+         spaceinvaders
+        </a>
+        <a class="tag" href="../../tag/text" title="text">
+         text
+        </a>
+       </p>
+       <!-- /#unitFavUserL -->
+      </div>
+      <div class="unitFavUserL group">
+       <p class="user">
+        <span class="thumb">
+         <a href="../../user/toruu_mw" title="toruu_mw">
+          <img alt="toruu_mw" height="30" src="../../img/common/img_user_anonymous.gif" title="toruu_mw" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/toruu_mw" title="toruu_mw">
+         toruu_mw
+        </a>
+        :
+       </p>
+       <p class="comment">
+        イカス！
+       </p>
+       <!-- /#unitFavUserL -->
+      </div>
+      <div class="unitFavUserL group">
+       <p class="user">
+        <span class="thumb">
+         <a href="../../user/fokhei" title="fokhei">
+          <img alt="fokhei" height="30" src="../../img/common/img_user_anonymous.gif" title="fokhei" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/fokhei" title="fokhei">
+         fokhei
+        </a>
+        :
+       </p>
+       <p class="comment">
+        <a class="tag" href="../../tag/fun" title="fun">
+         fun
+        </a>
+       </p>
+       <!-- /#unitFavUserL -->
+      </div>
+      <div class="unitFavUserL group">
+       <p class="user">
+        <span class="thumb">
+         <a href="../../user/kabouter_pis" title="kabouter_pis">
+          <img alt="kabouter_pis" height="30" src="../../images/icon/c/c3/c3ae/c3ae7a65e99bc48a017608e80ad9748b79b62c33m" title="kabouter_pis" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/kabouter_pis" title="kabouter_pis">
+         kabouter_pis..
+        </a>
+        :
+       </p>
+       <p class="comment">
+        <a class="tag" href="../../tag/avatars" title="avatars">
+         avatars
+        </a>
+        <a class="tag" href="../../tag/filereference" title="filereference">
+         filereference
+        </a>
+        <a class="tag" href="../../tag/retro" title="retro">
+         retro
+        </a>
+       </p>
+       <!-- /#unitFavUserL -->
+      </div>
+      <div class="unitFavUserL group">
+       <p class="user">
+        <span class="thumb">
+         <a href="../../user/mrgrotesque" title="mrgrotesque">
+          <img alt="mrgrotesque" height="30" src="../../images/icon/7/75/7503/7503a72324852470458a5266329ce71569f4d45bm" title="mrgrotesque" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/mrgrotesque" title="mrgrotesque">
+         mrgrotesque
+        </a>
+        :
+       </p>
+       <p class="comment">
+        <a class="tag" href="../../tag/インベーダー" title="インベーダー">
+         インベーダー
+        </a>
+        スバラスィです！
+       </p>
+       <!-- /#unitFavUserL -->
+      </div>
+      <div class="unitFavUserL group">
+       <p class="user">
+        <span class="thumb">
+         <a href="../../user/fallen" title="fallen">
+          <img alt="fallen" height="30" src="../../img/common/img_user_anonymous.gif" title="fallen" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/fallen" title="fallen">
+         fallen
+        </a>
+        :
+       </p>
+       <p class="comment">
+        <a class="tag" href="../../tag/avatar" title="avatar">
+         avatar
+        </a>
+       </p>
+       <!-- /#unitFavUserL -->
+      </div>
+      <div class="unitFavUserL group">
+       <p class="user">
+        <span class="thumb">
+         <a href="../../user/Lorenz82" title="Lorenz82">
+          <img alt="Lorenz82" height="30" src="../../images/icon/4/4d/4d87/4d871ab7944a8c6058c24679604bfc4877644f4bm" title="Lorenz82" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/Lorenz82" title="Lorenz82">
+         Lorenz82
+        </a>
+        :
+       </p>
+       <p class="comment">
+        <a class="tag" href="../../tag/avatar" title="avatar">
+         avatar
+        </a>
+        <a class="tag" href="../../tag/retro" title="retro">
+         retro
+        </a>
+        This is awesome!
+       </p>
+       <!-- /#unitFavUserL -->
+      </div>
+      <div class="unitFavUserL group">
+       <p class="user">
+        <span class="thumb">
+         <a href="../../user/tenchiwang2" title="tenchiwang2">
+          <img alt="tenchiwang2" height="30" src="../../img/common/img_user_anonymous.gif" title="tenchiwang2" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/tenchiwang2" title="tenchiwang2">
+         tenchiwang2
+        </a>
+        :
+       </p>
+       <p class="comment">
+        <a class="tag" href="../../tag/fun" title="fun">
+         fun
+        </a>
+       </p>
+       <!-- /#unitFavUserL -->
+      </div>
+      <div class="unitFavUserL group">
+       <p class="user">
+        <span class="thumb">
+         <a href="../../user/phillosophicflat" title="phillosophicflat">
+          <img alt="phillosophicflat" height="30" src="../../images/icon/1/1d/1d72/1d72e9fe66300bf528bda8ff4637dbb09ed826c0m" title="phillosophicflat" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/phillosophicflat" title="phillosophicflat">
+         phillosophic..
+        </a>
+        :
+       </p>
+       <p class="comment">
+        <a class="tag" href="../../tag/generator" title="generator">
+         generator
+        </a>
+       </p>
+       <!-- /#unitFavUserL -->
+      </div>
+      <div class="unitFavUserL group">
+       <p class="user">
+        <span class="thumb">
+         <a href="../../user/hacker_jaW" title="hacker_jaW">
+          <img alt="hacker_jaW" height="30" src="../../img/common/img_user_anonymous.gif" title="hacker_jaW" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/hacker_jaW" title="hacker_jaW">
+         hacker_jaW
+        </a>
+        :
+       </p>
+       <p class="comment">
+        Cool
+       </p>
+       <!-- /#unitFavUserL -->
+      </div>
+      <div class="unitFavUserL group">
+       <p class="user">
+        <span class="thumb">
+         <a href="../../user/peko" title="peko">
+          <img alt="peko" height="30" src="../../images/icon/b/bb/bb8a/bb8afd7fda9ac5771b305b7b16c4cf0352278875m" title="peko" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/peko" title="peko">
+         peko
+        </a>
+        :
+       </p>
+       <p class="comment">
+        i like it
+       </p>
+       <!-- /#unitFavUserL -->
+      </div>
+      <div class="unitFavUserL group">
+       <p class="user">
+        <span class="thumb">
+         <a href="../../user/keiso" title="keiso">
+          <img alt="keiso" height="30" src="../../images/icon/0/01/017b/017b6770451dc6bfb3bdeb948dfcec72038faaaem" title="keiso" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/keiso" title="keiso">
+         keiso
+        </a>
+        :
+       </p>
+       <p class="comment">
+        面白い。ARのマーカーにしたいかも。
+       </p>
+       <!-- /#unitFavUserL -->
+      </div>
+      <div class="unitFavUserL group">
+       <p class="user">
+        <span class="thumb">
+         <a href="../../user/Hiiragi" title="Hiiragi">
+          <img alt="Hiiragi" height="30" src="../../images/icon/9/95/9560/9560824f2ba0b37907a8cc46bd67965d31cb740bm" title="Hiiragi" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/Hiiragi" title="Hiiragi">
+         Hiiragi
+        </a>
+        :
+       </p>
+       <p class="comment">
+        コードもすごいけど、発想も面白い
+       </p>
+       <!-- /#unitFavUserL -->
+      </div>
+      <div class="unitFavUserL group">
+       <p class="user">
+        <span class="thumb">
+         <a href="../../user/sr_forest" title="sr_forest">
+          <img alt="sr_forest" height="30" src="../../img/common/img_user_anonymous.gif" title="sr_forest" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/sr_forest" title="sr_forest">
+         sr_forest
+        </a>
+        :
+       </p>
+       <p class="comment">
+        <a class="tag" href="../../tag/generator" title="generator">
+         generator
+        </a>
+        <a class="tag" href="../../tag/retro" title="retro">
+         retro
+        </a>
+        面白い
+       </p>
+       <!-- /#unitFavUserL -->
+      </div>
+      <div class="unitFavUserL group">
+       <p class="user">
+        <span class="thumb">
+         <a href="../../user/onedayitwillmake" title="onedayitwillmake">
+          <img alt="onedayitwillmake" height="30" src="../../images/icon/2/2a/2ab8/2ab8b34968ab4f5a98ff701c0a0f8402730320d7m" title="onedayitwillmake" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/onedayitwillmake" title="onedayitwillmake">
+         onedayitwill..
+        </a>
+        :
+       </p>
+       <p class="comment">
+        retro
+       </p>
+       <!-- /#unitFavUserL -->
+      </div>
+      <div class="unitFavUserL group">
+       <p class="user">
+        <span class="thumb">
+         <a href="../../user/sketchbookgames" title="sketchbookgames">
+          <img alt="sketchbookgames" height="30" src="../../images/icon/4/4d/4de6/4de6d5135510e6a8717d371546d336927bee97e0m" title="sketchbookgames" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/sketchbookgames" title="sketchbookgames">
+         sketchbookga..
+        </a>
+        :
+       </p>
+       <p class="comment">
+        <a class="tag" href="../../tag/avatar" title="avatar">
+         avatar
+        </a>
+        <a class="tag" href="../../tag/retro" title="retro">
+         retro
+        </a>
+       </p>
+       <!-- /#unitFavUserL -->
+      </div>
+      <div class="unitFavUserL group">
+       <p class="user">
+        <span class="thumb">
+         <a href="../../user/HaraMakoto" title="HaraMakoto">
+          <img alt="HaraMakoto" height="30" src="../../images/icon/e/e4/e46a/e46a71c5910078200319858c3edb4e6cda3cf3d7m" title="HaraMakoto" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/HaraMakoto" title="HaraMakoto">
+         HaraMakoto
+        </a>
+        :
+       </p>
+       <p class="comment">
+        <a class="tag" href="../../tag/avator" title="avator">
+         avator
+        </a>
+        <a class="tag" href="../../tag/generator" title="generator">
+         generator
+        </a>
+       </p>
+       <!-- /#unitFavUserL -->
+      </div>
+      <div class="unitFavUserL group">
+       <p class="user">
+        <span class="thumb">
+         <a href="../../user/dkgkAs" title="dkgkAs">
+          <img alt="dkgkAs" height="30" src="../../images/icon/7/76/7647/7647ee48d93a9cede01b47bb2f5d349103e89174m" title="dkgkAs" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/dkgkAs" title="dkgkAs">
+         dkgkAs
+        </a>
+        :
+       </p>
+       <p class="comment">
+        <a class="tag" href="../../tag/avator" title="avator">
+         avator
+        </a>
+        <a class="tag" href="../../tag/generator" title="generator">
+         generator
+        </a>
+       </p>
+       <!-- /#unitFavUserL -->
+      </div>
+      <div class="unitFavUserL group">
+       <p class="user">
+        <span class="thumb">
+         <a href="../../user/k0rin" title="k0rin">
+          <img alt="k0rin" height="30" src="../../images/icon/3/32/32be/32be63b3ce019a852e86a158df07aa61310f38fem" title="k0rin" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/k0rin" title="k0rin">
+         k0rin
+        </a>
+        :
+       </p>
+       <p class="comment">
+        おおー
+       </p>
+       <!-- /#unitFavUserL -->
+      </div>
+      <div class="unitFavUserL group">
+       <p class="user">
+        <span class="thumb">
+         <a href="../../user/oshige" title="oshige">
+          <img alt="oshige" height="30" src="../../images/icon/3/38/382b/382b1262ac727da9a48d06dadc218621f88868b3m" title="oshige" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/oshige" title="oshige">
+         oshige
+        </a>
+        :
+       </p>
+       <p class="comment">
+        あばたもえくぼ
+       </p>
+       <!-- /#unitFavUserL -->
+      </div>
+      <div class="unitFavUserL group">
+       <p class="user">
+        <span class="thumb">
+         <a href="../../user/SHINN" title="SHINN">
+          <img alt="SHINN" height="30" src="../../images/icon/6/6d/6dcd/6dcdd28fb6af34d157d1f3a608285904dd35bb04m" title="SHINN" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/SHINN" title="SHINN">
+         SHINN
+        </a>
+        :
+       </p>
+       <p class="comment">
+        おもろいw
+       </p>
+       <!-- /#unitFavUserL -->
+      </div>
+      <div class="unitFavUserL group">
+       <p class="user">
+        <span class="thumb">
+         <a href="../../user/keim_at_Si" title="keim_at_Si">
+          <img alt="keim_at_Si" height="30" src="../../images/icon/2/27/278a/278afc585a0a283d6e1f13f081cfd9c377ab9db2m" title="keim_at_Si" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/keim_at_Si" title="keim_at_Si">
+         keim_at_Si
+        </a>
+        :
+       </p>
+       <p class="comment">
+        仕事はや！
+       </p>
+       <!-- /#unitFavUserL -->
+      </div>
+      <!-- /#sectFavBy -->
+     </section>
+     <section class="group" id="sectTags">
+      <h1>
+       <img alt="Tags" height="18" src="../../img/code/ttl_code_tags.png" width="47"/>
+      </h1>
+      <ul class="listTag group">
+       <li>
+        <a class="tag tag1" href="../../tag/avatar" title="avatar">
+         avatar
+        </a>
+       </li>
+       <li>
+        <a class="tag tag1" href="../../tag/avatars" title="avatars">
+         avatars
+        </a>
+       </li>
+       <li>
+        <a class="tag tag1" href="../../tag/avator" title="avator">
+         avator
+        </a>
+       </li>
+       <li>
+        <a class="tag " href="../../tag/filereference" title="filereference">
+         filereference
+        </a>
+       </li>
+       <li>
+        <a class="tag tag1" href="../../tag/fun" title="fun">
+         fun
+        </a>
+       </li>
+       <li>
+        <a class="tag tag1" href="../../tag/generator" title="generator">
+         generator
+        </a>
+       </li>
+       <li>
+        <a class="tag " href="../../tag/png" title="png">
+         png
+        </a>
+       </li>
+       <li>
+        <a class="tag tag1" href="../../tag/retro" title="retro">
+         retro
+        </a>
+       </li>
+       <li>
+        <a class="tag " href="../../tag/spaceinvaders" title="spaceinvaders">
+         spaceinvaders
+        </a>
+       </li>
+       <li>
+        <a class="tag " href="../../tag/text" title="text">
+         text
+        </a>
+       </li>
+       <li>
+        <a class="tag " href="../../tag/インベーダー" title="インベーダー">
+         インベーダー
+        </a>
+       </li>
+      </ul>
+      <!-- / #sectTags .group -->
+     </section>
+     <section class="group" id="sectKeywords">
+      <h1>
+       <img alt="sectKeywords" height="19" src="../../img/code/ttl_code_keywords.png" width="98"/>
+      </h1>
+      <ul class="listKeywords group">
+       <li>
+        <a class="keyword keyword2" href="../../search?q=getPixel" title="getPixel | JavaScript,HTML5,CSS search">
+         getPixel
+        </a>
+       </li>
+       <li>
+        <a class="keyword keyword2" href="../../search?q=setPixel" title="setPixel | JavaScript,HTML5,CSS search">
+         setPixel
+        </a>
+       </li>
+       <li>
+        <a class="keyword keyword2" href="../../search?q=floodFill" title="floodFill | JavaScript,HTML5,CSS search">
+         floodFill
+        </a>
+       </li>
+       <li>
+        <a class="keyword keyword2" href="../../search?q=topLeft" title="topLeft | JavaScript,HTML5,CSS search">
+         topLeft
+        </a>
+       </li>
+       <li>
+        <a class="keyword keyword2" href="../../search?q=threshold" title="threshold | JavaScript,HTML5,CSS search">
+         threshold
+        </a>
+       </li>
+       <li>
+        <a class="keyword keyword2" href="../../search?q=type" title="type | JavaScript,HTML5,CSS search">
+         type
+        </a>
+       </li>
+       <li>
+        <a class="keyword keyword2" href="../../search?q=FileReference" title="FileReference | JavaScript,HTML5,CSS search">
+         FileReference
+        </a>
+       </li>
+       <li>
+        <a class="keyword keyword2" href="../../search?q=noise" title="noise | JavaScript,HTML5,CSS search">
+         noise
+        </a>
+       </li>
+       <li>
+        <a class="keyword keyword2" href="../../search?q=IME.enabled" title="IME.enabled | JavaScript,HTML5,CSS search">
+         IME.enabled
+        </a>
+       </li>
+       <li>
+        <a class="keyword keyword1" href="../../search?q=save" title="save | JavaScript,HTML5,CSS search">
+         save
+        </a>
+       </li>
+       <li>
+        <a class="keyword keyword1" href="../../search?q=transparent" title="transparent | JavaScript,HTML5,CSS search">
+         transparent
+        </a>
+       </li>
+       <li>
+        <a class="keyword keyword1" href="../../search?q=rect" title="rect | JavaScript,HTML5,CSS search">
+         rect
+        </a>
+       </li>
+       <li>
+        <a class="keyword keyword1" href="../../search?q=Boolean" title="Boolean | JavaScript,HTML5,CSS search">
+         Boolean
+        </a>
+       </li>
+       <li>
+        <a class="keyword keyword1" href="../../search?q=text" title="text | JavaScript,HTML5,CSS search">
+         text
+        </a>
+       </li>
+       <li>
+        <a class="keyword keyword1" href="../../search?q=TextFieldAutoSize.CENTER" title="TextFieldAutoSize.CENTER | JavaScript,HTML5,CSS search">
+         TextFieldAutoSize.CENTER
+        </a>
+       </li>
+       <li>
+        <a class="keyword keyword1" href="../../search?q=addEventListener" title="addEventListener | JavaScript,HTML5,CSS search">
+         addEventListener
+        </a>
+       </li>
+       <li>
+        <a class="keyword" href="../../search?q=concat" title="concat | JavaScript,HTML5,CSS search">
+         concat
+        </a>
+       </li>
+       <li>
+        <a class="keyword" href="../../search?q=charCode" title="charCode | JavaScript,HTML5,CSS search">
+         charCode
+        </a>
+       </li>
+       <li>
+        <a class="keyword" href="../../search?q=charCodeAt" title="charCodeAt | JavaScript,HTML5,CSS search">
+         charCodeAt
+        </a>
+       </li>
+       <li>
+        <a class="keyword" href="../../search?q=String.fromCharCode" title="String.fromCharCode | JavaScript,HTML5,CSS search">
+         String.fromCharCode
+        </a>
+       </li>
+      </ul>
+      <!-- / #sectKeywords .group -->
+     </section>
+     <section class="group" id="sectForked">
+      <h1 id="code_forked">
+       <img alt="Forked" height="15" src="../../img/code/ttl_code_forked.png" width="68"/>
+      </h1>
+      <div class="boxSort group">
+       <p class="changeSort">
+        sort
+       </p>
+       <ul class="group">
+        <li class="selected">
+         <em>
+          new
+         </em>
+        </li>
+        <li>
+         <a href="../../c/lX5A?order=pv#code_forked">
+          page view
+         </a>
+        </li>
+        <li>
+         <a href="../../c/lX5A?order=favorite#code_forked">
+          favorite
+         </a>
+        </li>
+        <li>
+         <a href="../../c/lX5A?order=forked#code_forked">
+          forked
+         </a>
+        </li>
+       </ul>
+       <!-- / .boxSort -->
+      </div>
+      <div class="autopagerize_page_element" id="boxForkedCode">
+       <div class="unitCodeGroup group">
+        <div class="unitCode" id="code_l6jp">
+         <div class="unitCodeThumb">
+          <p class="thumb">
+           <a href="../../c/l6jp" title="Pixel Avatars">
+            <img alt="Pixel Avatars" height="100" src="../../images/capture/9/93/93e4/93e457a07bddf8361bd53dab96575569d0c5c099_w.jpg" width="205"/>
+           </a>
+          </p>
+          <p class="pv">
+           <a href="../../c/l6jp" title="Pixel Avatars">
+            pv
+            <span>
+             785
+            </span>
+           </a>
+          </p>
+         </div>
+         <p class="ttl">
+          <a href="../../c/l6jp" title="Pixel Avatars">
+           Pixel Avatars
+          </a>
+         </p>
+         <p class="user">
+          <span class="thumb">
+           <a class="small_user" href="../../user/tananuka13">
+            <img height="15" src="../../images/icon/5/5b/5b8d/5b8dc5ade1d2fe275679be36dd31f793b669e4c3m" width="15"/>
+           </a>
+          </span>
+          <a class="user_name small_user" href="../../user/tananuka13">
+           tananuka13
+          </a>
+         </p>
+         <ul class="data">
+          <li class="forked">
+           forked:1
+          </li>
+          <li class="fav">
+           favorite:0
+          </li>
+          <li class="lines">
+           lines:454 (
+           <strong>
+            <a href="#" onclick="Wonderfl.Codepage.on_diff_click('lX5A','l6jp'); return false;">
+             diff:1
+            </a>
+           </strong>
+           )
+          </li>
+          <li class="tag">
+           tag:
+           <ul class="listTag">
+            <li>
+             <a class="" href="../../tag/pixel">
+              pixel
+             </a>
+            </li>
+           </ul>
+          </li>
+         </ul>
+         <!-- /.unitCode -->
+        </div>
+        <div class="unitCode" id="code_dRhJ">
+         <div class="unitCodeThumb">
+          <p class="thumb">
+           <a href="../../c/dRhJ" title="forked from: Retro Avatars">
+            <img alt="forked from: Retro Avatars" height="100" src="../../img/common/noswf_w.gif" width="205"/>
+           </a>
+          </p>
+          <p class="pv">
+           <a href="../../c/dRhJ" title="forked from: Retro Avatars">
+            pv
+            <span>
+             0
+            </span>
+           </a>
+          </p>
+         </div>
+         <p class="ttl">
+          <a href="../../c/dRhJ" title="forked from: Retro Avatars">
+           forked from: Retro Avatars
+          </a>
+         </p>
+         <p class="user">
+          <span class="thumb">
+           <a class="small_user" href="../../user/makishima">
+            <img height="15" src="../../img/common/img_user_anonymous.gif" width="15"/>
+           </a>
+          </span>
+          <a class="user_name small_user" href="../../user/makishima">
+           makishima
+          </a>
+         </p>
+         <ul class="data">
+          <li class="forked">
+           forked:0
+          </li>
+          <li class="fav">
+           favorite:0
+          </li>
+          <li class="lines">
+           lines:454 (
+           <strong>
+            <a href="#" onclick="Wonderfl.Codepage.on_diff_click('lX5A','dRhJ'); return false;">
+             diff:1
+            </a>
+           </strong>
+           )
+          </li>
+         </ul>
+         <!-- /.unitCode -->
+        </div>
+        <div class="unitCode" id="code_8rrI">
+         <div class="unitCodeThumb">
+          <p class="thumb">
+           <a href="../../c/8rrI" title="forked from: Retro Avatars">
+            <img alt="forked from: Retro Avatars" height="100" src="../../img/common/noswf_w.gif" width="205"/>
+           </a>
+          </p>
+          <p class="pv">
+           <a href="../../c/8rrI" title="forked from: Retro Avatars">
+            pv
+            <span>
+             0
+            </span>
+           </a>
+          </p>
+         </div>
+         <p class="ttl">
+          <a href="../../c/8rrI" title="forked from: Retro Avatars">
+           forked from: Retro Avatars
+          </a>
+         </p>
+         <p class="user">
+          <span class="thumb">
+           <a class="small_user" href="../../user/boohoo">
+            <img height="15" src="../../img/common/img_user_anonymous.gif" width="15"/>
+           </a>
+          </span>
+          <a class="user_name small_user" href="../../user/boohoo">
+           boohoo
+          </a>
+         </p>
+         <ul class="data">
+          <li class="forked">
+           forked:0
+          </li>
+          <li class="fav">
+           favorite:0
+          </li>
+          <li class="lines">
+           lines:454 (
+           <strong>
+            <a href="#" onclick="Wonderfl.Codepage.on_diff_click('lX5A','8rrI'); return false;">
+             diff:1
+            </a>
+           </strong>
+           )
+          </li>
+         </ul>
+         <!-- /.unitCode -->
+        </div>
+        <div class="unitCode" id="code_eiE4">
+         <div class="unitCodeThumb">
+          <p class="thumb">
+           <a href="../../c/eiE4" title="forked from: Retro Avatars">
+            <img alt="forked from: Retro Avatars" height="100" src="../../images/capture/6/64/643a/643a065f6beedafe108b1c60636c240b974c6ab2_w.jpg" width="205"/>
+           </a>
+          </p>
+          <p class="pv">
+           <a href="../../c/eiE4" title="forked from: Retro Avatars">
+            pv
+            <span>
+             1833
+            </span>
+           </a>
+          </p>
+         </div>
+         <p class="ttl">
+          <a href="../../c/eiE4" title="forked from: Retro Avatars">
+           forked from: Retro Avatars
+          </a>
+         </p>
+         <p class="user">
+          <span class="thumb">
+           <a class="small_user" href="../../user/hyper_pepper">
+            <img height="15" src="../../img/common/img_user_anonymous.gif" width="15"/>
+           </a>
+          </span>
+          <a class="user_name small_user" href="../../user/hyper_pepper">
+           hyper_pepper
+          </a>
+         </p>
+         <ul class="data">
+          <li class="forked">
+           forked:1
+          </li>
+          <li class="fav">
+           favorite:0
+          </li>
+          <li class="lines">
+           lines:454 (
+           <strong>
+            <a href="#" onclick="Wonderfl.Codepage.on_diff_click('lX5A','eiE4'); return false;">
+             diff:1
+            </a>
+           </strong>
+           )
+          </li>
+         </ul>
+         <!-- /.unitCode -->
+        </div>
+        <!--/.unitCodeGroup-->
+       </div>
+       <!-- /#boxForkedCode -->
+      </div>
+      <!-- / #sectForked .group -->
+     </section>
+     <div class="ad_super_bnr bnrAd btnT">
+      <div class="ad_super_bnr bnrAd btnT">
+       <!-- wonderfl_codepage_longbnr -->
+      </div>
+     </div>
+     <script src="../../js/lib/prototype-1.7.2.js" type="text/javascript">
+     </script>
+     <script src="../../js/lib/builder.js" type="text/javascript">
+     </script>
+     <script src="../../js/lib/effects.js" type="text/javascript">
+     </script>
+     <script src="../../js/lib/lightbox.js" type="text/javascript">
+     </script>
+     <script src="../../js/lib/swfobject.js" type="text/javascript">
+     </script>
+     <script src="../../js/lib/swfformfix2.js" type="text/javascript">
+     </script>
+     <script src="../../js/form_manager.js" type="text/javascript">
+     </script>
+     <script src="../../js/rpc_wrapper.js" type="text/javascript">
+     </script>
+     <script src="../../js/wonderfl.js" type="text/javascript">
+     </script>
+     <script type="text/javascript">
+      var viewer_swf      = "../../swf/WonderflViewer.swf";
+var open_api_key    = "a76b80051993a7c6322bf8b4bbc457b44c3d4f5c";
+var google_maps_key = "ABQIAAAAXpWFDG8Wm9YzscY4IEB27xSO5wqdqdHVqPB8sVJhBj86bhrVXRSBgqnsO9rxcctD5ppITaLzKCDqHA";
+var compiler_server = "";
+var compiler_port   = "";
+var code_uid        = "lX5A";
+var swf_uri         = "../../swf/usercode/9/99/99db/99db9f4dc72fd4f660750c1d5db06e7af8c4904a.swf";
+var wmode           = "transparent";
+var ticket          = "";
+var is_login        = "0";
+var viewer          = {
+  displayName : "anonymous",
+  iconURL     : "http://wonderfl.net/img/common/img_user_anonymous.gif"
+};
+     </script>
+    </article>
+    <div id="diff_container">
+    </div>
+    <div id="diff_controller">
+     <a href="#" id="diff_close_button">
+      <img class="btn" src="../../img/code/close.gif"/>
+     </a>
+    </div>
+    <div id="popup" style="display:none">
+     <p class="btnClose">
+      <a href="javascript:void(0);" onclick="popup.hide();">
+       <img alt="close" height="23" src="../../img/nengafl2011/btn_close.png" width="23"/>
+      </a>
+     </p>
+     <form action="/api/code/flash2android/sendmail" id="sendmail" method="post" style="display:none">
+      <p class="ttlPopup">
+       <img alt="AndroidアプリのDownload URLを携帯へ送る" src="../../img/nengafl2011/ttl_download.png"/>
+      </p>
+      <p>
+       <input id="email" name="email" placeholder="メールアドレスを入力してください" type="input" value=""/>
+      </p>
+      <p class="btnSubmit">
+       <input alt="携帯に送る" src="../../img/nengafl2011/btn_send.png" type="image"/>
+      </p>
+      <input name="token" type="hidden" value="38c83c61cedf1826235b0dbb2dffc243d32c199e2c18869a9d94795e2e1f8f7e"/>
+      <input name="code_uid" type="hidden" value="lX5A"/>
+     </form>
+     <p id="converting" style="display:block">
+      Converting...
+     </p>
+     <!-- /#popup -->
+    </div>
+    <!--/#content-->
+   </div>
+   <!--/[[[ CONTENT-AREA ]]]-->
+   <!--[[[ FOOTER-AREA ]]]-->
+   <div id="footerGlobal">
+    <p class="goPageTop">
+     <a href="#container">
+      <img alt="ページの先頭へ戻る" class="btn" height="32" src="../../img/common/btn/btn_backtotop.png" width="36"/>
+     </a>
+    </p>
+    <div id="navFooter">
+     <p class="navFooterTop">
+      <a href="../../" title="wonderfl TOP">
+       wonderfl TOP
+      </a>
+     </p>
+     <ul class="listNavFooter group">
+      <li>
+       <dl>
+        <dt>
+         <a href="../../codes" title="Codes">
+          Codes
+         </a>
+        </dt>
+        <dd>
+         <a href="../../codes" title="page view ranking">
+          page view ranking
+         </a>
+        </dd>
+        <dd>
+         <a href="../../codes?order=favorite" title="favorite ranking">
+          favorite ranking
+         </a>
+        </dd>
+        <dd>
+         <a href="../../codes?order=forked" title="forked count ranking">
+          forked count ranking
+         </a>
+        </dd>
+       </dl>
+      </li>
+      <li>
+       <dl>
+        <dt>
+         <a href="../../users" title="Users">
+          Users
+         </a>
+        </dt>
+        <dd>
+         <a href="../../users" title="page view ranking">
+          page view ranking
+         </a>
+        </dd>
+        <dd>
+         <a href="../../users?order=favorite" title="favorite ranking">
+          favorite ranking
+         </a>
+        </dd>
+        <dd>
+         <a href="../../users?order=forked" title="forked count ranking">
+          forked count ranking
+         </a>
+        </dd>
+       </dl>
+      </li>
+      <li>
+       <dl>
+        <dt>
+         <a href="http://flash-games.wonderfl.net/" title="Game">
+          Game
+         </a>
+        </dt>
+        <dd>
+         <a href="http://flash-games.wonderfl.net/about" title="フラッシュゲームをつくる">
+          make games
+         </a>
+        </dd>
+        <dd>
+         <a href="http://flash-games.wonderfl.net/" title="フラッシュゲームで遊ぶ">
+          play games
+         </a>
+        </dd>
+       </dl>
+      </li>
+      <li>
+       <dl>
+        <dt>
+         <a href="../../events" title="Game">
+          Events
+         </a>
+        </dt>
+        <dd>
+         <a href="http://jsdo.it/event/jam/" title="HTML5&amp;Flash">
+          JAM -HTML5&amp;Flash-
+         </a>
+        </dd>
+        <dd>
+         <a href="http://checkmate.wonderfl.net/" title="CHECKMATE">
+          CHECKMATE
+         </a>
+        </dd>
+        <dd>
+         <a href="http://nengafl.wonderfl.net/" title="nengafl">
+          nengafl
+         </a>
+        </dd>
+        <dd>
+         <a href="../../code/adce526f063149d781c2752e7472b08ad7279595" title="FeliCa Flash Contest">
+          FeliCa Flash Contest
+         </a>
+        </dd>
+       </dl>
+      </li>
+      <li>
+       <dl>
+        <dt>
+         <a href="http://flash-jobs.wonderfl.net/" title="flash-jobs">
+          Jobs
+         </a>
+        </dt>
+        <dd>
+         <a href="http://flash-jobs.wonderfl.net/" target="_blank" title="want a job?">
+          want a job?
+         </a>
+        </dd>
+        <dd>
+         <a href="http://flash-jobs.wonderfl.net/plan" target="_blank" title="post a job">
+          post a job
+         </a>
+        </dd>
+       </dl>
+      </li>
+      <li>
+       <dl>
+        <dt>
+         <a href="../../tags" title="Tags">
+          Tags
+         </a>
+        </dt>
+        <dd>
+         <a href="../../search">
+          Flash /
+          <br/>
+          Actionscript3.0
+          <br/>
+          keywords
+         </a>
+        </dd>
+       </dl>
+      </li>
+      <li>
+       <dl>
+        <dt>
+         <a href="../../qa" title="Q&amp;A">
+          Q&amp;A
+         </a>
+        </dt>
+        <dd>
+         <a href="../../qa#questions">
+          Questions
+          <br/>
+          about Flash /
+          <br/>
+          Actionscript3.0
+         </a>
+        </dd>
+       </dl>
+      </li>
+     </ul>
+     <ul class="listNavFooter group">
+      <li>
+       <dl>
+        <dt>
+         <a href="../../about/" title="about">
+          What is wonderfl
+         </a>
+        </dt>
+        <dd>
+         <a href="../../help" title="ヘルプ">
+          help
+         </a>
+        </dd>
+        <dd>
+         <a href="../../qa" title="Q&amp;A">
+          Q&amp;A
+         </a>
+        </dd>
+        <dd>
+         <a href="../../libraries" title="ライブラリ">
+          libraries
+         </a>
+        </dd>
+        <dd>
+         <a href="../../wiki" title="wiki">
+          wiki
+         </a>
+        </dd>
+        <dd>
+         <a href="../../apis" title="APIs">
+          APIs
+         </a>
+        </dd>
+        <dd>
+         <a href="../../media" title="Media">
+          Media Information
+         </a>
+        </dd>
+        <dd>
+         <a href="../../blog" title="developer's blog">
+          developer's blog
+         </a>
+        </dd>
+        <dd>
+         <a href="../../help#help_contact" title="contact">
+          contact
+         </a>
+        </dd>
+       </dl>
+      </li>
+      <li>
+       <dl>
+        <dt>
+         <a href="../../terms" title="利用規約">
+          Terms of Use
+         </a>
+        </dt>
+        <dd>
+         <a href="../../terms#terms_pp" title="プライバシーポリシー">
+          Privacy Policy
+         </a>
+        </dd>
+       </dl>
+      </li>
+     </ul>
+     <!--/#navFooter-->
+    </div>
+    <dl id="kayacFooter">
+     <dt class="ttlKayacService">
+      <a href="http://www.kayac.com" title="株式会社KAYAC（カヤック）古都鎌倉から新しい価値感のサービスを次々にリリースする面白法人">
+       <img alt="KAYAC Project" height="14" src="../../img/common/kayacproject.png" width="56"/>
+      </a>
+     </dt>
+     <dd class="listKayacService">
+      <div id="boxKayacLink">
+       <div class="unitKayacLink" id="kayacProject">
+        <dl>
+         <dt>
+          <a class="external" href="http://www.kayac.com/" rel="external" title="面白法人カヤック">
+           カヤックプロジェクト
+          </a>
+         </dt>
+         <dd>
+          <ul class="group">
+           <li>
+            <a class="external" href="https://web.lobi.co/" rel="external" title="Lobi">
+             Lobi
+            </a>
+           </li>
+           <li>
+            <a class="external" href="https://lobi.co/recsdk" rel="external" title="Lobi REC SDK">
+             Lobi REC SDK
+            </a>
+           </li>
+           <li>
+            <a class="external" href="https://rankers.co/" rel="external" title="RANKERS">
+             RANKERS
+            </a>
+           </li>
+           <li>
+            <a class="external" href="https://koshien-pocket.kayac.com/" rel="external" title="ぼくらの甲子園！ポケット">
+             ぼくらの甲子園！ポケット
+            </a>
+           </li>
+           <li>
+            <a class="external" href="https://games.kayac.com/pf/" rel="external" title="ポケットフットボーラーPLUS">
+             ポケットフットボーラーPLUS
+            </a>
+           </li>
+           <li>
+            <a class="external" href="http://quikin.kayac.com/" rel="external" title="冒険クイズキングダム">
+             冒険クイズキングダム
+            </a>
+           </li>
+           <li>
+            <a class="external" href="http://jagmo.jp/" rel="external" title="JAGMO">
+             JAGMO
+            </a>
+           </li>
+           <li>
+            <a class="external" href="https://pla-cole.wedding/" rel="external" title="プラコレ">
+             プラコレ
+            </a>
+           </li>
+           <li>
+            <a class="external" href="http://iikuni-kamakura.jp/" rel="external" title="iikuni">
+             iikuni
+            </a>
+           </li>
+           <li>
+            <a class="external" href="http://thanks.kayac.com/ja/top" rel="external" title="THANKS">
+             THANKS
+            </a>
+           </li>
+           <li>
+            <a class="external" href="https://sumika.me/" rel="external" title="SuMiKa">
+             SuMiKa
+            </a>
+           </li>
+           <li>
+            <a class="external" href="http://www.kayac.com/service/strongpoint" rel="external" title="キャンペーン">
+             キャンペーン
+            </a>
+           </li>
+           <li>
+            <a class="external" href="http://www.kayac.com/service/strongpoint" rel="external" title="受託">
+             受託
+            </a>
+           </li>
+          </ul>
+         </dd>
+        </dl>
+        <!-- / #kayacProject -->
+       </div>
+       <div class="unitKayacLink" id="kayacMedia">
+        <dl>
+         <dt>
+          KAYAC Media
+         </dt>
+         <dd>
+          <ul class="group">
+           <li>
+            <a class="external" href="http://techblog.kayac.com/" rel="external" title="面白法人プログラマーブログ">
+             面白法人プログラマーブログ
+            </a>
+           </li>
+           <li>
+            <a class="external" href="http://business.nikkeibp.co.jp/article/opinion/20111227/225722/?rt=nocnt" rel="external" title="面白法人社長ブログ">
+             面白法人社長ブログ
+            </a>
+           </li>
+           <li>
+            <a class="external" href="http://www.facebook.com/KayacJapan" rel="external" title="面白法人カヤックの「ここだけの話」">
+             面白法人カヤックの「ここだけの話」
+            </a>
+           </li>
+           <li>
+            <a class="external" href="http://design.kayac.com" rel="external" title="面白法人デザイナーブログ">
+             面白法人デザイナーブログ
+            </a>
+           </li>
+           <li>
+            <a class="external" href="https://twitter.com/yanasawa" rel="external" title="@yanasawa">
+             @yanasawa
+            </a>
+           </li>
+           <li>
+            <a class="external" href="http://create.kayac.com" rel="external" title="つくってみたラボ">
+             つくってみたラボ
+            </a>
+           </li>
+          </ul>
+         </dd>
+        </dl>
+        <!-- / #kayacMedia -->
+       </div>
+       <!-- / #boxKayacLink -->
+      </div>
+     </dd>
+    </dl>
+    <p class="vcard" id="copyright">
+     <small>
+      site design ©
+      <a class="external fn org url" href="http://www.kayac.com/" title="KAYAC Inc.">
+       KAYAC Inc.
+      </a>
+      All Rights Reserved.
+     </small>
+    </p>
+    <!--/#footer-->
+   </div>
+   <!--/[[[ FOOTER-AREA ]]]-->
+   <!--/#container-->
+  </div>
+  <!-- scripts [-->
+  <script src="../../js/lib/sisso.js" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   var swf_server = "http://swf.wonderfl.net";
+var lang = "ja";
+  </script>
+  <!--] scripts-->
+  <!-- Analytics [-->
+  <!--] Analytics-->
+ </body>
+</html>

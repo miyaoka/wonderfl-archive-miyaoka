@@ -1,0 +1,3150 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:mixi="http://mixi-platform.com/ns#" xmlns:og="http://ogp.me/ns#">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="chrome=1" http-equiv="X-UA-Compatible"/>
+  <title>
+   Slicer implements GlowLine - wonderfl build flash online
+  </title>
+  <meta content="Slicer implements GlowLine | wonderfl build flash online" name="title"/>
+  <meta content="Slicer implements GlowLine @sketchbookgames Fixed the counter bug. ty:) * * GlowLine from * http://wonderfl.kayac.com/code/704630050881c4429dca8c7f27296b6e2fa3fa4f *  * マウス押しっぱなしで切りまくるようにした  切った後、割れるようにした @ wonderfl build flash online. wonderflは、サイト上でFlash（swf）をつくることのできるサービス。Actionscript3のコードを書くと、自動でコンパイルし、作成されたFlashを見ることができます。" name="description"/>
+  <meta content="Flash,Actionscript3,Flex,as3,wonderful" http-equiv="Keywords"/>
+  <meta content="text/css" http-equiv="content-style-type"/>
+  <meta content="text/javascript" http-equiv="content-script-type"/>
+  <meta content="KAYAC Inc." name="author"/>
+  <meta content="Copyright © 2008-2010 Wonderfl All right reserved. KAYAC Inc." name="copyright"/>
+  <meta content="wonderfl build flash online" property="og:site_name"/>
+  <meta content="100748186650646" property="fb:page_id"/>
+  <!--[if IE]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+  <link href="../../css/common.css" media="screen,print" rel="stylesheet" type="text/css"/>
+  <link href="../../css/reserved.css" media="screen,print" rel="stylesheet" type="text/css"/>
+  <link href="../../css/SyntaxHighlighter.css" media="screen,print" rel="stylesheet" type="text/css"/>
+  <link href="../../css/code.css" media="screen,print" rel="stylesheet" type="text/css"/>
+  <link href="../../css/lightbox.css" media="screen,print" rel="stylesheet" type="text/css"/>
+  <link href="../../img/favicon.png" rel="shortcut icon" type="image/png"/>
+  <link href="../../images/capture/3/37/3700/37003275488134dc512c2c80217be7f9f81d6c24_100.jpg" rel="image_src"/>
+  <link href="../../images/capture/3/37/3700/37003275488134dc512c2c80217be7f9f81d6c24_100.jpg" rel="mixi-check-image"/>
+  <meta content="http://wonderfl.net/images/capture/3/37/3700/37003275488134dc512c2c80217be7f9f81d6c24_100.jpg" property="og:image"/>
+  <meta content="Slicer implements GlowLine" property="og:title"/>
+  <meta content="video" name="medium"/>
+  <meta content="../../swf/usercode/3/37/3700/37003275488134dc512c2c80217be7f9f81d6c24.swf" property="og:video"/>
+  <meta content="Slicer implements GlowLine" property="og:audio:title"/>
+  <meta content="465" property="og:video:height"/>
+  <meta content="465" property="og:video:width"/>
+  <meta content="application/x-shockwave-flash" property="og:video:type"/>
+  <script src="../../js/header.js" type="text/javascript">
+  </script>
+  <script src="http://partner.googleadservices.com/gampad/google_service.js" type="text/javascript">
+  </script>
+ </head>
+ <body>
+  <div class="codepage contents" id="container">
+   <!--[[[ HEADER-AREA ]]]-->
+   <header class="group" id="headerGlobal">
+    <p id="siteName">
+     <a href="../../" title="wonderfl - build flash online">
+      <img alt="wonderfl - build flash online" height="24" src="../../img/common/logo.png" width="234"/>
+     </a>
+    </p>
+    <nav id="navGlobal">
+     <ul>
+      <li class="column">
+       <span class="header_menu_column">
+        <a href="../../login" onclick="this.href='/login?redirect=' + encodeURIComponent(location.pathname);">
+         signin
+        </a>
+       </span>
+      </li>
+      <li class="column">
+       <span class="header_menu_column" id="header_menu_column_2" onmouseout="Wonderfl.Header.mouseout(this);" onmouseover="Wonderfl.Header.mouseover(this);">
+        <a href="../../codes" title="flash,actionscript3 code ranking">
+         codes
+        </a>
+       </span>
+       <ul class="navGlobalSub" id="header_submenu_2" onmouseout="Wonderfl.Header.mouseout(this);" onmouseover="Wonderfl.Header.mouseover(this);" style="display:none;">
+        <li>
+         <a href="../../codes" title="page view ranking">
+          page view ranking
+         </a>
+        </li>
+        <li>
+         <a href="../../codes?order=favorite" title="favorites count ranking">
+          favorite ranking
+         </a>
+        </li>
+        <li>
+         <a href="../../codes?order=forked" title="forked count ranking">
+          forked count ranking
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li class="column">
+       <span class="header_menu_column" id="header_menu_column_3" onmouseout="Wonderfl.Header.mouseout(this);" onmouseover="Wonderfl.Header.mouseover(this);">
+        <a href="../../users" title="wonderfl users">
+         users
+        </a>
+       </span>
+       <ul class="navGlobalSub" id="header_submenu_3" onmouseout="Wonderfl.Header.mouseout(this);" onmouseover="Wonderfl.Header.mouseover(this);" style="display:none;">
+        <li>
+         <a href="../../users" title="page view ranking">
+          page view ranking
+         </a>
+        </li>
+        <li>
+         <a href="../../users?order=favorite" title="favorites count ranking">
+          favorite ranking
+         </a>
+        </li>
+        <li>
+         <a href="../../users?order=forked" title="forked count ranking">
+          forked count ranking
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li class="column">
+       <span class="header_menu_column" id="header_menu_column_8" onmouseout="Wonderfl.Header.mouseout(this);" onmouseover="Wonderfl.Header.mouseover(this);">
+        <a href="http://flash-games.wonderfl.net/" title="game wonderfl">
+         games
+        </a>
+       </span>
+       <ul class="navGlobalSub" id="header_submenu_8" onmouseout="Wonderfl.Header.mouseout(this);" onmouseover="Wonderfl.Header.mouseover(this);" style="display:none;">
+        <li>
+         <a href="http://flash-games.wonderfl.net/about" title="フラッシュゲームをつくる">
+          make games
+         </a>
+        </li>
+        <li>
+         <a href="http://flash-games.wonderfl.net/" title="フラッシュゲームで遊ぶ">
+          play games
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li class="column">
+       <span class="header_menu_column" id="header_menu_column_10" onmouseout="Wonderfl.Header.mouseout(this);" onmouseover="Wonderfl.Header.mouseover(this);">
+        <a href="../../events" title="events">
+         events
+        </a>
+       </span>
+       <ul class="navGlobalSub" id="header_submenu_10" onmouseout="Wonderfl.Header.mouseout(this);" onmouseover="Wonderfl.Header.mouseover(this);" style="display:none;">
+        <li>
+         <a class="external" href="http://jsdo.it/event/jam/" title="HTML5&amp;Flash">
+          JAM -HTML5&amp;Flash-
+         </a>
+        </li>
+        <li>
+         <a class="external" href="http://checkmate.wonderfl.net/" title="CHECKMATE">
+          CHECKMATE
+         </a>
+        </li>
+        <li>
+         <a class="external" href="http://nengafl.wonderfl.net/" title="nengafl">
+          nengafl
+         </a>
+        </li>
+        <li>
+         <a href="../../code/adce526f063149d781c2752e7472b08ad7279595" title="FeliCa Flash Contest">
+          FeliCa Flash Contest
+         </a>
+        </li>
+       </ul>
+      </li>
+      <!-- li class="column">
+<span class="header_menu_column" id="header_menu_column_9" onmouseover="Wonderfl.Header.mouseover(this);" onmouseout="Wonderfl.Header.mouseout(this);"><a href="http://flash-jobs.wonderfl.net/" title="flash-jobs" target="_blank" >jobs</a></span>
+<ul class="navGlobalSub" id="header_submenu_9" style="display:none;" onmouseover="Wonderfl.Header.mouseover(this);" onmouseout="Wonderfl.Header.mouseout(this);">
+<li><a href="http://flash-jobs.wonderfl.net/" title="want a job?" target="_blank" >want a job?</a></li>
+<li><a href="http://flash-jobs.wonderfl.net/plan" title="post a job" target="_blank" >post a job</a></li>
+</ul>
+</li -->
+      <li class="column">
+       <span class="header_menu_column" id="header_menu_column_4" onmouseout="Wonderfl.Header.mouseout(this);" onmouseover="Wonderfl.Header.mouseover(this);">
+        <a href="../../tags" title="tags">
+         tags
+        </a>
+       </span>
+       <ul class="navGlobalSub" id="header_submenu_4" onmouseout="Wonderfl.Header.mouseout(this);" onmouseover="Wonderfl.Header.mouseover(this);" style="display:none;">
+        <li>
+         <a href="../../search" title="Flash/Actionscript keywords">
+          Flash/Actionscript keywords
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li class="column">
+       <span class="header_menu_column" id="header_menu_column_5" onmouseout="Wonderfl.Header.mouseout(this);" onmouseover="Wonderfl.Header.mouseover(this);">
+        <a href="../../qa" title="Flash Q&amp;A">
+         Q&amp;A
+        </a>
+       </span>
+       <ul class="navGlobalSub" id="header_submenu_5" onmouseout="Wonderfl.Header.mouseout(this);" onmouseover="Wonderfl.Header.mouseover(this);" style="display:none;">
+        <li>
+         <a href="../../qa#questions" title="Flash Q&amp;A">
+          new questions
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li class="column header_menu header_last">
+       <span class="header_menu_column" id="header_menu_column_7" onmouseout="Wonderfl.Header.mouseout(this);" onmouseover="Wonderfl.Header.mouseover(this);">
+        <a href="../../about/" title="about">
+         wonderfl?
+        </a>
+       </span>
+       <ul class="navGlobalSub" id="header_submenu_7" onmouseout="Wonderfl.Header.mouseout(this);" onmouseover="Wonderfl.Header.mouseover(this);" style="display:none;">
+        <li>
+         <a href="../../about/" title="about">
+          what is wonderfl?
+         </a>
+        </li>
+        <li>
+         <a href="../../help" title="help, FAQ">
+          help!
+         </a>
+        </li>
+        <li>
+         <a href="../../libraries" title="libraries">
+          libraries
+         </a>
+        </li>
+        <li>
+         <a href="../../wiki" title="wiki">
+          wiki
+         </a>
+        </li>
+        <li>
+         <a href="../../apis" title="APIs">
+          APIs
+         </a>
+        </li>
+        <li>
+         <a href="../../media" title="Media">
+          Media Information
+         </a>
+        </li>
+        <li>
+         <a href="../../blog" title="developer's blog">
+          developer's blog
+         </a>
+        </li>
+        <li>
+         <a href="../../help#help_contact" title="contact">
+          contact
+         </a>
+        </li>
+       </ul>
+      </li>
+     </ul>
+    </nav>
+    <div id="navUtility">
+     <div id="btnHeaderCodeNew">
+      <form action="/code/new" method="get">
+       <fieldset>
+        <p>
+         <input alt="コードを書きはじめる" class="btnT" src="../../img/common/btn_write_code.png" type="image"/>
+        </p>
+       </fieldset>
+       <input name="token" type="hidden" value="16564e152d3cb58b50ffa3d130695f2feb5941682c91284ee44102f39e859fdf"/>
+      </form>
+      <!-- / #btnHeaderCodeNew -->
+     </div>
+     <div id="navGlobalSearch">
+      <form action="/search" class="search" method="get">
+       <span>
+        <a href="../../search" title="flash,actionscript3 code search">
+         code search
+        </a>
+       </span>
+       <input class="query" name="q" type="text"/>
+       <input class="search_btn btnT" src="../../img/common/btn/btn_go.png" type="image" value=""/>
+      </form>
+      <!--/#navGlobalSearch-->
+     </div>
+     <!-- /#navUtility -->
+    </div>
+    <!--/#header-->
+   </header>
+   <!--/[[[ HEADER-AREA ]]]-->
+   <!--[[[ CONTENT-AREA ]]]-->
+   <div class="group" id="content">
+    <!--Banner-->
+    <div class="ad_super_bnr bnrAd btnT">
+     <!-- wonderfl_codepage_fullbnr1 -->
+    </div>
+    <!--Banner-->
+    <article class="code">
+     <header>
+      <div id="boxForked">
+       <dl>
+        <dt>
+         Forked from:
+        </dt>
+        <dd>
+         <span class="user">
+          <a href="../../user/miyaoka" title="miyaoka">
+           miyaoka
+          </a>
+          's
+          <a href="../../c/nlKz">
+           forked from: Line slicer（割れるよ）
+          </a>
+         </span>
+        </dd>
+       </dl>
+       <p class="diff">
+        <a href="#" onclick="Wonderfl.Codepage.on_diff_click('nlKz','7QyG'); return false;">
+         diff:140
+        </a>
+       </p>
+       <!-- /#boxForked -->
+      </div>
+      <div class="headerInfo group">
+       <h1>
+        Slicer implements GlowLine
+       </h1>
+       <p class="description">
+        @sketchbookgames Fixed the counter bug. ty:)
+        <br/>
+        *
+        <br/>
+        * GlowLine from
+        <br/>
+        *
+        <a href="http://wonderfl.kayac.com/code/704630050881c4429dca8c7f27296b6e2fa3fa4f">
+         http://wonderfl.kayac.com/code/704630050881c4429dca8c7f27296b6e2fa3fa4f
+        </a>
+        <br/>
+        *
+        <br/>
+        * マウス押しっぱなしで切りまくるようにした
+        <br/>
+        <br/>
+        切った後、割れるようにした
+       </p>
+       <p class="user">
+        <span class="thumb">
+         <a href="../../user/miyaoka" title="miyaoka">
+          <img alt="miyaoka" height="30" src="../../images/icon/c/c4/c475/c475c2100684a371e18b18afc96d9f6455df8db4m" title="miyaoka" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/miyaoka" title="miyaoka">
+         miyaoka
+        </a>
+       </p>
+       <ul class="data">
+        <ul class="data">
+         <li class="forked">
+          <a href="#code_forked" title="forked from Slicer implements GlowLine">
+           forked:11
+          </a>
+         </li>
+         <li class="fav">
+          <a href="#code_favorites" title="Slicer implements GlowLine favorites">
+           favorite:96
+          </a>
+         </li>
+         <li class="lines">
+          lines:247
+         </li>
+         <li class="license">
+          license :
+          <a href="../../help#help_license">
+           MIT License
+          </a>
+         </li>
+         <li class="modified">
+          modified : 2009-06-12 08:21:34
+         </li>
+        </ul>
+       </ul>
+       <p class="btnAddFav btnAddFavDes">
+        <a href="../../login?redirect=http%3A%2F%2Fwonderfl.net%2Fc%2F7QyG">
+         <img alt="add to favorites" class="btnT" height="50" src="../../img/common/btn/btn_code_add_fav.png?t=1" width="140"/>
+        </a>
+       </p>
+       <!-- /.headerInfo -->
+      </div>
+     </header>
+     <div class="mode_view" id="parentsCode">
+      <div class="boxCodeInner">
+       <div class="code mode_view">
+        <div id="as3_container">
+         <div id="externalFlashViewer">
+         </div>
+         <textarea id="raw_as3" style="display:none;">/*
+ * @sketchbookgames Fixed the counter bug. ty:)
+ *
+ * GlowLine from
+ * http://wonderfl.kayac.com/code/704630050881c4429dca8c7f27296b6e2fa3fa4f
+ * 
+ * マウス押しっぱなしで切りまくるようにした
+ */
+// forked from a24's Line slicer（割れるよ）
+// forked from a24's Line slicer
+// 切った後、割れるようにした
+package  
+{
+	import flash.display.Sprite;
+	import flash.geom.Point;
+	import flash.events.MouseEvent;
+	import flash.text.TextField;
+	import flash.text.TextFormat;
+	import flash.text.TextFormatAlign;
+	import flash.text.TextFieldAutoSize;
+	import flash.events.Event;
+	import net.hires.debug.Stats;
+	
+	[ SWF( width = "465" , height = "465" , backgroundColor = "0x000000" , frameRate = "60" ) ]
+
+	public class Slicer2 extends Sprite
+	{
+		private	var _container:Sprite = new Sprite();
+		private var isPress:Boolean;
+		private var counterTfd:TextField = new TextField;
+		
+		public function Slicer2() 
+		{
+			graphics.beginFill(0);
+			graphics.drawRect(0, 0, stage.stageWidth, stage.stageHeight);
+			
+//			Wonderfl.capture_delay( 5 );
+			
+			var _pointArray:Array = [
+				new Point( 0 , 0 ),
+				new Point( 265 , 0 ),
+				new Point( 265 , 265 ),
+				new Point( 0 , 265 )
+			];
+			
+			addChild( _container );
+			
+			//text
+			var tft:TextFormat = new TextFormat();
+			tft.align = TextFormatAlign.RIGHT;
+			tft.bold = true;
+			tft.font = "Verdana";
+			tft.color = 0xFFFFFF;
+			tft.letterSpacing = 5;
+			tft.size = 48;
+			
+			counterTfd.defaultTextFormat = tft;
+			counterTfd.autoSize = TextFieldAutoSize.RIGHT;
+			counterTfd.mouseEnabled = false;
+			counterTfd.x = stage.stageWidth -20;
+			counterTfd.y = stage.stageHeight - 60;
+			addChild(counterTfd);
+			
+			//stats
+			addChild(new Stats());
+			
+			
+			//evts
+			stage.addEventListener( MouseEvent.MOUSE_DOWN, function ():void 
+			{
+				isPress = true;
+				while (_container.numChildren) _container.removeChildAt(0);
+				
+				var _sliceObj:LineSliceObject = new LineSliceObject( stage , _pointArray ,
+				(Math.random() * 0x99 + 0x66) &lt;&lt; 16 | 
+				(Math.random() * 0x99 + 0x66) &lt;&lt; 8 | 
+				(Math.random() * 0x99 + 0x66)
+				);
+				_sliceObj.x = _sliceObj.y = 100;
+				_container.addChild( _sliceObj );
+			});
+			stage.addEventListener( MouseEvent.MOUSE_UP, function ():void 
+			{
+				isPress = false;
+			});
+			addEventListener(Event.ENTER_FRAME, function ():void 
+			{
+				if (!isPress) return;
+
+				var t1:Number = Math.random() * Math.PI * 2;
+				var t2:Number = t1 + Math.random() * (Math.PI * 2 / 3) + Math.PI * 1 / 3;
+				
+				var Pt1:Point = Point.polar(300, t1).add(new Point(stage.stageWidth/2, stage.stageHeight / 2)); 
+				var Pt2:Point = Point.polar(300, t2).add(new Point(stage.stageWidth/2, stage.stageHeight / 2)); 
+				
+				var gl:GlowLine = new GlowLine(Pt1, Pt2);
+				gl.addEventListener("completeLine", function ():void 
+				{
+					var lsos:Array = [];
+					for (var i:int = 0; i &lt; _container.numChildren; i++)
+					{
+						lsos.push(_container.getChildAt(i))
+					}
+					for each (var lso:LineSliceObject in lsos)
+					{
+						lso.slice(Pt1, Pt2);
+					}
+					
+					
+					counterTfd.text = _container.numChildren.toString();
+					removeChild(gl);
+					gl = null;
+				});
+				
+				addChild(gl);
+				
+				
+
+			});
+		}
+	}
+}
+
+
+
+import flash.display.Sprite;
+import flash.display.Shape
+import flash.events.Event;
+import flash.display.Stage;
+import flash.geom.Point;
+import flash.events.MouseEvent;
+import caurina.transitions.Tweener;
+
+import flash.filters.DropShadowFilter
+import flash.filters.GlowFilter;
+import flash.display.Graphics;
+class GlowLine
+extends Shape
+{
+//	private var linearr:Array = new Array();
+	private var dotarr:Array = new Array();
+	public var startPt:Point;
+	public var endPt:Point;
+	public var t:Number = 0;
+	public function GlowLine(startPt:Point, endPt:Point) {
+		this.startPt = startPt;
+		this.endPt = endPt;
+		
+		//filters
+		filters = [
+			new GlowFilter(0xffffff, 1, 16, 8, 1, 3, true, false),
+			new GlowFilter(0xffff00, 1, 8, 8, 1, 3, false, false),
+			new DropShadowFilter(0, 90, 0xcc3300, 1, 64, 64, 5, 3, false, false, false)
+		];
+		
+		//evts
+		addEventListener(Event.ENTER_FRAME, addPtHandler);
+		addEventListener(Event.ENTER_FRAME, drawLineHandler);
+		
+		//twn
+		Tweener.addTween(this, {
+			t: 1.0,
+			time:Math.random() * 0.2 + 0.1,
+			transition: "easeInCubic"
+		})
+	}
+	private function addPtHandler(e:Event):void 
+	{
+		var obj:Object = new Object();
+		obj.x = startPt.x + (endPt.x - startPt.x) * t;
+		obj.y = startPt.y + (endPt.y - startPt.y) * t;
+		dotarr.push(obj);
+		if(t == 1) removeEventListener(Event.ENTER_FRAME, addPtHandler);		
+	}
+	private function drawLineHandler(e:Event):void {
+		if (t == 1 ) {
+			dotarr.splice(0, 1);
+			
+			if (dotarr.length &lt; 5)
+			{
+			removeEventListener(Event.ENTER_FRAME, drawLineHandler);
+			dispatchEvent(new Event("completeLine"));
+			return;
+			}
+		}
+		
+		var _g:Graphics = graphics;
+
+		_g.clear();
+		_g.lineStyle(0, 0xff0000, 100, true, "none", "round", "round", 1);				
+		var _prevPoint:Point = null;
+		var _dotLength:int = dotarr.length;
+		for (var i:int = 1; i &lt; _dotLength; ++i) {		
+			var _prevObj:Object = dotarr[i - 1];									
+			var _currentObj:Object = dotarr[i];
+
+			_g.lineStyle(i / 1.5 * 2  , 0xffffff, 1, true, "none", "round", "round", 1);				
+//			var _point:Point = new Point(_prevObj.x + (_currentObj.x - _prevObj.x) / 2, _prevObj.y + (_currentObj.y - _prevObj.y) / 2);				
+			//if (_prevPoint) {
+				//_g.moveTo(_prevPoint.x,_prevPoint.y);
+				//_g.curveTo(_prevObj.x,_prevObj.y,_point.x,_point.y);
+			//} else {
+				_g.moveTo(_prevObj.x,_prevObj.y);
+				_g.lineTo(_currentObj.x,_currentObj.y);
+//				_g.lineTo(_point.x,_point.y);
+			//}
+//			_prevPoint = _point;
+		}
+		if (_currentObj) {
+			_g.lineTo(_currentObj.x, _currentObj.y);
+		}		
+		
+	}	
+}
+class LineSliceObject extends Sprite
+{
+	private var _stage:Stage;
+	private var _pointArray:Array;
+	private var _color:uint;
+	private var _point1:Point;
+	private var _point2:Point;
+	private var _length:int;
+	
+	public function LineSliceObject( _stage:Stage , _pointArray:Array , _color:uint ) 
+	{
+		this._stage = _stage;
+		this._pointArray = _pointArray;
+		this._color = _color;
+		drawRectFromPoint( this , _pointArray , _color );
+	}
+
+	
+	/*
+	 * ------------------------------------------------------------
+	 * Graphic描画
+	 * ------------------------------------------------------------
+	*/
+	private function drawRectFromPoint( _target:* , _pointArray:Array , _color:uint ):void
+	{
+		_target.graphics.beginFill( _color , 1.0 );
+		_target.graphics.moveTo( _pointArray[ 0 ].x , _pointArray[ 0 ].y );
+		_length = _pointArray.length;
+		for ( var i:int = 1; i &lt; _length; i ++ )
+		{
+			var _point:Point = _pointArray[ i ];
+			_target.graphics.lineTo( _point.x , _point.y );
+		}
+		_target.graphics.endFill();
+	}
+	
+	/*
+	 * ------------------------------------------------------------
+	 * スライス
+	 * ------------------------------------------------------------
+	*/
+	public function slice( _point1:Point , _point2:Point ):void
+	{
+		var _pt1:Point = globalToLocal( _point1 );
+		var _pt2:Point = globalToLocal( _point2 );
+		var _newPointArray:Array = [ new Array() , new Array() ];
+		var _numCloss:int = 0;
+		
+		for ( var i:int = 0; i &lt; _length ; i ++ ) 
+		{
+			var _pt3:Point = _pointArray[ i ];
+			var _pt4:Point = ( _pointArray[ i + 1 ] ) ? _pointArray[ i + 1 ] : _pointArray[ 0 ];
+			var _clossPt:Point = crossPoint( _pt1 , _pt2 , _pt3 , _pt4 );
+			
+			_newPointArray[ 0 ].push( _pt3 );
+			if ( _clossPt )
+			{
+				_newPointArray[ 0 ].push( _clossPt );
+				_newPointArray[ 1 ].push( _clossPt );
+				_newPointArray.reverse();
+				_numCloss ++;
+			}
+		}
+		if ( _numCloss == 2 )
+		{
+			var _newObj1:LineSliceObject = new LineSliceObject( _stage , _newPointArray[ 0 ] , _color );
+			var _newObj2:LineSliceObject = new LineSliceObject( _stage , _newPointArray[ 1 ] , Math.random() * 0xFFFF00 );
+			_newObj1.x = _newObj2.x = this.x;
+			_newObj1.y = _newObj2.y = this.y;
+			parent.addChild( _newObj1 );
+			parent.addChild( _newObj2 );
+			parent.removeChild( this );
+
+			var _vector:Point = _pt2.subtract( _pt1 );
+			var _angle:Number = Math.atan2( _vector.y , _vector.x );
+			var _force:int = 6 * Math.random() * 20;
+			var _fx:Number = Math.abs( Math.sin( _angle ) );
+			var _fy:Number = Math.abs( Math.cos( _angle ) );
+			var _fx1:Number = ( _newPointArray[0][0].x &lt; _newPointArray[1][0].x ) ? -_fx : _fx;
+			var _fx2:Number = ( _newPointArray[1][0].x &lt; _newPointArray[0][0].x ) ? -_fx : _fx;
+			var _fy1:Number = ( _newPointArray[0][0].y &lt; _newPointArray[1][0].y ) ? -_fy : _fy;
+			var _fy2:Number = ( _newPointArray[1][0].y &lt; _newPointArray[0][0].y ) ? -_fy : _fy;
+			
+			Tweener.addTween( _newObj1 , { x : _newObj1.x + _fx1 * _force , y : _newObj1.y + _fy1 * _force , time : Math.random()*4+2, transition:"easeOutExpo" } );
+			Tweener.addTween( _newObj2 , { x : _newObj2.x + _fx2 * _force , y : _newObj2.y + _fy2 * _force , time : Math.random()*4+2, transition:"easeOutExpo" } );
+		}
+//		else _stage.addEventListener( MouseEvent.MOUSE_DOWN , mouseDownHandler );
+	}
+	
+	/*
+	 * ------------------------------------------------------------
+	 * 交点を割り出す
+	 * ------------------------------------------------------------
+	*/
+	private function crossPoint( _pt1:Point , _pt2:Point , _pt3:Point , _pt4:Point ):Point
+	{	
+		var _vector1:Point = _pt2.subtract( _pt1 );
+		var _vector2:Point = _pt4.subtract( _pt3 );
+		
+		if ( cross( _vector1, _vector2 ) == 0.0) return null;
+		
+		var _s:Number = cross( _vector2 , _pt3.subtract( _pt1) ) / cross( _vector2 , _vector1 );
+		var _t:Number = cross( _vector1, _pt1.subtract( _pt3 ) ) / cross( _vector1, _vector2 );
+
+		if ( isCross( _s ) &amp;&amp; isCross( _t ) )
+		{
+			_vector1.x *= _s;
+			_vector1.y *= _s;
+			return _pt1.add( _vector1 );
+		}
+		else return null;
+	}
+		
+	private function cross( _vector1:Point , _vector2:Point ):Number
+	{
+		return ( _vector1.x * _vector2.y - _vector1.y * _vector2.x );
+	}
+	
+	public static function isCross( _n:Number ):Boolean
+	{
+		return ( ( 0 &lt;= _n ) &amp;&amp; ( _n &lt;= 1) );
+	}
+}
+</textarea>
+         <p class="btnFullScreen">
+          <a href="../../c/7QyG/read">
+           Code Fullscreen
+          </a>
+         </p>
+        </div>
+       </div>
+      </div>
+      <div class="codeswf boxCodeInner ">
+       <p class="btnFullScreen">
+        <a href="../../c/7QyG/fullscreen">
+         Preview Fullscreen
+        </a>
+       </p>
+       <div id="swf_container">
+        <div id="swf">
+         <img alt="flash swf thumbnail" height="465" src="../../images/capture/3/37/3700/37003275488134dc512c2c80217be7f9f81d6c24.jpg" title="Slicer implements GlowLine" width="465"/>
+         <a href="javascript:void(0);" id="play_button" onclick="Wonderfl.Codepage.play(); return false;">
+          <img alt="play" class="iepngfix btn" src="../../img/common/play_button.png"/>
+         </a>
+        </div>
+       </div>
+      </div>
+     </div>
+     <ul class="listBtns" id="listPlayer">
+      <li>
+       <a href="javascript:void(0);">
+        <img class="btnT" height="10" id="btnPlay" src="../../img/code/btn_code_play.png" width="30"/>
+       </a>
+      </li>
+      <li>
+       <a href="javascript:void(0);">
+        <img class="btnT" height="10" id="btnStop" src="../../img/code/btn_code_stop.png" style="display: none;" width="34"/>
+       </a>
+      </li>
+      <li>
+       <a href="javascript:void(0);">
+        <img class="btnT" height="10" id="btnReload" src="../../img/code/btn_code_reload.png" style="display: none;" width="44"/>
+       </a>
+      </li>
+     </ul>
+     <ul class="listBtns" id="listActions">
+      <li class="btnEdit btnT">
+       <a href="../../c/7QyG/fork">
+        <img class="btnT" height="46" src="../../img/code/btn_code_fork.png" width="221"/>
+       </a>
+      </li>
+      <li class="btnDl btnT">
+       <a href="../../c/7QyG/7QyG.zip">
+        <img class="btnT" height="14" src="../../img/common/btn/btn_code_dl.png" width="102"/>
+       </a>
+      </li>
+     </ul>
+     <!--Banner-->
+     <div class="ad_super_bnr bnrAd btnT">
+      <p>
+       <!-- wonderfl_codepage_fullbnr2 -->
+      </p>
+     </div>
+     <!--Banner-->
+     <section class="group" id="sectFavBy">
+      <h1 id="code_favorites">
+       <img alt="Favorite by" height="19" src="../../img/code/ttl_code_fav_by.png" width="111"/>
+      </h1>
+      <div class="unitGroup group">
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/mvr" title="mvr">
+          <img alt="mvr" height="30" src="../../img/common/img_user_anonymous.gif" title="mvr" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/mvr" title="mvr">
+         mvr
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/aaafl" title="aaafl">
+          <img alt="aaafl" height="30" src="../../img/common/img_user_anonymous.gif" title="aaafl" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/aaafl" title="aaafl">
+         aaafl
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/WLAD" title="WLAD">
+          <img alt="WLAD" height="30" src="../../images/icon/d/d2/d247/d2474be8b20604f59688e5efcd90ee5b7e9697a2m" title="WLAD" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/WLAD" title="WLAD">
+         WLAD
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/kabantus" title="kabantus">
+          <img alt="kabantus" height="30" src="../../img/common/img_user_anonymous.gif" title="kabantus" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/kabantus" title="kabantus">
+         kabantus
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/akirao0112" title="akirao0112">
+          <img alt="akirao0112" height="30" src="../../img/common/img_user_anonymous.gif" title="akirao0112" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/akirao0112" title="akirao0112">
+         akirao0112
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/Trinkschokolade" title="Trinkschokolade">
+          <img alt="Trinkschokolade" height="30" src="../../img/common/img_user_anonymous.gif" title="Trinkschokolade" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/Trinkschokolade" title="Trinkschokolade">
+         Trinkschokol..
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/taomengyu" title="taomengyu">
+          <img alt="taomengyu" height="30" src="../../img/common/img_user_anonymous.gif" title="taomengyu" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/taomengyu" title="taomengyu">
+         taomengyu
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/jackfreak" title="jackfreak">
+          <img alt="jackfreak" height="30" src="../../img/common/img_user_anonymous.gif" title="jackfreak" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/jackfreak" title="jackfreak">
+         jackfreak
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/will_costa" title="will_costa">
+          <img alt="will_costa" height="30" src="../../images/icon/1/13/13a5/13a5060dc22bd98e8dfe7b6aea0c18e87d5322aam" title="will_costa" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/will_costa" title="will_costa">
+         will_costa
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/jackwlee01" title="jackwlee01">
+          <img alt="jackwlee01" height="30" src="../../img/common/img_user_anonymous.gif" title="jackwlee01" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/jackwlee01" title="jackwlee01">
+         jackwlee01
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/hmcorcoran0" title="hmcorcoran0">
+          <img alt="hmcorcoran0" height="30" src="../../img/common/img_user_anonymous.gif" title="hmcorcoran0" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/hmcorcoran0" title="hmcorcoran0">
+         hmcorcoran0
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/Kihara" title="Kihara">
+          <img alt="Kihara" height="30" src="../../images/icon/5/5c/5c81/5c818c0a1c4f2a77f0af627e9c3694d0bbe36debm" title="Kihara" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/Kihara" title="Kihara">
+         Kihara
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/savage69kr" title="savage69kr">
+          <img alt="savage69kr" height="30" src="../../images/icon/d/d7/d73b/d73bf79691be0965f049e02abe3708f355952409m" title="savage69kr" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/savage69kr" title="savage69kr">
+         savage69kr
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/hacker_7z56ro6o" title="hacker_7z56ro6o">
+          <img alt="hacker_7z56ro6o" height="30" src="../../img/common/img_user_anonymous.gif" title="hacker_7z56ro6o" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/hacker_7z56ro6o" title="hacker_7z56ro6o">
+         hacker_7z56r..
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/twinsin" title="twinsin">
+          <img alt="twinsin" height="30" src="../../img/common/img_user_anonymous.gif" title="twinsin" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/twinsin" title="twinsin">
+         twinsin
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/0xABCDEF" title="0xABCDEF">
+          <img alt="0xABCDEF" height="30" src="../../images/icon/0/0c/0cac/0cacaabe03463d97513d64e9e4d64f8aa450255fm" title="0xABCDEF" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/0xABCDEF" title="0xABCDEF">
+         0xABCDEF
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/titou" title="titou">
+          <img alt="titou" height="30" src="../../images/icon/0/00/00a3/00a32b9f7d4cfe97d78b530d72f4419663ec379cm" title="titou" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/titou" title="titou">
+         titou
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/alwAYs" title="alwAYs">
+          <img alt="alwAYs" height="30" src="../../img/common/img_user_anonymous.gif" title="alwAYs" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/alwAYs" title="alwAYs">
+         alwAYs
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/kotobuki" title="kotobuki">
+          <img alt="kotobuki" height="30" src="../../img/common/img_user_anonymous.gif" title="kotobuki" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/kotobuki" title="kotobuki">
+         kotobuki
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/gomako" title="gomako">
+          <img alt="gomako" height="30" src="../../img/common/img_user_anonymous.gif" title="gomako" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/gomako" title="gomako">
+         gomako
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/o_healer" title="o_healer">
+          <img alt="o_healer" height="30" src="../../images/icon/0/02/021f/021ffac0af8e746a99fa208d7fb9dc54bc39ca83m" title="o_healer" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/o_healer" title="o_healer">
+         o_healer
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/uly" title="uly">
+          <img alt="uly" height="30" src="../../images/icon/0/0a/0a3c/0a3cb069609bcd05abe166e7ffd3f7c826cda8dem" title="uly" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/uly" title="uly">
+         uly
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/yun" title="yun">
+          <img alt="yun" height="30" src="../../images/icon/2/24/2403/2403c52d67341fde83fda8ee142ba6ab9c55d30fm" title="yun" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/yun" title="yun">
+         yun
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/anvide24" title="anvide24">
+          <img alt="anvide24" height="30" src="../../img/common/img_user_anonymous.gif" title="anvide24" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/anvide24" title="anvide24">
+         anvide24
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/takishiki" title="takishiki">
+          <img alt="takishiki" height="30" src="../../images/icon/1/10/1090/1090b9438b898c44b476583d6db4a696d4074878m" title="takishiki" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/takishiki" title="takishiki">
+         takishiki
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/hacker_xdv5gh1f" title="hacker_xdv5gh1f">
+          <img alt="hacker_xdv5gh1f" height="30" src="../../img/common/img_user_anonymous.gif" title="hacker_xdv5gh1f" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/hacker_xdv5gh1f" title="hacker_xdv5gh1f">
+         hacker_xdv5g..
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/yamat" title="yamat">
+          <img alt="yamat" height="30" src="../../img/common/img_user_anonymous.gif" title="yamat" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/yamat" title="yamat">
+         yamat
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/jackoz" title="jackoz">
+          <img alt="jackoz" height="30" src="../../img/common/img_user_anonymous.gif" title="jackoz" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/jackoz" title="jackoz">
+         jackoz
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/taxponation" title="taxponation">
+          <img alt="taxponation" height="30" src="../../img/common/img_user_anonymous.gif" title="taxponation" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/taxponation" title="taxponation">
+         taxponation
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/MacEvely" title="MacEvely">
+          <img alt="MacEvely" height="30" src="../../images/icon/e/ed/ed28/ed28ec353d1f03092e7bcac01d0b54abf2cae097m" title="MacEvely" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/MacEvely" title="MacEvely">
+         MacEvely
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/umekichi" title="umekichi">
+          <img alt="umekichi" height="30" src="../../img/common/img_user_anonymous.gif" title="umekichi" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/umekichi" title="umekichi">
+         umekichi
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/yass7th" title="yass7th">
+          <img alt="yass7th" height="30" src="../../images/icon/b/b7/b767/b767c18df7f364c2b43b83dbd332648afbcceb5am" title="yass7th" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/yass7th" title="yass7th">
+         yass7th
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/bluepix" title="bluepix">
+          <img alt="bluepix" height="30" src="../../img/common/img_user_anonymous.gif" title="bluepix" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/bluepix" title="bluepix">
+         bluepix
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/matacat" title="matacat">
+          <img alt="matacat" height="30" src="../../images/icon/e/e1/e1f8/e1f8c29d86f38fd5ba12986268f42d5f1c49d8d4m" title="matacat" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/matacat" title="matacat">
+         matacat
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/djankey" title="djankey">
+          <img alt="djankey" height="30" src="../../images/icon/4/4a/4a0e/4a0ef3ab68e56fd0de0862e6808409d8faf0a67em" title="djankey" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/djankey" title="djankey">
+         djankey
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/FlashFit" title="FlashFit">
+          <img alt="FlashFit" height="30" src="../../img/common/img_user_anonymous.gif" title="FlashFit" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/FlashFit" title="FlashFit">
+         FlashFit
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/idle_niyak" title="idle_niyak">
+          <img alt="idle_niyak" height="30" src="../../img/common/img_user_anonymous.gif" title="idle_niyak" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/idle_niyak" title="idle_niyak">
+         idle_niyak
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/gupon" title="gupon">
+          <img alt="gupon" height="30" src="../../images/icon/d/db/db27/db27720f39bd0b0a0560e5616c3bb3b7c89da052m" title="gupon" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/gupon" title="gupon">
+         gupon
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/scratchbrain" title="scratchbrain">
+          <img alt="scratchbrain" height="30" src="../../images/icon/d/df/df70/df70af44acdcc9fa9de0dd2a3f024b7de67a6ef7m" title="scratchbrain" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/scratchbrain" title="scratchbrain">
+         scratchbrain..
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/inaba" title="inaba">
+          <img alt="inaba" height="30" src="../../img/common/img_user_anonymous.gif" title="inaba" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/inaba" title="inaba">
+         inaba
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/Nontakku" title="Nontakku">
+          <img alt="Nontakku" height="30" src="../../img/common/img_user_anonymous.gif" title="Nontakku" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/Nontakku" title="Nontakku">
+         Nontakku
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/nanashism" title="nanashism">
+          <img alt="nanashism" height="30" src="../../img/common/img_user_anonymous.gif" title="nanashism" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/nanashism" title="nanashism">
+         nanashism
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/civet" title="civet">
+          <img alt="civet" height="30" src="../../images/icon/9/94/94bc/94bc0cdb9b187d17f5d9143e537c52b36af566c4m" title="civet" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/civet" title="civet">
+         civet
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/NINECUBE" title="NINECUBE">
+          <img alt="NINECUBE" height="30" src="../../img/common/img_user_anonymous.gif" title="NINECUBE" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/NINECUBE" title="NINECUBE">
+         NINECUBE
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/LawrieCape" title="LawrieCape">
+          <img alt="LawrieCape" height="30" src="../../images/icon/e/e2/e2be/e2be6dcc06032ca5524fba239ec70df376017261m" title="LawrieCape" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/LawrieCape" title="LawrieCape">
+         LawrieCape
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/namaakubi" title="namaakubi">
+          <img alt="namaakubi" height="30" src="../../images/icon/e/e2/e28d/e28d57aa7ae9ecffebd3ff31213894fb0942724fm" title="namaakubi" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/namaakubi" title="namaakubi">
+         namaakubi
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/end0fInterNet" title="end0fInterNet">
+          <img alt="end0fInterNet" height="30" src="../../img/common/img_user_anonymous.gif" title="end0fInterNet" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/end0fInterNet" title="end0fInterNet">
+         end0fInterNe..
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/ibu4gin" title="ibu4gin">
+          <img alt="ibu4gin" height="30" src="../../images/icon/c/c6/c656/c6561951eb06f23a22f79074d39039de95e573f0m" title="ibu4gin" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/ibu4gin" title="ibu4gin">
+         ibu4gin
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/web_shiino" title="web_shiino">
+          <img alt="web_shiino" height="30" src="../../img/common/img_user_anonymous.gif" title="web_shiino" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/web_shiino" title="web_shiino">
+         web_shiino
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/ueueueueue" title="ueueueueue">
+          <img alt="ueueueueue" height="30" src="../../img/common/img_user_anonymous.gif" title="ueueueueue" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/ueueueueue" title="ueueueueue">
+         ueueueueue
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/KiKiKi" title="KiKiKi">
+          <img alt="KiKiKi" height="30" src="../../images/icon/7/77/7727/7727470c724e25276c7961e4abd1d02ce001c1f3m" title="KiKiKi" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/KiKiKi" title="KiKiKi">
+         KiKiKi
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/emnobu" title="emnobu">
+          <img alt="emnobu" height="30" src="../../images/icon/3/39/3914/3914faacce843cf9d21b2a3e987a714d57763460m" title="emnobu" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/emnobu" title="emnobu">
+         emnobu
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/digitrick" title="digitrick">
+          <img alt="digitrick" height="30" src="../../images/icon/e/e8/e84d/e84daaa0463c228734749fabf3362c1b91cfff13m" title="digitrick" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/digitrick" title="digitrick">
+         digitrick
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/linktale" title="linktale">
+          <img alt="linktale" height="30" src="../../images/icon/1/10/1069/106989957e4559067c00f83ecd40caeba09a6b61m" title="linktale" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/linktale" title="linktale">
+         linktale
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/BMA_JAPAN" title="BMA_JAPAN">
+          <img alt="BMA_JAPAN" height="30" src="../../images/icon/2/21/21e4/21e4108eef5b96351a71ec3be977694e8976b4dam" title="BMA_JAPAN" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/BMA_JAPAN" title="BMA_JAPAN">
+         BMA_JAPAN
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/SeeDa" title="SeeDa">
+          <img alt="SeeDa" height="30" src="../../img/common/img_user_anonymous.gif" title="SeeDa" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/SeeDa" title="SeeDa">
+         SeeDa
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/webpenta" title="webpenta">
+          <img alt="webpenta" height="30" src="../../images/icon/1/15/1511/15111815c4c48b6a8d1492ecd96a6f60f1b499e4m" title="webpenta" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/webpenta" title="webpenta">
+         webpenta
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/oreore" title="oreore">
+          <img alt="oreore" height="30" src="../../images/icon/e/e4/e48b/e48b986a7b23a21168efd8df8588562381ab6d45m" title="oreore" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/oreore" title="oreore">
+         oreore
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/dkgkAs" title="dkgkAs">
+          <img alt="dkgkAs" height="30" src="../../images/icon/7/76/7647/7647ee48d93a9cede01b47bb2f5d349103e89174m" title="dkgkAs" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/dkgkAs" title="dkgkAs">
+         dkgkAs
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/dizgid" title="dizgid">
+          <img alt="dizgid" height="30" src="../../img/common/img_user_anonymous.gif" title="dizgid" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/dizgid" title="dizgid">
+         dizgid
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/tkinjo" title="tkinjo">
+          <img alt="tkinjo" height="30" src="../../images/icon/0/01/015b/015bc0b73d35f9e45774a163b7d26bf97b4684c0m" title="tkinjo" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/tkinjo" title="tkinjo">
+         tkinjo
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/sokak" title="sokak">
+          <img alt="sokak" height="30" src="../../images/icon/9/90/90b0/90b0edf1df95a07e4c2f834ab2d384c11c04dd8bm" title="sokak" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/sokak" title="sokak">
+         sokak
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/Laqu" title="Laqu">
+          <img alt="Laqu" height="30" src="../../images/icon/0/03/03ae/03aed65c6cb98f04110a2df0db828c1ea6f11118m" title="Laqu" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/Laqu" title="Laqu">
+         Laqu
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/katapad" title="katapad">
+          <img alt="katapad" height="30" src="../../images/icon/a/ad/ad8e/ad8ee85eadefcc97670258170e1a80bc1da8089dm" title="katapad" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/katapad" title="katapad">
+         katapad
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/OneInchPunch" title="OneInchPunch">
+          <img alt="OneInchPunch" height="30" src="../../images/icon/8/87/87cf/87cfa6a1b096625bd8d1ff5374e1b3ab5b016bddm" title="OneInchPunch" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/OneInchPunch" title="OneInchPunch">
+         OneInchPunch..
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/ngtn" title="ngtn">
+          <img alt="ngtn" height="30" src="../../img/common/img_user_anonymous.gif" title="ngtn" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/ngtn" title="ngtn">
+         ngtn
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/kyurun" title="kyurun">
+          <img alt="kyurun" height="30" src="../../img/common/img_user_anonymous.gif" title="kyurun" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/kyurun" title="kyurun">
+         kyurun
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/yasohachi" title="yasohachi">
+          <img alt="yasohachi" height="30" src="../../img/common/img_user_anonymous.gif" title="yasohachi" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/yasohachi" title="yasohachi">
+         yasohachi
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/hacker_yblownxi" title="hacker_yblownxi">
+          <img alt="hacker_yblownxi" height="30" src="../../img/common/img_user_anonymous.gif" title="hacker_yblownxi" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/hacker_yblownxi" title="hacker_yblownxi">
+         hacker_yblow..
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/assen_nissen" title="assen_nissen">
+          <img alt="assen_nissen" height="30" src="../../img/common/img_user_anonymous.gif" title="assen_nissen" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/assen_nissen" title="assen_nissen">
+         assen_nissen..
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/sw_lucchini" title="sw_lucchini">
+          <img alt="sw_lucchini" height="30" src="../../images/icon/d/d1/d149/d14976d0e9c864c3fd94423617d92e6415859eefm" title="sw_lucchini" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/sw_lucchini" title="sw_lucchini">
+         sw_lucchini
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <div class="unitFavBy">
+        <span class="thumb">
+         <a href="../../user/enjoy_tpm" title="enjoy_tpm">
+          <img alt="enjoy_tpm" height="30" src="../../img/common/img_user_anonymous.gif" title="enjoy_tpm" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/enjoy_tpm" title="enjoy_tpm">
+         enjoy_tpm
+        </a>
+        <!-- /.unitFavBy -->
+       </div>
+       <!-- /.unitGroup -->
+      </div>
+      <div class="unitFavUserL group">
+       <p class="user">
+        <span class="thumb">
+         <a href="../../user/xfs" title="xfs">
+          <img alt="xfs" height="30" src="../../img/common/img_user_anonymous.gif" title="xfs" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/xfs" title="xfs">
+         xfs
+        </a>
+        :
+       </p>
+       <p class="comment">
+        slicing transition
+       </p>
+       <!-- /#unitFavUserL -->
+      </div>
+      <div class="unitFavUserL group">
+       <p class="user">
+        <span class="thumb">
+         <a href="../../user/radiohabitat" title="radiohabitat">
+          <img alt="radiohabitat" height="30" src="../../img/common/img_user_anonymous.gif" title="radiohabitat" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/radiohabitat" title="radiohabitat">
+         radiohabitat..
+        </a>
+        :
+       </p>
+       <p class="comment">
+        super awesome
+       </p>
+       <!-- /#unitFavUserL -->
+      </div>
+      <div class="unitFavUserL group">
+       <p class="user">
+        <span class="thumb">
+         <a href="../../user/F10" title="F10">
+          <img alt="F10" height="30" src="../../img/common/img_user_anonymous.gif" title="F10" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/F10" title="F10">
+         F10
+        </a>
+        :
+       </p>
+       <p class="comment">
+        [логика, эффект] режим плоскость как хотим
+       </p>
+       <!-- /#unitFavUserL -->
+      </div>
+      <div class="unitFavUserL group">
+       <p class="user">
+        <span class="thumb">
+         <a href="../../user/sazaam" title="sazaam">
+          <img alt="sazaam" height="30" src="../../images/icon/a/a1/a1ef/a1ef64baff3474d1640533fd197b3a5c960e8dacm" title="sazaam" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/sazaam" title="sazaam">
+         sazaam
+        </a>
+        :
+       </p>
+       <p class="comment">
+        slicer
+       </p>
+       <!-- /#unitFavUserL -->
+      </div>
+      <div class="unitFavUserL group">
+       <p class="user">
+        <span class="thumb">
+         <a href="../../user/mapache" title="mapache">
+          <img alt="mapache" height="30" src="../../images/icon/7/7e/7eb8/7eb8cb7ca9e7634afe6be56100603db1a740f192m" title="mapache" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/mapache" title="mapache">
+         mapache
+        </a>
+        :
+       </p>
+       <p class="comment">
+        <a class="tag" href="../../tag/bitmapdata" title="bitmapdata">
+         bitmapdata
+        </a>
+        slicer
+       </p>
+       <!-- /#unitFavUserL -->
+      </div>
+      <div class="unitFavUserL group">
+       <p class="user">
+        <span class="thumb">
+         <a href="../../user/unamu" title="unamu">
+          <img alt="unamu" height="30" src="../../img/common/img_user_anonymous.gif" title="unamu" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/unamu" title="unamu">
+         unamu
+        </a>
+        :
+       </p>
+       <p class="comment">
+        <a class="tag" href="../../tag/bitmap" title="bitmap">
+         bitmap
+        </a>
+        <a class="tag" href="../../tag/glow" title="glow">
+         glow
+        </a>
+        <a class="tag" href="../../tag/vector" title="vector">
+         vector
+        </a>
+        <a class="tag" href="../../tag/レーザーで斬ったとき" title="レーザーで斬ったとき">
+         レーザーで斬ったとき
+        </a>
+       </p>
+       <!-- /#unitFavUserL -->
+      </div>
+      <div class="unitFavUserL group">
+       <p class="user">
+        <span class="thumb">
+         <a href="../../user/chacker" title="chacker">
+          <img alt="chacker" height="30" src="../../images/icon/c/c4/c4f5/c4f5f9fff428167b06d42c16ab9c691431f9bbaam" title="chacker" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/chacker" title="chacker">
+         chacker
+        </a>
+        :
+       </p>
+       <p class="comment">
+        <a class="tag" href="../../tag/slice" title="slice">
+         slice
+        </a>
+        <a class="tag" href="../../tag/vector" title="vector">
+         vector
+        </a>
+       </p>
+       <!-- /#unitFavUserL -->
+      </div>
+      <div class="unitFavUserL group">
+       <p class="user">
+        <span class="thumb">
+         <a href="../../user/pixelmagic" title="pixelmagic">
+          <img alt="pixelmagic" height="30" src="../../img/common/img_user_anonymous.gif" title="pixelmagic" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/pixelmagic" title="pixelmagic">
+         pixelmagic
+        </a>
+        :
+       </p>
+       <p class="comment">
+        crazy slice
+       </p>
+       <!-- /#unitFavUserL -->
+      </div>
+      <div class="unitFavUserL group">
+       <p class="user">
+        <span class="thumb">
+         <a href="../../user/fardeen" title="fardeen">
+          <img alt="fardeen" height="30" src="../../img/common/img_user_anonymous.gif" title="fardeen" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/fardeen" title="fardeen">
+         fardeen
+        </a>
+        :
+       </p>
+       <p class="comment">
+        <a class="tag" href="../../tag/particle" title="particle">
+         particle
+        </a>
+        <a class="tag" href="../../tag/slice" title="slice">
+         slice
+        </a>
+       </p>
+       <!-- /#unitFavUserL -->
+      </div>
+      <div class="unitFavUserL group">
+       <p class="user">
+        <span class="thumb">
+         <a href="../../user/nukerito" title="nukerito">
+          <img alt="nukerito" height="30" src="../../images/icon/9/9f/9f2b/9f2be61318b22264b4d242b27368ff194b15f732m" title="nukerito" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/nukerito" title="nukerito">
+         nukerito
+        </a>
+        :
+       </p>
+       <p class="comment">
+        <a class="tag" href="../../tag/slice" title="slice">
+         slice
+        </a>
+        slice
+       </p>
+       <!-- /#unitFavUserL -->
+      </div>
+      <div class="unitFavUserL group">
+       <p class="user">
+        <span class="thumb">
+         <a href="../../user/darman" title="darman">
+          <img alt="darman" height="30" src="../../img/common/img_user_anonymous.gif" title="darman" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/darman" title="darman">
+         darman
+        </a>
+        :
+       </p>
+       <p class="comment">
+        <a class="tag" href="../../tag/bitmap" title="bitmap">
+         bitmap
+        </a>
+        <a class="tag" href="../../tag/graphics" title="graphics">
+         graphics
+        </a>
+       </p>
+       <!-- /#unitFavUserL -->
+      </div>
+      <div class="unitFavUserL group">
+       <p class="user">
+        <span class="thumb">
+         <a href="../../user/fallen" title="fallen">
+          <img alt="fallen" height="30" src="../../img/common/img_user_anonymous.gif" title="fallen" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/fallen" title="fallen">
+         fallen
+        </a>
+        :
+       </p>
+       <p class="comment">
+        <a class="tag" href="../../tag/slice" title="slice">
+         slice
+        </a>
+       </p>
+       <!-- /#unitFavUserL -->
+      </div>
+      <div class="unitFavUserL group">
+       <p class="user">
+        <span class="thumb">
+         <a href="../../user/fazeaction" title="fazeaction">
+          <img alt="fazeaction" height="30" src="../../img/common/img_user_anonymous.gif" title="fazeaction" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/fazeaction" title="fazeaction">
+         fazeaction
+        </a>
+        :
+       </p>
+       <p class="comment">
+        <a class="tag" href="../../tag/glow" title="glow">
+         glow
+        </a>
+        <a class="tag" href="../../tag/slice" title="slice">
+         slice
+        </a>
+        <a class="tag" href="../../tag/tringles" title="tringles">
+         tringles
+        </a>
+        lines triangle cutter
+       </p>
+       <!-- /#unitFavUserL -->
+      </div>
+      <div class="unitFavUserL group">
+       <p class="user">
+        <span class="thumb">
+         <a href="../../user/CoremindJP" title="CoremindJP">
+          <img alt="CoremindJP" height="30" src="../../images/icon/c/c6/c612/c6127e4fd79477c8d3fd15f8638ffeb01c02ba5em" title="CoremindJP" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/CoremindJP" title="CoremindJP">
+         CoremindJP
+        </a>
+        :
+       </p>
+       <p class="comment">
+        <a class="tag" href="../../tag/絶対" title="絶対">
+         絶対
+        </a>
+        閃光の表現が（・∀・）ｲｲ!!
+       </p>
+       <!-- /#unitFavUserL -->
+      </div>
+      <div class="unitFavUserL group">
+       <p class="user">
+        <span class="thumb">
+         <a href="../../user/sketchbookgames" title="sketchbookgames">
+          <img alt="sketchbookgames" height="30" src="../../images/icon/4/4d/4de6/4de6d5135510e6a8717d371546d336927bee97e0m" title="sketchbookgames" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/sketchbookgames" title="sketchbookgames">
+         sketchbookga..
+        </a>
+        :
+       </p>
+       <p class="comment">
+        <a class="tag" href="../../tag/glow" title="glow">
+         glow
+        </a>
+        <a class="tag" href="../../tag/slice" title="slice">
+         slice
+        </a>
+        the poly counter seems to be behind a few cuts in this version, i can tap the mouse, and it will still tell me one poly.
+       </p>
+       <!-- /#unitFavUserL -->
+      </div>
+      <div class="unitFavUserL group">
+       <p class="user">
+        <span class="thumb">
+         <a href="../../user/kakyoin" title="kakyoin">
+          <img alt="kakyoin" height="30" src="../../img/common/img_user_anonymous.gif" title="kakyoin" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/kakyoin" title="kakyoin">
+         kakyoin
+        </a>
+        :
+       </p>
+       <p class="comment">
+        <a class="tag" href="../../tag/斬鉄" title="斬鉄">
+         斬鉄
+        </a>
+       </p>
+       <!-- /#unitFavUserL -->
+      </div>
+      <div class="unitFavUserL group">
+       <p class="user">
+        <span class="thumb">
+         <a href="../../user/no48" title="no48">
+          <img alt="no48" height="30" src="../../images/icon/d/d3/d328/d328715a205458229a5ac08ac8d0b36a135eaf60m" title="no48" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/no48" title="no48">
+         no48
+        </a>
+        :
+       </p>
+       <p class="comment">
+        <a class="tag" href="../../tag/斬鉄" title="斬鉄">
+         斬鉄
+        </a>
+        すげーーーーーーーー！！
+       </p>
+       <!-- /#unitFavUserL -->
+      </div>
+      <div class="unitFavUserL group">
+       <p class="user">
+        <span class="thumb">
+         <a href="../../user/hi_noon" title="hi_noon">
+          <img alt="hi_noon" height="30" src="../../images/icon/9/94/9478/9478e8c2c42aa2abb9eddcee47f80f6d6edf4c5cm" title="hi_noon" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/hi_noon" title="hi_noon">
+         hi_noon
+        </a>
+        :
+       </p>
+       <p class="comment">
+        レーザー
+       </p>
+       <!-- /#unitFavUserL -->
+      </div>
+      <div class="unitFavUserL group">
+       <p class="user">
+        <span class="thumb">
+         <a href="../../user/fumix" title="fumix">
+          <img alt="fumix" height="30" src="../../images/icon/0/06/065b/065b32f18846d644577e86539c719599cb270e3em" title="fumix" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/fumix" title="fumix">
+         fumix
+        </a>
+        :
+       </p>
+       <p class="comment">
+        シャキーン！！！これはカッコいい！
+       </p>
+       <!-- /#unitFavUserL -->
+      </div>
+      <div class="unitFavUserL group">
+       <p class="user">
+        <span class="thumb">
+         <a href="../../user/clockmaker" title="clockmaker">
+          <img alt="clockmaker" height="30" src="../../images/icon/0/01/01b7/01b79458eb5ee95dfc7b3be443e53fd4db249f78m" title="clockmaker" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/clockmaker" title="clockmaker">
+         clockmaker
+        </a>
+        :
+       </p>
+       <p class="comment">
+        か、かっこいい…
+       </p>
+       <!-- /#unitFavUserL -->
+      </div>
+      <div class="unitFavUserL group">
+       <p class="user">
+        <span class="thumb">
+         <a href="../../user/makc3d" title="makc3d">
+          <img alt="makc3d" height="30" src="../../images/icon/2/29/29b9/29b91963d1bb71a93e8c506575a3ad1e1c0182afm" title="makc3d" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/makc3d" title="makc3d">
+         makc3d
+        </a>
+        :
+       </p>
+       <p class="comment">
+        weird, but if I hold down for a few seconds, I stop seing glowing line
+       </p>
+       <!-- /#unitFavUserL -->
+      </div>
+      <div class="unitFavUserL group">
+       <p class="user">
+        <span class="thumb">
+         <a href="../../user/siouxcitizen" title="siouxcitizen">
+          <img alt="siouxcitizen" height="30" src="../../img/common/img_user_anonymous.gif" title="siouxcitizen" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/siouxcitizen" title="siouxcitizen">
+         siouxcitizen..
+        </a>
+        :
+       </p>
+       <p class="comment">
+        <a class="tag" href="../../tag/レーザーで斬ったとき" title="レーザーで斬ったとき">
+         レーザーで斬ったとき
+        </a>
+        または斬鉄剣で斬ったとき
+       </p>
+       <!-- /#unitFavUserL -->
+      </div>
+      <div class="unitFavUserL group">
+       <p class="user">
+        <span class="thumb">
+         <a href="../../user/kazy" title="kazy">
+          <img alt="kazy" height="30" src="../../images/icon/f/f3/f3b4/f3b4f7650e60438e707deba934d2aea8271cc633m" title="kazy" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/kazy" title="kazy">
+         kazy
+        </a>
+        :
+       </p>
+       <p class="comment">
+        シャキーン
+       </p>
+       <!-- /#unitFavUserL -->
+      </div>
+      <div class="unitFavUserL group">
+       <p class="user">
+        <span class="thumb">
+         <a href="../../user/esukei" title="esukei">
+          <img alt="esukei" height="30" src="../../images/icon/5/53/5345/534549b7bc55f25898e0a62d3d26f851836f2b13m" title="esukei" width="30"/>
+         </a>
+        </span>
+        <a href="../../user/esukei" title="esukei">
+         esukei
+        </a>
+        :
+       </p>
+       <p class="comment">
+        かっこいい…
+       </p>
+       <!-- /#unitFavUserL -->
+      </div>
+      <!-- /#sectFavBy -->
+     </section>
+     <section class="group" id="sectTags">
+      <h1>
+       <img alt="Tags" height="18" src="../../img/code/ttl_code_tags.png" width="47"/>
+      </h1>
+      <ul class="listTag group">
+       <li>
+        <a class="tag tag1" href="../../tag/bitmap" title="bitmap">
+         bitmap
+        </a>
+       </li>
+       <li>
+        <a class="tag " href="../../tag/bitmapdata" title="bitmapdata">
+         bitmapdata
+        </a>
+       </li>
+       <li>
+        <a class="tag tag1" href="../../tag/glow" title="glow">
+         glow
+        </a>
+       </li>
+       <li>
+        <a class="tag " href="../../tag/graphics" title="graphics">
+         graphics
+        </a>
+       </li>
+       <li>
+        <a class="tag " href="../../tag/particle" title="particle">
+         particle
+        </a>
+       </li>
+       <li>
+        <a class="tag tag2" href="../../tag/slice" title="slice">
+         slice
+        </a>
+       </li>
+       <li>
+        <a class="tag " href="../../tag/tringles" title="tringles">
+         tringles
+        </a>
+       </li>
+       <li>
+        <a class="tag tag1" href="../../tag/vector" title="vector">
+         vector
+        </a>
+       </li>
+       <li>
+        <a class="tag tag1" href="../../tag/レーザーで斬ったとき" title="レーザーで斬ったとき">
+         レーザーで斬ったとき
+        </a>
+       </li>
+       <li>
+        <a class="tag tag1" href="../../tag/斬鉄" title="斬鉄">
+         斬鉄
+        </a>
+       </li>
+       <li>
+        <a class="tag " href="../../tag/絶対" title="絶対">
+         絶対
+        </a>
+       </li>
+      </ul>
+      <!-- / #sectTags .group -->
+     </section>
+     <section class="group" id="sectKeywords">
+      <h1>
+       <img alt="sectKeywords" height="19" src="../../img/code/ttl_code_keywords.png" width="98"/>
+      </h1>
+      <ul class="listKeywords group">
+       <li>
+        <a class="keyword keyword2" href="../../search?q=Point" title="Point | JavaScript,HTML5,CSS search">
+         Point
+        </a>
+       </li>
+       <li>
+        <a class="keyword keyword2" href="../../search?q=MouseEvent.ENTER_FRAME" title="MouseEvent.ENTER_FRAME | JavaScript,HTML5,CSS search">
+         MouseEvent.ENTER_FRAME
+        </a>
+       </li>
+       <li>
+        <a class="keyword keyword2" href="../../search?q=Point.polar" title="Point.polar | JavaScript,HTML5,CSS search">
+         Point.polar
+        </a>
+       </li>
+       <li>
+        <a class="keyword keyword1" href="../../search?q=Object" title="Object | JavaScript,HTML5,CSS search">
+         Object
+        </a>
+       </li>
+       <li>
+        <a class="keyword keyword1" href="../../search?q=GlowFilter" title="GlowFilter | JavaScript,HTML5,CSS search">
+         GlowFilter
+        </a>
+       </li>
+       <li>
+        <a class="keyword keyword1" href="../../search?q=Tweener.addTween" title="Tweener.addTween | JavaScript,HTML5,CSS search">
+         Tweener.addTween
+        </a>
+       </li>
+       <li>
+        <a class="keyword keyword1" href="../../search?q=TextFieldAutoSize.RIGHT" title="TextFieldAutoSize.RIGHT | JavaScript,HTML5,CSS search">
+         TextFieldAutoSize.RIGHT
+        </a>
+       </li>
+       <li>
+        <a class="keyword keyword1" href="../../search?q=time" title="time | JavaScript,HTML5,CSS search">
+         time
+        </a>
+       </li>
+       <li>
+        <a class="keyword keyword1" href="../../search?q=slice" title="slice | JavaScript,HTML5,CSS search">
+         slice
+        </a>
+       </li>
+       <li>
+        <a class="keyword keyword1" href="../../search?q=reverse" title="reverse | JavaScript,HTML5,CSS search">
+         reverse
+        </a>
+       </li>
+       <li>
+        <a class="keyword keyword1" href="../../search?q=Math.abs" title="Math.abs | JavaScript,HTML5,CSS search">
+         Math.abs
+        </a>
+       </li>
+       <li>
+        <a class="keyword keyword1" href="../../search?q=subtract" title="subtract | JavaScript,HTML5,CSS search">
+         subtract
+        </a>
+       </li>
+       <li>
+        <a class="keyword keyword1" href="../../search?q=add" title="add | JavaScript,HTML5,CSS search">
+         add
+        </a>
+       </li>
+       <li>
+        <a class="keyword" href="../../search?q=push" title="push | JavaScript,HTML5,CSS search">
+         push
+        </a>
+       </li>
+       <li>
+        <a class="keyword" href="../../search?q=color" title="color | JavaScript,HTML5,CSS search">
+         color
+        </a>
+       </li>
+       <li>
+        <a class="keyword" href="../../search?q=toString" title="toString | JavaScript,HTML5,CSS search">
+         toString
+        </a>
+       </li>
+       <li>
+        <a class="keyword" href="../../search?q=Stats" title="Stats | JavaScript,HTML5,CSS search">
+         Stats
+        </a>
+       </li>
+       <li>
+        <a class="keyword" href="../../search?q=Math.PI" title="Math.PI | JavaScript,HTML5,CSS search">
+         Math.PI
+        </a>
+       </li>
+       <li>
+        <a class="keyword" href="../../search?q=splice" title="splice | JavaScript,HTML5,CSS search">
+         splice
+        </a>
+       </li>
+       <li>
+        <a class="keyword" href="../../search?q=clear" title="clear | JavaScript,HTML5,CSS search">
+         clear
+        </a>
+       </li>
+      </ul>
+      <!-- / #sectKeywords .group -->
+     </section>
+     <section class="group" id="sectForked">
+      <h1 id="code_forked">
+       <img alt="Forked" height="15" src="../../img/code/ttl_code_forked.png" width="68"/>
+      </h1>
+      <div class="boxSort group">
+       <p class="changeSort">
+        sort
+       </p>
+       <ul class="group">
+        <li class="selected">
+         <em>
+          new
+         </em>
+        </li>
+        <li>
+         <a href="../../c/7QyG?order=pv#code_forked">
+          page view
+         </a>
+        </li>
+        <li>
+         <a href="../../c/7QyG?order=favorite#code_forked">
+          favorite
+         </a>
+        </li>
+        <li>
+         <a href="../../c/7QyG?order=forked#code_forked">
+          forked
+         </a>
+        </li>
+       </ul>
+       <!-- / .boxSort -->
+      </div>
+      <div class="autopagerize_page_element" id="boxForkedCode">
+       <div class="unitCodeGroup group">
+        <div class="unitCode" id="code_MFlt">
+         <div class="unitCodeThumb">
+          <p class="thumb">
+           <a href="../../c/MFlt" title="forked from: Slicer implements GlowLine">
+            <img alt="forked from: Slicer implements GlowLine" height="100" src="../../images/capture/0/05/0580/058056112d1749ecc5e69478136e6947817a3a7a_w.jpg" width="205"/>
+           </a>
+          </p>
+          <p class="pv">
+           <a href="../../c/MFlt" title="forked from: Slicer implements GlowLine">
+            pv
+            <span>
+             455
+            </span>
+           </a>
+          </p>
+         </div>
+         <p class="ttl">
+          <a href="../../c/MFlt" title="forked from: Slicer implements GlowLine">
+           forked from: Slicer implements..
+          </a>
+         </p>
+         <p class="user">
+          <span class="thumb">
+           <a class="small_user" href="../../user/ih311010">
+            <img height="15" src="../../img/common/img_user_anonymous.gif" width="15"/>
+           </a>
+          </span>
+          <a class="user_name small_user" href="../../user/ih311010">
+           ih311010
+          </a>
+         </p>
+         <ul class="data">
+          <li class="forked">
+           forked:0
+          </li>
+          <li class="fav">
+           favorite:0
+          </li>
+          <li class="lines">
+           lines:247 (
+           <strong>
+            <a href="#" onclick="Wonderfl.Codepage.on_diff_click('7QyG','MFlt'); return false;">
+             diff:1
+            </a>
+           </strong>
+           )
+          </li>
+         </ul>
+         <!-- /.unitCode -->
+        </div>
+        <div class="unitCode" id="code_3oQF">
+         <div class="unitCodeThumb">
+          <p class="thumb">
+           <a href="../../c/3oQF" title="forked from: Slicer implements GlowLine">
+            <img alt="forked from: Slicer implements GlowLine" height="100" src="../../images/capture/1/17/17d5/17d59f049f6669a7994bfab0b0b9bdae6a55247d_w.jpg" width="205"/>
+           </a>
+          </p>
+          <p class="pv">
+           <a href="../../c/3oQF" title="forked from: Slicer implements GlowLine">
+            pv
+            <span>
+             897
+            </span>
+           </a>
+          </p>
+         </div>
+         <p class="ttl">
+          <a href="../../c/3oQF" title="forked from: Slicer implements GlowLine">
+           forked from: Slicer implements..
+          </a>
+         </p>
+         <p class="user">
+          <span class="thumb">
+           <a class="small_user" href="../../user/yootaehan">
+            <img height="15" src="../../img/common/img_user_anonymous.gif" width="15"/>
+           </a>
+          </span>
+          <a class="user_name small_user" href="../../user/yootaehan">
+           yootaehan
+          </a>
+         </p>
+         <ul class="data">
+          <li class="forked">
+           forked:0
+          </li>
+          <li class="fav">
+           favorite:1
+          </li>
+          <li class="lines">
+           lines:247 (
+           <strong>
+            <a href="#" onclick="Wonderfl.Codepage.on_diff_click('7QyG','3oQF'); return false;">
+             diff:5
+            </a>
+           </strong>
+           )
+          </li>
+         </ul>
+         <!-- /.unitCode -->
+        </div>
+        <div class="unitCode" id="code_9hGl">
+         <div class="unitCodeThumb">
+          <p class="thumb">
+           <a href="../../c/9hGl" title="forked from: Slicer implements GlowLine">
+            <img alt="forked from: Slicer implements GlowLine" height="100" src="../../images/capture/4/41/4113/411347623495797c0f1c65f38ddf90913e796ac9_w.jpg" width="205"/>
+           </a>
+          </p>
+          <p class="pv">
+           <a href="../../c/9hGl" title="forked from: Slicer implements GlowLine">
+            pv
+            <span>
+             616
+            </span>
+           </a>
+          </p>
+         </div>
+         <p class="ttl">
+          <a href="../../c/9hGl" title="forked from: Slicer implements GlowLine">
+           forked from: Slicer implements..
+          </a>
+         </p>
+         <p class="user">
+          <span class="thumb">
+           <a class="small_user" href="../../user/alwAYs">
+            <img height="15" src="../../img/common/img_user_anonymous.gif" width="15"/>
+           </a>
+          </span>
+          <a class="user_name small_user" href="../../user/alwAYs">
+           alwAYs
+          </a>
+         </p>
+         <ul class="data">
+          <li class="forked">
+           forked:0
+          </li>
+          <li class="fav">
+           favorite:0
+          </li>
+          <li class="lines">
+           lines:247 (
+           <strong>
+            <a href="#" onclick="Wonderfl.Codepage.on_diff_click('7QyG','9hGl'); return false;">
+             diff:1
+            </a>
+           </strong>
+           )
+          </li>
+         </ul>
+         <!-- /.unitCode -->
+        </div>
+        <div class="unitCode" id="code_6DrH">
+         <div class="unitCodeThumb">
+          <p class="thumb">
+           <a href="../../c/6DrH" title="[wonderfl] Slicer implements GlowLine">
+            <img alt="[wonderfl] Slicer implements GlowLine" height="100" src="../../images/capture/2/2e/2e82/2e8290889054fb88a0f0f9877151862f67032963_w.jpg" width="205"/>
+           </a>
+          </p>
+          <p class="pv">
+           <a href="../../c/6DrH" title="[wonderfl] Slicer implements GlowLine">
+            pv
+            <span>
+             704
+            </span>
+           </a>
+          </p>
+         </div>
+         <p class="ttl">
+          <a href="../../c/6DrH" title="[wonderfl] Slicer implements GlowLine">
+           [wonderfl] Slicer implements G..
+          </a>
+         </p>
+         <p class="user">
+          <span class="thumb">
+           <a class="small_user" href="../../user/gya">
+            <img height="15" src="../../images/icon/6/61/61b4/61b4ce925cb69863cf96977ccaa57c93e4123c31m" width="15"/>
+           </a>
+          </span>
+          <a class="user_name small_user" href="../../user/gya">
+           gya
+          </a>
+         </p>
+         <ul class="data">
+          <li class="forked">
+           forked:0
+          </li>
+          <li class="fav">
+           favorite:2
+          </li>
+          <li class="lines">
+           lines:246 (
+           <strong>
+            <a href="#" onclick="Wonderfl.Codepage.on_diff_click('7QyG','6DrH'); return false;">
+             diff:3
+            </a>
+           </strong>
+           )
+          </li>
+         </ul>
+         <!-- /.unitCode -->
+        </div>
+        <div class="unitCode" id="code_gYMM">
+         <div class="unitCodeThumb">
+          <p class="thumb">
+           <a href="../../c/gYMM" title="Slicer implements GlowLine for Arduino">
+            <img alt="Slicer implements GlowLine for Arduino" height="100" src="../../images/capture/7/77/7701/7701da5caefe62d1f19356a51353c76ba2856a3f_w.jpg" width="205"/>
+           </a>
+          </p>
+          <p class="pv">
+           <a href="../../c/gYMM" title="Slicer implements GlowLine for Arduino">
+            pv
+            <span>
+             1489
+            </span>
+           </a>
+          </p>
+         </div>
+         <p class="ttl">
+          <a href="../../c/gYMM" title="Slicer implements GlowLine for Arduino">
+           Slicer implements GlowLine for..
+          </a>
+         </p>
+         <p class="user">
+          <span class="thumb">
+           <a class="small_user" href="../../user/kotobuki">
+            <img height="15" src="../../img/common/img_user_anonymous.gif" width="15"/>
+           </a>
+          </span>
+          <a class="user_name small_user" href="../../user/kotobuki">
+           kotobuki
+          </a>
+         </p>
+         <ul class="data">
+          <li class="forked">
+           forked:1
+          </li>
+          <li class="fav">
+           favorite:0
+          </li>
+          <li class="lines">
+           lines:252 (
+           <strong>
+            <a href="#" onclick="Wonderfl.Codepage.on_diff_click('7QyG','gYMM'); return false;">
+             diff:8
+            </a>
+           </strong>
+           )
+          </li>
+          <li class="tag">
+           tag:
+           <ul class="listTag">
+            <li>
+             <a class="" href="../../tag/PrototypingLab">
+              PrototypingLab
+             </a>
+            </li>
+            <li>
+             <a class="" href="../../tag/arduino">
+              arduino
+             </a>
+            </li>
+           </ul>
+          </li>
+         </ul>
+         <!-- /.unitCode -->
+        </div>
+        <div class="unitCode" id="code_cCgS">
+         <div class="unitCodeThumb">
+          <p class="thumb">
+           <a href="../../c/cCgS" title="forked from: Slicer implements GlowLine">
+            <img alt="forked from: Slicer implements GlowLine" height="100" src="../../images/capture/5/58/586d/586d9ee6462fb2ddaddebbbcf5d1f230a2ea265a_w.jpg" width="205"/>
+           </a>
+          </p>
+          <p class="pv">
+           <a href="../../c/cCgS" title="forked from: Slicer implements GlowLine">
+            pv
+            <span>
+             620
+            </span>
+           </a>
+          </p>
+         </div>
+         <p class="ttl">
+          <a href="../../c/cCgS" title="forked from: Slicer implements GlowLine">
+           forked from: Slicer implements..
+          </a>
+         </p>
+         <p class="user">
+          <span class="thumb">
+           <a class="small_user" href="../../user/mapache">
+            <img height="15" src="../../images/icon/7/7e/7eb8/7eb8cb7ca9e7634afe6be56100603db1a740f192m" width="15"/>
+           </a>
+          </span>
+          <a class="user_name small_user" href="../../user/mapache">
+           mapache
+          </a>
+         </p>
+         <ul class="data">
+          <li class="forked">
+           forked:0
+          </li>
+          <li class="fav">
+           favorite:0
+          </li>
+          <li class="lines">
+           lines:247 (
+           <strong>
+            <a href="#" onclick="Wonderfl.Codepage.on_diff_click('7QyG','cCgS'); return false;">
+             diff:295
+            </a>
+           </strong>
+           )
+          </li>
+         </ul>
+         <!-- /.unitCode -->
+        </div>
+        <div class="unitCode" id="code_qGIB">
+         <div class="unitCodeThumb">
+          <p class="thumb">
+           <a href="../../c/qGIB" title="forked from: Slicer implements GlowLine">
+            <img alt="forked from: Slicer implements GlowLine" height="100" src="../../images/capture/b/bb/bb0c/bb0cbfa413f91e0077d35440ff0f23319c8f5636_w.jpg" width="205"/>
+           </a>
+          </p>
+          <p class="pv">
+           <a href="../../c/qGIB" title="forked from: Slicer implements GlowLine">
+            pv
+            <span>
+             506
+            </span>
+           </a>
+          </p>
+         </div>
+         <p class="ttl">
+          <a href="../../c/qGIB" title="forked from: Slicer implements GlowLine">
+           forked from: Slicer implements..
+          </a>
+         </p>
+         <p class="user">
+          <span class="thumb">
+           <a class="small_user" href="../../user/mapache">
+            <img height="15" src="../../images/icon/7/7e/7eb8/7eb8cb7ca9e7634afe6be56100603db1a740f192m" width="15"/>
+           </a>
+          </span>
+          <a class="user_name small_user" href="../../user/mapache">
+           mapache
+          </a>
+         </p>
+         <ul class="data">
+          <li class="forked">
+           forked:0
+          </li>
+          <li class="fav">
+           favorite:0
+          </li>
+          <li class="lines">
+           lines:246 (
+           <strong>
+            <a href="#" onclick="Wonderfl.Codepage.on_diff_click('7QyG','qGIB'); return false;">
+             diff:295
+            </a>
+           </strong>
+           )
+          </li>
+         </ul>
+         <!-- /.unitCode -->
+        </div>
+        <div class="unitCode" id="code_cO7w">
+         <div class="unitCodeThumb">
+          <p class="thumb">
+           <a href="../../c/cO7w" title="forked from: Slicer implements GlowLine">
+            <img alt="forked from: Slicer implements GlowLine" height="100" src="../../images/capture/5/59/59c4/59c48323229177e9a0b118882bf78b8c1cc63b6c_w.jpg" width="205"/>
+           </a>
+          </p>
+          <p class="pv">
+           <a href="../../c/cO7w" title="forked from: Slicer implements GlowLine">
+            pv
+            <span>
+             1922
+            </span>
+           </a>
+          </p>
+         </div>
+         <p class="ttl">
+          <a href="../../c/cO7w" title="forked from: Slicer implements GlowLine">
+           forked from: Slicer implements..
+          </a>
+         </p>
+         <p class="user">
+          <span class="thumb">
+           <a class="small_user" href="../../user/kotobuki">
+            <img height="15" src="../../img/common/img_user_anonymous.gif" width="15"/>
+           </a>
+          </span>
+          <a class="user_name small_user" href="../../user/kotobuki">
+           kotobuki
+          </a>
+         </p>
+         <ul class="data">
+          <li class="forked">
+           forked:1
+          </li>
+          <li class="fav">
+           favorite:0
+          </li>
+          <li class="lines">
+           lines:251 (
+           <strong>
+            <a href="#" onclick="Wonderfl.Codepage.on_diff_click('7QyG','cO7w'); return false;">
+             diff:7
+            </a>
+           </strong>
+           )
+          </li>
+          <li class="tag">
+           tag:
+           <ul class="listTag">
+            <li>
+             <a class="" href="../../tag/gainer">
+              gainer
+             </a>
+            </li>
+            <li>
+             <a class="" href="../../tag/physical">
+              physical
+             </a>
+            </li>
+           </ul>
+          </li>
+         </ul>
+         <!-- /.unitCode -->
+        </div>
+        <!--/.unitCodeGroup-->
+       </div>
+       <!-- /#boxForkedCode -->
+      </div>
+      <!-- / #sectForked .group -->
+     </section>
+     <div class="ad_super_bnr bnrAd btnT">
+      <div class="ad_super_bnr bnrAd btnT">
+       <!-- wonderfl_codepage_longbnr -->
+      </div>
+     </div>
+     <script src="../../js/lib/prototype-1.7.2.js" type="text/javascript">
+     </script>
+     <script src="../../js/lib/builder.js" type="text/javascript">
+     </script>
+     <script src="../../js/lib/effects.js" type="text/javascript">
+     </script>
+     <script src="../../js/lib/lightbox.js" type="text/javascript">
+     </script>
+     <script src="../../js/lib/swfobject.js" type="text/javascript">
+     </script>
+     <script src="../../js/lib/swfformfix2.js" type="text/javascript">
+     </script>
+     <script src="../../js/form_manager.js" type="text/javascript">
+     </script>
+     <script src="../../js/rpc_wrapper.js" type="text/javascript">
+     </script>
+     <script src="../../js/wonderfl.js" type="text/javascript">
+     </script>
+     <script type="text/javascript">
+      var viewer_swf      = "../../swf/WonderflViewer.swf";
+var open_api_key    = "a76b80051993a7c6322bf8b4bbc457b44c3d4f5c";
+var google_maps_key = "ABQIAAAAXpWFDG8Wm9YzscY4IEB27xSO5wqdqdHVqPB8sVJhBj86bhrVXRSBgqnsO9rxcctD5ppITaLzKCDqHA";
+var compiler_server = "";
+var compiler_port   = "";
+var code_uid        = "7QyG";
+var swf_uri         = "../../swf/usercode/3/37/3700/37003275488134dc512c2c80217be7f9f81d6c24.swf";
+var wmode           = "transparent";
+var ticket          = "";
+var is_login        = "0";
+var viewer          = {
+  displayName : "anonymous",
+  iconURL     : "http://wonderfl.net/img/common/img_user_anonymous.gif"
+};
+     </script>
+    </article>
+    <div id="diff_container">
+    </div>
+    <div id="diff_controller">
+     <a href="#" id="diff_close_button">
+      <img class="btn" src="../../img/code/close.gif"/>
+     </a>
+    </div>
+    <div id="popup" style="display:none">
+     <p class="btnClose">
+      <a href="javascript:void(0);" onclick="popup.hide();">
+       <img alt="close" height="23" src="../../img/nengafl2011/btn_close.png" width="23"/>
+      </a>
+     </p>
+     <form action="/api/code/flash2android/sendmail" id="sendmail" method="post" style="display:none">
+      <p class="ttlPopup">
+       <img alt="AndroidアプリのDownload URLを携帯へ送る" src="../../img/nengafl2011/ttl_download.png"/>
+      </p>
+      <p>
+       <input id="email" name="email" placeholder="メールアドレスを入力してください" type="input" value=""/>
+      </p>
+      <p class="btnSubmit">
+       <input alt="携帯に送る" src="../../img/nengafl2011/btn_send.png" type="image"/>
+      </p>
+      <input name="token" type="hidden" value="16564e152d3cb58b50ffa3d130695f2feb5941682c91284ee44102f39e859fdf"/>
+      <input name="code_uid" type="hidden" value="7QyG"/>
+     </form>
+     <p id="converting" style="display:block">
+      Converting...
+     </p>
+     <!-- /#popup -->
+    </div>
+    <!--/#content-->
+   </div>
+   <!--/[[[ CONTENT-AREA ]]]-->
+   <!--[[[ FOOTER-AREA ]]]-->
+   <div id="footerGlobal">
+    <p class="goPageTop">
+     <a href="#container">
+      <img alt="ページの先頭へ戻る" class="btn" height="32" src="../../img/common/btn/btn_backtotop.png" width="36"/>
+     </a>
+    </p>
+    <div id="navFooter">
+     <p class="navFooterTop">
+      <a href="../../" title="wonderfl TOP">
+       wonderfl TOP
+      </a>
+     </p>
+     <ul class="listNavFooter group">
+      <li>
+       <dl>
+        <dt>
+         <a href="../../codes" title="Codes">
+          Codes
+         </a>
+        </dt>
+        <dd>
+         <a href="../../codes" title="page view ranking">
+          page view ranking
+         </a>
+        </dd>
+        <dd>
+         <a href="../../codes?order=favorite" title="favorite ranking">
+          favorite ranking
+         </a>
+        </dd>
+        <dd>
+         <a href="../../codes?order=forked" title="forked count ranking">
+          forked count ranking
+         </a>
+        </dd>
+       </dl>
+      </li>
+      <li>
+       <dl>
+        <dt>
+         <a href="../../users" title="Users">
+          Users
+         </a>
+        </dt>
+        <dd>
+         <a href="../../users" title="page view ranking">
+          page view ranking
+         </a>
+        </dd>
+        <dd>
+         <a href="../../users?order=favorite" title="favorite ranking">
+          favorite ranking
+         </a>
+        </dd>
+        <dd>
+         <a href="../../users?order=forked" title="forked count ranking">
+          forked count ranking
+         </a>
+        </dd>
+       </dl>
+      </li>
+      <li>
+       <dl>
+        <dt>
+         <a href="http://flash-games.wonderfl.net/" title="Game">
+          Game
+         </a>
+        </dt>
+        <dd>
+         <a href="http://flash-games.wonderfl.net/about" title="フラッシュゲームをつくる">
+          make games
+         </a>
+        </dd>
+        <dd>
+         <a href="http://flash-games.wonderfl.net/" title="フラッシュゲームで遊ぶ">
+          play games
+         </a>
+        </dd>
+       </dl>
+      </li>
+      <li>
+       <dl>
+        <dt>
+         <a href="../../events" title="Game">
+          Events
+         </a>
+        </dt>
+        <dd>
+         <a href="http://jsdo.it/event/jam/" title="HTML5&amp;Flash">
+          JAM -HTML5&amp;Flash-
+         </a>
+        </dd>
+        <dd>
+         <a href="http://checkmate.wonderfl.net/" title="CHECKMATE">
+          CHECKMATE
+         </a>
+        </dd>
+        <dd>
+         <a href="http://nengafl.wonderfl.net/" title="nengafl">
+          nengafl
+         </a>
+        </dd>
+        <dd>
+         <a href="../../code/adce526f063149d781c2752e7472b08ad7279595" title="FeliCa Flash Contest">
+          FeliCa Flash Contest
+         </a>
+        </dd>
+       </dl>
+      </li>
+      <li>
+       <dl>
+        <dt>
+         <a href="http://flash-jobs.wonderfl.net/" title="flash-jobs">
+          Jobs
+         </a>
+        </dt>
+        <dd>
+         <a href="http://flash-jobs.wonderfl.net/" target="_blank" title="want a job?">
+          want a job?
+         </a>
+        </dd>
+        <dd>
+         <a href="http://flash-jobs.wonderfl.net/plan" target="_blank" title="post a job">
+          post a job
+         </a>
+        </dd>
+       </dl>
+      </li>
+      <li>
+       <dl>
+        <dt>
+         <a href="../../tags" title="Tags">
+          Tags
+         </a>
+        </dt>
+        <dd>
+         <a href="../../search">
+          Flash /
+          <br/>
+          Actionscript3.0
+          <br/>
+          keywords
+         </a>
+        </dd>
+       </dl>
+      </li>
+      <li>
+       <dl>
+        <dt>
+         <a href="../../qa" title="Q&amp;A">
+          Q&amp;A
+         </a>
+        </dt>
+        <dd>
+         <a href="../../qa#questions">
+          Questions
+          <br/>
+          about Flash /
+          <br/>
+          Actionscript3.0
+         </a>
+        </dd>
+       </dl>
+      </li>
+     </ul>
+     <ul class="listNavFooter group">
+      <li>
+       <dl>
+        <dt>
+         <a href="../../about/" title="about">
+          What is wonderfl
+         </a>
+        </dt>
+        <dd>
+         <a href="../../help" title="ヘルプ">
+          help
+         </a>
+        </dd>
+        <dd>
+         <a href="../../qa" title="Q&amp;A">
+          Q&amp;A
+         </a>
+        </dd>
+        <dd>
+         <a href="../../libraries" title="ライブラリ">
+          libraries
+         </a>
+        </dd>
+        <dd>
+         <a href="../../wiki" title="wiki">
+          wiki
+         </a>
+        </dd>
+        <dd>
+         <a href="../../apis" title="APIs">
+          APIs
+         </a>
+        </dd>
+        <dd>
+         <a href="../../media" title="Media">
+          Media Information
+         </a>
+        </dd>
+        <dd>
+         <a href="../../blog" title="developer's blog">
+          developer's blog
+         </a>
+        </dd>
+        <dd>
+         <a href="../../help#help_contact" title="contact">
+          contact
+         </a>
+        </dd>
+       </dl>
+      </li>
+      <li>
+       <dl>
+        <dt>
+         <a href="../../terms" title="利用規約">
+          Terms of Use
+         </a>
+        </dt>
+        <dd>
+         <a href="../../terms#terms_pp" title="プライバシーポリシー">
+          Privacy Policy
+         </a>
+        </dd>
+       </dl>
+      </li>
+     </ul>
+     <!--/#navFooter-->
+    </div>
+    <dl id="kayacFooter">
+     <dt class="ttlKayacService">
+      <a href="http://www.kayac.com" title="株式会社KAYAC（カヤック）古都鎌倉から新しい価値感のサービスを次々にリリースする面白法人">
+       <img alt="KAYAC Project" height="14" src="../../img/common/kayacproject.png" width="56"/>
+      </a>
+     </dt>
+     <dd class="listKayacService">
+      <div id="boxKayacLink">
+       <div class="unitKayacLink" id="kayacProject">
+        <dl>
+         <dt>
+          <a class="external" href="http://www.kayac.com/" rel="external" title="面白法人カヤック">
+           カヤックプロジェクト
+          </a>
+         </dt>
+         <dd>
+          <ul class="group">
+           <li>
+            <a class="external" href="https://web.lobi.co/" rel="external" title="Lobi">
+             Lobi
+            </a>
+           </li>
+           <li>
+            <a class="external" href="https://lobi.co/recsdk" rel="external" title="Lobi REC SDK">
+             Lobi REC SDK
+            </a>
+           </li>
+           <li>
+            <a class="external" href="https://rankers.co/" rel="external" title="RANKERS">
+             RANKERS
+            </a>
+           </li>
+           <li>
+            <a class="external" href="https://koshien-pocket.kayac.com/" rel="external" title="ぼくらの甲子園！ポケット">
+             ぼくらの甲子園！ポケット
+            </a>
+           </li>
+           <li>
+            <a class="external" href="https://games.kayac.com/pf/" rel="external" title="ポケットフットボーラーPLUS">
+             ポケットフットボーラーPLUS
+            </a>
+           </li>
+           <li>
+            <a class="external" href="http://quikin.kayac.com/" rel="external" title="冒険クイズキングダム">
+             冒険クイズキングダム
+            </a>
+           </li>
+           <li>
+            <a class="external" href="http://jagmo.jp/" rel="external" title="JAGMO">
+             JAGMO
+            </a>
+           </li>
+           <li>
+            <a class="external" href="https://pla-cole.wedding/" rel="external" title="プラコレ">
+             プラコレ
+            </a>
+           </li>
+           <li>
+            <a class="external" href="http://iikuni-kamakura.jp/" rel="external" title="iikuni">
+             iikuni
+            </a>
+           </li>
+           <li>
+            <a class="external" href="http://thanks.kayac.com/ja/top" rel="external" title="THANKS">
+             THANKS
+            </a>
+           </li>
+           <li>
+            <a class="external" href="https://sumika.me/" rel="external" title="SuMiKa">
+             SuMiKa
+            </a>
+           </li>
+           <li>
+            <a class="external" href="http://www.kayac.com/service/strongpoint" rel="external" title="キャンペーン">
+             キャンペーン
+            </a>
+           </li>
+           <li>
+            <a class="external" href="http://www.kayac.com/service/strongpoint" rel="external" title="受託">
+             受託
+            </a>
+           </li>
+          </ul>
+         </dd>
+        </dl>
+        <!-- / #kayacProject -->
+       </div>
+       <div class="unitKayacLink" id="kayacMedia">
+        <dl>
+         <dt>
+          KAYAC Media
+         </dt>
+         <dd>
+          <ul class="group">
+           <li>
+            <a class="external" href="http://techblog.kayac.com/" rel="external" title="面白法人プログラマーブログ">
+             面白法人プログラマーブログ
+            </a>
+           </li>
+           <li>
+            <a class="external" href="http://business.nikkeibp.co.jp/article/opinion/20111227/225722/?rt=nocnt" rel="external" title="面白法人社長ブログ">
+             面白法人社長ブログ
+            </a>
+           </li>
+           <li>
+            <a class="external" href="http://www.facebook.com/KayacJapan" rel="external" title="面白法人カヤックの「ここだけの話」">
+             面白法人カヤックの「ここだけの話」
+            </a>
+           </li>
+           <li>
+            <a class="external" href="http://design.kayac.com" rel="external" title="面白法人デザイナーブログ">
+             面白法人デザイナーブログ
+            </a>
+           </li>
+           <li>
+            <a class="external" href="https://twitter.com/yanasawa" rel="external" title="@yanasawa">
+             @yanasawa
+            </a>
+           </li>
+           <li>
+            <a class="external" href="http://create.kayac.com" rel="external" title="つくってみたラボ">
+             つくってみたラボ
+            </a>
+           </li>
+          </ul>
+         </dd>
+        </dl>
+        <!-- / #kayacMedia -->
+       </div>
+       <!-- / #boxKayacLink -->
+      </div>
+     </dd>
+    </dl>
+    <p class="vcard" id="copyright">
+     <small>
+      site design ©
+      <a class="external fn org url" href="http://www.kayac.com/" title="KAYAC Inc.">
+       KAYAC Inc.
+      </a>
+      All Rights Reserved.
+     </small>
+    </p>
+    <!--/#footer-->
+   </div>
+   <!--/[[[ FOOTER-AREA ]]]-->
+   <!--/#container-->
+  </div>
+  <!-- scripts [-->
+  <script src="../../js/lib/sisso.js" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   var swf_server = "http://swf.wonderfl.net";
+var lang = "ja";
+  </script>
+  <!--] scripts-->
+  <!-- Analytics [-->
+  <!--] Analytics-->
+ </body>
+</html>
